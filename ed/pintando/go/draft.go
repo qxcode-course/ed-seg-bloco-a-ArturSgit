@@ -10,6 +10,6 @@ func main() {
 
     result := math.Sqrt( p * ( p - a ) * ( p - b ) * (p - c ))
 
-    fmt.Printf("%.2f", result)
+    fmt.Printf("%.2f\n", result)
 
 }

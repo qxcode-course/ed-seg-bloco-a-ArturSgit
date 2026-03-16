@@ -27,7 +27,12 @@
         },
         {
             "label": "2026-03-16_14-59-04",
-            "content": "package main\nimport (\"fmt\"\n        \"math\")\n\nfunc main() {\n    \n    var a, b, c float32\n    var p := (a + b + c)/2\n    fmt.Scanln(\"%v,%v,%v\", &a, &b, &c)\n\n    var result := math.Sqrt( p * ( p - a ) * ( p - b ) * (p - c ))\n\n    fmt.Print(result)\n\n}\n",
+            "content": "@@ -81,24 +81,65 @@\n loat\n-64%0A    fmt.Scan(\n+32%0A    var p := (a + b + c)/2%0A    fmt.Scanln(%22%25v,%25v,%25v%22, \n &a, \n@@ -150,35 +150,16 @@\n &c)%0A\n+%0A\n     \n-p := (a + b + c)/2%0A%0A   \n+var\n  res\n@@ -232,18 +232,9 @@\n rint\n-f(%22%25.2f%22, \n+(\n resu\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-16_15-43-41",
+            "content": "package main\nimport (\"fmt\"\n        \"math\")\n\nfunc main() {\n    \n    var a, b, c float64\n    fmt.Scan(&a, &b, &c)\n    p := (a + b + c)/2\n\n    result := math.Sqrt( p * ( p - a ) * ( p - b ) * (p - c ))\n\n    fmt.Printf(\"%.2f\", result)\n\n}\n",
             "lines": "15"
         }
     ]
