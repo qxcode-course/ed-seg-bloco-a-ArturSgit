@@ -32,7 +32,12 @@
         },
         {
             "label": "2026-03-16_15-43-41",
-            "content": "package main\nimport (\"fmt\"\n        \"math\")\n\nfunc main() {\n    \n    var a, b, c float64\n    fmt.Scan(&a, &b, &c)\n    p := (a + b + c)/2\n\n    result := math.Sqrt( p * ( p - a ) * ( p - b ) * (p - c ))\n\n    fmt.Printf(\"%.2f\", result)\n\n}\n",
+            "content": "@@ -217,10 +217,8 @@\n %25.2f\n-%5Cn\n %22, r\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-03-16_15-45-25",
+            "content": "package main\nimport (\"fmt\"\n        \"math\")\n\nfunc main() {\n    \n    var a, b, c float64\n    fmt.Scan(&a, &b, &c)\n    p := (a + b + c)/2\n\n    result := math.Sqrt( p * ( p - a ) * ( p - b ) * (p - c ))\n\n    fmt.Printf(\"%.2f\\n\", result)\n\n}\n",
             "lines": "15"
         }
     ]

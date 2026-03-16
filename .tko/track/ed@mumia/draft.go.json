@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_15-47-32",
+            "content": "@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -37,373 +37,37 @@\n ) %7B%0A\n-%0A    var name string%0A    var age int%0A%0A    fmt.Scan(&name, &age)%0A%0A    if age %3C 12 %7B%0A        %0A        name = %22crianca%22%0A%0A    %7D else if age %3C 18 %7B%0A        %0A        name = %22jovem%22%0A%0A    %7D else if age %3C 65 %7B%0A%0A        name = %22adulto%22%0A%0A    %7D else if age %3C 1000 %7B%0A%0A        name = %22idoso%22%0A%0A    %7D else %7B%0A%0A        name = %22mumia%22%0A    %7D%0A%0A    fmt.Printf (%22%25s eh %25d%22, name, age)%0A%0A%0A%0A%0A\n+    fmt.Println(%22qxcode%22)%0A    \n %0A%7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-03-16_16-08-16",
+            "content": "@@ -47,23 +47,16 @@\n var name\n-, namep\n  string%0A\n@@ -90,17 +90,16 @@\n an(&name\n-p\n , &age)%0A\n@@ -385,22 +385,20 @@\n eh %25\n-s\n+d\n %22, name\n-p\n , \n-nam\n+ag\n e)%0A%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-03-16_16-10-18",
+            "content": "@@ -394,10 +394,8 @@\n h %25s\n-%5Cn\n %22, n\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-03-16_16-10-26",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n\n    var name, namep string\n    var age int\n\n    fmt.Scan(&namep, &age)\n\n    if age < 12 {\n        \n        name = \"crianca\"\n\n    } else if age < 18 {\n        \n        name = \"jovem\"\n\n    } else if age < 65 {\n\n        name = \"adulto\"\n\n    } else if age < 1000 {\n\n        name = \"idoso\"\n\n    } else {\n\n        name = \"mumia\"\n    }\n\n    fmt.Printf (\"%s eh %s\\n\", namep, name)\n\n\n\n\n\n}\n",
+            "lines": "38"
+        }
+    ]
+}
