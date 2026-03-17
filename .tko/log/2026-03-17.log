@@ -1,0 +1,4 @@
+2026-03-17 09:21:20, MOVE, v:1, k:ed@fuga, mode:PICK
+2026-03-17 09:21:24, EXEC, v:1, k:ed@fuga, mode:FULL, rate:0, size:59
+2026-03-17 09:22:09, EXEC, v:1, k:ed@fuga, mode:FULL, rate:100, size:59
+2026-03-17 09:30:01, MOVE, v:1, k:ed@fuga, mode:BACK

@@ -18,3 +18,11 @@
 2026-03-16 16:08:16, EXEC, v:1, k:ed@mumia, mode:FULL, rate:0, size:38
 2026-03-16 16:10:18, EXEC, v:1, k:ed@mumia, mode:FULL, rate:0, size:38
 2026-03-16 16:10:26, EXEC, v:1, k:ed@mumia, mode:FULL, rate:100, size:38
+2026-03-16 16:14:16, MOVE, v:1, k:ed@mumia, mode:BACK
+2026-03-16 16:14:37, MOVE, v:1, k:ed@fuga, mode:DOWN
+2026-03-16 16:47:27, MOVE, v:1, k:ed@fuga, mode:PICK
+2026-03-16 16:47:29, EXEC, v:1, k:ed@fuga, mode:FULL, size:50, fail:COMP
+2026-03-16 16:53:04, EXEC, v:1, k:ed@fuga, mode:FULL, rate:0, size:58
+2026-03-16 16:53:50, EXEC, v:1, k:ed@fuga, mode:FULL, rate:0
+2026-03-16 16:59:13, EXEC, v:1, k:ed@fuga, mode:FULL, rate:0, size:61
+2026-03-16 17:00:44, MOVE, v:1, k:ed@fuga, mode:BACK

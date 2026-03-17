@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-16_16-47-29",
+            "content": "@@ -163,38 +163,24 @@\n     for \n- %7B%0A%0A            \n i := f\n+ %7B\n %0A%0A      \n@@ -419,41 +419,8 @@\n   %7D%0A\n-                %0A            i++%0A\n     \n@@ -455,29 +455,22 @@\n for \n-%7B%0A%0A            i := f\n+i := f ; i-- %7B\n %0A%0A  \n@@ -712,25 +712,8 @@\n    %7D\n-%0A%0A            i--\n %0A   \n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-03-16_16-53-04",
+            "content": "@@ -196,36 +196,36 @@\n            if i \n-== p\n+%3E 15\n  %7B%0A             \n@@ -209,32 +209,41 @@\n  i %3E 15 %7B%0A      \n+  \n+      %0A\n           %0A     \n@@ -228,32 +228,76 @@\n      %0A          \n+      i = 0%0A%0A            %7D else if i == p %7B%0A\n %0A               \n@@ -332,32 +332,16 @@\n   break%0A\n-                \n %0A       \n@@ -364,36 +364,16 @@\n  == h %7B%0A\n-                    \n %0A       \n@@ -437,36 +437,32 @@\n                 \n-    \n %0A            i++\n@@ -474,32 +474,32 @@\n     \n+%7D%0A\n     \n-if i %3E 15\n+%7D else\n  %7B%0A\n+%0A\n         \n     \n@@ -494,33 +494,23 @@\n         \n-              %0A  \n+for %7B%0A%0A\n         \n@@ -513,23 +513,23 @@\n         \n-  \n i \n+:\n = \n-0\n+f%0A\n %0A       \n@@ -529,30 +529,30 @@\n         \n-%0A\n     \n-        %7D\n+if i %3C 0 %7B\n %0A       \n@@ -548,39 +548,30 @@\n 0 %7B%0A        \n-%7D%0A\n     \n-%7D else %7B%0A\n+  \n %0A        for\n@@ -571,33 +571,22 @@\n     \n-for %7B%0A%0A\n+ \n        \n-     \n i \n-:\n = \n-f\n+15\n %0A%0A  \n@@ -591,24 +591,31 @@\n             \n+%7D else \n if i == p %7B%0A\n@@ -614,32 +614,16 @@\n  == p %7B%0A\n-                \n %0A       \n@@ -666,32 +666,16 @@\n   break%0A\n-                \n %0A       \n@@ -702,33 +702,9 @@\n h %7B%0A\n-                    %0A    \n+%0A\n     \n@@ -736,36 +736,32 @@\n                 \n-    \n break           \n@@ -767,142 +767,24 @@\n   %7D%0A\n-                    %0A            i--%0A                %0A            if i %3C 0 %7B%0A              %0A                i = 15%0A    %0A            %7D \n+%0A            i--\n %0A   \n@@ -796,28 +796,16 @@\n %7D%0A    %7D%0A\n-            \n %0A    fmt\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-03-16_16-59-13",
+            "content": "@@ -179,16 +179,22 @@\n         \n+i := f\n %0A%0A      \n@@ -194,33 +194,33 @@\n %0A            if \n-f\n+i\n  == p %7B%0A        \n@@ -310,33 +310,33 @@\n       %7D else if \n-f\n+i\n  == h %7B%0A        \n@@ -445,17 +445,17 @@\n         \n-f\n+i\n ++%0A     \n@@ -464,17 +464,17 @@\n      if \n-f\n+i\n  %3E 15 %7B%0A\n@@ -512,17 +512,17 @@\n         \n-f\n+i\n  = 0%0A   \n@@ -593,19 +593,39 @@\n        i\n-f f\n+ := f%0A%0A            if i\n  == p %7B%0A\n@@ -731,17 +731,17 @@\n else if \n-f\n+i\n  == h %7B%0A\n@@ -866,17 +866,17 @@\n         \n-f\n+i\n --%0A     \n@@ -902,17 +902,17 @@\n      if \n-f\n+i\n  %3C 0 %7B%0A \n@@ -941,17 +941,17 @@\n         \n-f\n+i\n  = 15%0A  \n",
+            "lines": "61"
+        },
+        {
+            "label": "2026-03-17_09-21-24",
+            "content": "@@ -988,18 +988,9 @@\n rint\n-f(%22%25s%5Cn%22, \n+(\n resu\n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-03-17_09-22-09",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\n    var h, p, f, d int \n    var result string\n    fmt.Scan(&h, &p, &f, &d)\n\n    if d == 1 { // anti-horario\n        \n        for  {\n\n            \n\n            if f == p {\n                \n                result = \"N\"\n                break\n                \n            } else if f == h {\n                    \n                result = \"S\"\n                break            }\n                    \n            f++\n            if f > 15 {\n                      \n                f = 0\n        \n            }\n        }\n    } else {\n\n        for {\n\n            if f == p {\n                \n                result = \"N\"\n                break\n                \n            } else if f == h {\n                    \n                    result = \"S\"\n                    break            }\n                    \n            f--\n                \n            if f < 0 {\n              \n                f = 15\n    \n            } \n        }\n    }\n            \n    fmt.Printf(\"%s\\n\", result)\n    \n    \n}\n",
+            "lines": "59"
+        }
+    ]
+}
