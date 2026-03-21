@@ -1,0 +1,39 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-21_19-43-34",
+            "content": "@@ -387,11 +387,8 @@\n     \n- //\n  ani\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-21_19-45-44",
+            "content": "@@ -176,17 +176,16 @@\n mt.Scan(\n-&\n animals%5B\n@@ -383,16 +383,19 @@\n         \n+ //\n  animals\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-21_19-47-50",
+            "content": "@@ -496,10 +496,8 @@\n ners\n-%5Cn\n )%0A%0A%7D\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-21_19-47-58",
+            "content": "@@ -487,10 +487,8 @@\n rint\n-ln\n (par\n@@ -492,13 +492,15 @@\n partners\n+%5Cn\n )%0A%0A%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-21_19-48-17",
+            "content": "@@ -402,11 +402,8 @@\n %5D = \n-100\n 0%0A  \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-21_19-57-32",
+            "content": "@@ -77,68 +77,8 @@\n b)%0A%0A\n-    //poderia ser feita por meio de verifica%C3%A7ao em boolean%0A%0A\n     \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-21_20-01-07",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n\n    var numb int\n    fmt.Scan(&numb)\n\n    //poderia ser feita por meio de verifica\u00e7ao em boolean\n\n    animals := make([]int, numb)\n    partners := 0\n\n    for i := 0 ; i < numb ; i++ {\n        fmt.Scan(&animals[i])\n    }\n\n    for i := 0 ; i < numb ; i++ {\n        \n        for j := i + 1 ; j < numb ; j++ {\n            \n            if (animals[i] + animals[j]) == 0 {\n                partners++\n                animals[j] = 1000\n                break \n                \n            }\n        }\n    }\n    fmt.Println(partners)\n\n}\n",
+            "lines": "32"
+        }
+    ]
+}
