@@ -1,0 +1,279 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-17_16-33-48",
+            "content": "@@ -240,20 +240,17 @@\n      if \n-jogA\n+a\n  %3C 10 %7C%7C\n@@ -250,20 +250,17 @@\n %3C 10 %7C%7C \n-jogB\n+b\n  %3C 10 %7B \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-17_16-34-50",
+            "content": "@@ -88,24 +88,28 @@\n (&qtd)%0A%0A    \n+var \n jogadores :=\n@@ -109,29 +109,17 @@\n ores\n- := make(%5B%5D int, qtd)\n+%5Bqtd%5D int\n %0A   \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-17_16-36-43",
+            "content": "@@ -433,16 +433,17 @@\n ogadores\n+ \n %5Bi+1%5D %7B \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-17_16-41-25",
+            "content": "@@ -241,67 +241,8 @@\n B)%0A%0A\n-        valor := int (math.Abs(float64( jogA - jogB ) ) )%0A%0A\n     \n@@ -273,21 +273,28 @@\n  %3C 10 %7B \n-%0A    \n+continue %7D%0A%0A\n         \n@@ -303,25 +303,52 @@\n lor \n+:\n = \n-0    %0A        %7D\n+int (math.Abs(float64( jogA - jogB ) ) )%0A\n %0A   \n@@ -381,58 +381,27 @@\n     \n-%7D%0A    comparable := 0%0A    for i:=0 ; i%3Cqtd ; i++ %7B\n+    // vencedor = i\n %0A%0A  \n@@ -460,162 +460,14 @@\n i %7D%0A\n-%0A        comparable += jogadores%5Bi%5D%0A    %7D%0A%0A    if comparable == 0 %7B%0A        fmt.Printf(%220%5Cn%22)%0A    %0A    %7D else %7B%0A%0A        fmt.Println(vencedor)%0A    %7D%0A%0A\n     \n+%7D%0A\n %0A   \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-03-17_16-58-31",
+            "content": "@@ -428,29 +428,8 @@\n = 0%0A\n-    maiorvalor := -1%0A\n     \n@@ -484,71 +484,24 @@\n %5D %3E \n-maiorvalor %7B%0A            maiorvalor = jogadores%5Bi%5D %0A           \n+jogadores%5Bi+1%5D %7B\n  ven\n@@ -509,25 +509,16 @@\n edor = i\n-%0A        \n  %7D%0A%0A    \n@@ -660,11 +660,43 @@\n r)%0A    %7D\n+%0A%0A    %0A    fmt.Println(vencedor)\n %0A%7D%0A\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-19_19-51-58",
+            "content": "@@ -359,29 +359,8 @@\n = 0 \n-%0A            continue\n    %0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-19_19-52-53",
+            "content": "@@ -333,16 +333,39 @@\n %3C 10 %7B %0A\n+            valor = 0 %0A\n         \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-19_19-53-12",
+            "content": "@@ -237,16 +237,75 @@\n &jogB)%0A%0A\n+        valor := int (math.Abs(float64( jogA - jogB ) ) )%0A%0A\n         \n@@ -371,67 +371,8 @@\n   %7D%0A\n-        valor := int (math.Abs(float64( jogA - jogB ) ) )%0A%0A\n     \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-19_19-53-42",
+            "content": "@@ -241,67 +241,8 @@\n B)%0A%0A\n-        valor := int (math.Abs(float64( jogA - jogB ) ) )%0A%0A\n     \n@@ -307,34 +307,70 @@\n     \n+   %7D%0A\n        \n+ \n valor \n+:\n = \n-0%0A        %7D\n+int (math.Abs(float64( jogA - jogB ) ) )\n %0A%0A  \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-19_19-58-02",
+            "content": "@@ -353,24 +353,46 @@\n continue   %0A\n+            valor = 0%0A\n         %7D%0A%0A \n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-03-21_18-04-40",
+            "content": "@@ -349,17 +349,16 @@\n     \n-valor = 0\n+continue\n    %0A\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-21_18-06-12",
+            "content": "@@ -681,20 +681,9 @@\n tf(%22\n-sem ganhador\n+0\n %5Cn%22)\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-21_18-08-16",
+            "content": "@@ -146,22 +146,8 @@\n  0 %0A\n-    valor := 0\n %0A   \n@@ -237,32 +237,82 @@\n &jogB)%0A%0A        \n+valor := int (math.Abs(float64( jogA - jogB ) ) )%0A\n %0A        if jogA\n@@ -361,104 +361,8 @@\n 0   \n-%0A%0A        %7D else %7B%0A            valor = int (math.Abs(float64( jogA - jogB ) ) )%0A                \n %0A   \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-21_18-11-12",
+            "content": "@@ -641,12 +641,8 @@\n  = i\n- + 1\n %0A   \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-03-21_18-14-57",
+            "content": "@@ -638,16 +638,19 @@\n dor = i \n++ 1\n %0A       \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-03-21_18-15-19",
+            "content": "@@ -313,16 +313,20 @@\n     \n-continue\n+valor = 0   \n %0A%0A  \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-03-21_18-18-52",
+            "content": "@@ -460,24 +460,39 @@\n r%0A    %7D%0A    \n+comparable := 0\n %0A    maiorva\n@@ -556,17 +556,16 @@\n res%5Bi%5D %3E\n-=\n  maiorva\n@@ -574,55 +574,8 @@\n r %7B%0A\n-            if jogadores%5Bi%5D %3E maiorvalor %7B%0A    \n     \n@@ -621,20 +621,16 @@\n         \n-    \n vencedor\n@@ -633,28 +633,16 @@\n edor = i\n-%0A           \n  %0A      \n@@ -648,96 +648,75 @@\n     \n- \n-  // %7D else %7B%0A%0A            // %7D%0A         %7D%0A%0A        %0A    %7D%0A%0A    if jogadores%5Bi%5D == null\n+%7D%0A%0A        comparable += jogadores%5Bi%5D%0A    %7D%0A%0A    if comparable == 0\n  %7B%0A \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-03-21_18-23-37",
+            "content": "@@ -313,20 +313,16 @@\n     \n-valor = 0   \n+continue\n %0A%0A  \n@@ -468,23 +468,8 @@\n     \n-comparable := 0\n %0A   \n@@ -541,16 +541,17 @@\n res%5Bi%5D %3E\n+=\n  maiorva\n@@ -556,16 +556,63 @@\n valor %7B%0A\n+            if jogadores%5Bi%5D %3E maiorvalor %7B%0A    \n         \n@@ -650,24 +650,28 @@\n             \n+    \n vencedor = i\n@@ -674,89 +674,119 @@\n  = i\n- + 1%0A         %7D%0A%0A        comparable += jogadores%5Bi%5D%0A    %7D%0A%0A    if comparable == 0\n+%0A            %0A            // %7D else %7B%0A%0A            // %7D%0A         %7D%0A%0A        %0A    %7D%0A%0A    if jogadores%5Bi%5D == null\n  %7B%0A \n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-03-21_18-24-10",
+            "content": "@@ -322,32 +322,11 @@\n  = 0\n-%0A\n    \n-         vencedor --\n %0A%0A  \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-03-21_18-28-19",
+            "content": "@@ -340,20 +340,18 @@\n encedor \n-= -1\n+--\n %0A%0A      \n@@ -660,19 +660,8 @@\n or =\n- vencedor +\n  i +\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-03-21_18-29-05",
+            "content": "@@ -301,32 +301,41 @@\n  %7B %0A            \n+valor = 0\n %0A            con\n@@ -335,29 +335,21 @@\n     \n-continue%0A            \n+vencedor = -1\n %0A%0A  \n@@ -658,16 +658,27 @@\n ncedor =\n+ vencedor +\n  i + 1%0A \n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-03-21_18-29-48",
+            "content": "@@ -313,28 +313,8 @@\n     \n-jogadores%5Bi%5D = 0    \n %0A   \n@@ -343,31 +343,48 @@\n     \n-%7D%0A%0A        jogadores%5Bi%5D\n+    %0A%0A        %7D else %7B%0A            valor\n  = i\n@@ -423,16 +423,73 @@\n B ) ) )%0A\n+                %0A        %7D%0A%0A        jogadores%5Bi%5D = valor%0A\n     %7D%0A  \n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-03-21_18-31-42",
+            "content": "@@ -142,24 +142,34 @@\n r := 0 %0A    \n+valor := 0\n %0A    for  i \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-21_18-32-02",
+            "content": "@@ -287,16 +287,48 @@\n %3C 10 %7B %0A\n+            jogadores%5Bi%5D = 0    \n %0A       \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-21_18-33-07",
+            "content": "@@ -291,40 +291,8 @@\n  %7B %0A\n-            jogadores%5Bi%5D = 0    \n %0A   \n@@ -564,17 +564,21 @@\n dor = i \n-%0A\n++ 1%0A \n         \n@@ -731,20 +731,16 @@\n vencedor\n- + 1\n )%0A    %7D%0A\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-21_18-34-55",
+            "content": "@@ -286,16 +286,46 @@\n  %3C 10 %7B \n+%0A            jogadores%5Bi%5D = 0 \n    %0A    \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-21_18-35-24",
+            "content": "@@ -146,49 +146,8 @@\n  0 %0A\n-    comparable := 0%0A    maiorvalor := -1%0A\n     \n@@ -386,24 +386,26 @@\n B ) ) )%0A    \n+%7D%0A\n     comparab\n@@ -411,23 +411,62 @@\n ble \n-+= jogadores%5Bi%5D\n+:= 0%0A    maiorvalor := -1%0A    for i:=0 ; i%3Cqtd ; i++ %7B\n %0A%0A  \n@@ -577,20 +577,59 @@\n       %7D%0A\n+%0A\n     \n+    comparable += jogadores%5Bi%5D%0A    %7D%0A%0A\n     if c\n@@ -645,20 +645,16 @@\n  == 0 %7B%0A\n-    \n         \n@@ -682,33 +682,25 @@\n dor%5Cn%22)%0A    \n-    %0A    \n+%0A\n     %7D else %7B\n@@ -700,25 +700,17 @@\n  else %7B%0A\n-    %0A    \n+%0A\n         \n@@ -735,26 +735,16 @@\n or + 1)%0A\n-        %7D%0A\n     %7D%0A%7D%0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-21_18-37-16",
+            "content": "@@ -146,16 +146,41 @@\n  0 %0A    \n+comparable := 0%0A    maior\n valor :=\n@@ -176,25 +176,31 @@\n iorvalor := \n-0\n+-1%0A    \n %0A    for  i \n@@ -331,38 +331,8 @@\n 0 %7B \n-%0A            jogadores%5Bi%5D = 0 \n    %0A\n@@ -431,18 +431,16 @@\n ) )%0A    \n-%7D%0A\n     comp\n@@ -450,62 +450,23 @@\n ble \n-:= 0%0A    maiorvalor := -1%0A    for i:=0 ; i%3Cqtd ; i++ %7B\n++= jogadores%5Bi%5D\n %0A%0A  \n@@ -570,13 +570,9 @@\n = i \n-+ 1%0A \n+%0A\n     \n@@ -581,51 +581,12 @@\n   %7D%0A\n-%0A\n     \n-    comparable += jogadores%5Bi%5D%0A    %7D%0A%0A\n     \n@@ -606,16 +606,20 @@\n  == 0 %7B%0A\n+    \n         \n@@ -647,25 +647,33 @@\n dor%5Cn%22)%0A    \n-%0A\n+    %0A    \n     %7D else %7B\n@@ -673,17 +673,25 @@\n  else %7B%0A\n-%0A\n+    %0A    \n         \n@@ -710,17 +710,31 @@\n vencedor\n-)\n+ + 1)%0A        %7D\n %0A    %7D%0A%7D\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-03-21_18-37-59",
+            "content": "@@ -142,24 +142,34 @@\n r := 0 %0A    \n+valor := 0\n %0A    for  i \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-21_18-38-10",
+            "content": "@@ -456,25 +456,26 @@\n iorvalor := \n-0\n+-1\n %0A    for i:=\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-21_18-40-09",
+            "content": "@@ -460,17 +460,17 @@\n alor := \n-1\n+0\n %0A    for\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-21_18-40-18",
+            "content": "@@ -464,9 +464,9 @@\n  := \n-2\n+1\n %0A   \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-21_18-40-24",
+            "content": "@@ -464,10 +464,9 @@\n  := \n--1\n+2\n %0A   \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-21_18-42-06",
+            "content": "@@ -318,10 +318,13 @@\n %5D = \n--1\n+0    \n %0A   \n@@ -460,18 +460,17 @@\n alor := \n-10\n+-\n 1%0A    fo\n@@ -517,17 +517,17 @@\n ores%5Bi%5D \n-%3C\n+%3E\n  maiorva\n@@ -571,16 +571,16 @@\n res%5Bi%5D %0A\n-\n         \n@@ -596,16 +596,19 @@\n dor = i \n++ 1\n %0A       \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-21_18-44-12",
+            "content": "@@ -762,12 +762,8 @@\n edor\n- + 1\n )%0A  \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-21_18-44-32",
+            "content": "@@ -287,16 +287,46 @@\n %3C 10 %7B %0A\n+            jogadores%5Bi%5D = -1%0A\n         \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-21_18-45-21",
+            "content": "@@ -565,24 +565,32 @@\n or = i %0A    \n+     %7D%0A%0A\n         comp\n@@ -601,21 +601,22 @@\n le +\n-+%0A         %7D%0A\n+= jogadores%5Bi%5D\n %0A   \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-21_18-46-43",
+            "content": "@@ -569,24 +569,16 @@\n  i %0A    \n-     %7D%0A%0A\n         \n@@ -591,16 +591,28 @@\n able ++%0A\n+         %7D%0A%0A\n     %7D%0A%0A \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-21_18-46-50",
+            "content": "@@ -597,30 +597,17 @@\n arable +\n-= jogadores%5Bi%5D\n++\n %0A    %7D%0A%0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-21_18-46-54",
+            "content": "@@ -392,19 +392,16 @@\n    %7D%0A   \n- //\n  compara\n@@ -588,11 +588,8 @@\n     \n- //\n  com\n@@ -630,22 +630,18 @@\n  if \n-jogadores%5Bqtd%5D\n+comparable\n  == \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-21_18-48-03",
+            "content": "@@ -287,17 +287,16 @@\n %3C 10 %7B %0A\n-%0A\n         \n@@ -392,16 +392,19 @@\n    %7D%0A   \n+ //\n  compara\n@@ -587,16 +587,19 @@\n %0A       \n+ //\n  compara\n@@ -632,26 +632,30 @@\n %0A    if \n-comparable\n+jogadores%5Bqtd%5D\n  == 0 %7B%0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-03-21_18-49-52",
+            "content": "@@ -291,38 +291,9 @@\n  %7B %0A\n-            jogadores%5Bi%5D = -1\n %0A\n+\n     \n@@ -428,17 +428,18 @@\n alor := \n--\n+10\n 1%0A    fo\n@@ -490,10 +490,9 @@\n %5Bi%5D \n-%3E=\n+%3C\n  mai\n@@ -638,17 +638,17 @@\n parable \n-%3C\n+=\n = 0 %7B%0A  \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-21_18-55-17",
+            "content": "@@ -758,16 +758,20 @@\n vencedor\n+ + 1\n )%0A    %7D%0A\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-21_18-55-22",
+            "content": "@@ -598,11 +598,8 @@\n = i \n-+ 1\n %0A   \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-21_18-55-36",
+            "content": "@@ -453,25 +453,26 @@\n iorvalor := \n-0\n+-1\n %0A    for i:=\n@@ -514,17 +514,18 @@\n ores%5Bi%5D \n-%3C\n+%3E=\n  maiorva\n@@ -600,113 +600,20 @@\n i + \n-2%0A       %0A        %7D else %7B%0A            maiorvalor = jogadores%5Bi%5D%0A            vencedor = i - 1%0A%0A        %7D%0A\n+1%0A         %7D\n %0A%0A  \n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-03-21_19-01-09",
+            "content": "@@ -684,16 +684,19 @@\n dor = i \n+- 1\n %0A%0A      \n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-03-21_19-01-15",
+            "content": "@@ -594,17 +594,17 @@\n r = i + \n-1\n+2\n %0A       \n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-03-21_19-01-24",
+            "content": "@@ -514,17 +514,16 @@\n res%5Bi%5D %3C\n-=\n  maiorva\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-03-21_19-02-12",
+            "content": "@@ -514,16 +514,17 @@\n res%5Bi%5D %3C\n+=\n  maiorva\n@@ -529,16 +529,55 @@\n valor %7B%0A\n+            maiorvalor = jogadores%5Bi%5D %0A\n         \n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-03-21_19-04-12",
+            "content": "@@ -649,11 +649,8 @@\n = i \n-- 1\n %0A%0A  \n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-03-21_19-04-27",
+            "content": "@@ -553,16 +553,19 @@\n dor = i \n++ 1\n %0A       \n@@ -645,16 +645,19 @@\n dor = i \n+- 1\n %0A%0A      \n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-03-21_19-04-41",
+            "content": "@@ -461,11 +461,9 @@\n  := \n-101\n+0\n %0A   \n@@ -515,17 +515,26 @@\n es%5Bi%5D %3C \n-0\n+maiorvalor\n  %7B%0A     \n@@ -583,54 +583,8 @@\n e %7B%0A\n-            if maiorvalor %3E jogadores%5Bi%5D%7B%0A    \n     \n@@ -616,21 +616,17 @@\n dores%5Bi%5D\n- %0A   \n+%0A\n         \n@@ -621,33 +621,32 @@\n %5Bi%5D%0A            \n- \n vencedor = i %0A  \n@@ -647,23 +647,8 @@\n  i %0A\n-            %7D%0A%0A\n %0A   \n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-03-21_19-15-34",
+            "content": "@@ -550,11 +550,8 @@\n = i \n-- 1\n %0A   \n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-03-21_19-19-19",
+            "content": "@@ -779,16 +779,17 @@\n arable %3C\n+=\n  0 %7B%0A   \n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-03-21_19-19-57",
+            "content": "package main\nimport (\"fmt\"\n        \"math\")\n\nfunc main() {\n   \n    qtd := 0\n    fmt.Scan(&qtd)\n\n    jogadores := make([] int, qtd)\n    vencedor := 0 \n    \n    for  i := 0 ; i < qtd ; i++ {\n\n        var jogA, jogB int\n        fmt.Scan(&jogA, &jogB)\n\n        \n        if jogA < 10 || jogB < 10 { \n            jogadores[i] = -1\n            continue\n        }\n\n        jogadores[i] = int (math.Abs(float64( jogA - jogB ) ) )\n    }\n    comparable := 0\n    maiorvalor := 101\n    for i:=0 ; i<qtd ; i++ {\n\n        if jogadores[i] < 0 {\n            vencedor = i - 1\n       \n        } else {\n            if maiorvalor > jogadores[i]{\n                maiorvalor = jogadores[i] \n                vencedor = i \n            }\n\n\n        }\n\n\n        comparable += jogadores[i]\n    }\n\n    if comparable < 0 {\n        fmt.Printf(\"sem ganhador\\n\")\n    \n    } else {\n\n        fmt.Println(vencedor)\n    }\n}\n",
+            "lines": "53"
+        }
+    ]
+}
