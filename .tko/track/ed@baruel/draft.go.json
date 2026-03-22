@@ -1,0 +1,174 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-21_20-44-11",
+            "content": "@@ -198,24 +198,103 @@\n , totbaruel)\n+%0A    faltando := make(%5B%5Dbool, totalbum)%0A    repetidas := make(%5B%5Dint, totbaruel)\n %0A%0A    for i \n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-03-21_20-44-30",
+            "content": "@@ -220,38 +220,37 @@\n i := 0 ; i %3C tot\n-baruel\n+album\n  ; i++ %7B%0A%0A      \n@@ -256,34 +256,34 @@\n    f\n-mt.Scan(&figbaruel)\n+igalbum%5Bi%5D = i + 1\n %0A    %7D%0A\n+%0A\n     \n@@ -294,37 +294,38 @@\n i := 0 ; i %3C tot\n-album\n+baruel\n  ; i++ %7B%0A%0A      \n@@ -331,34 +331,35 @@\n    f\n-igalbum%5Bi%5D = i + 1\n+mt.Scan(&figbaruel)\n %0A    %7D%0A%0A\n %0A   \n@@ -354,17 +354,16 @@\n %0A    %7D%0A%0A\n-%0A\n     coun\n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-03-21_20-48-59",
+            "content": "@@ -358,20 +358,16 @@\n %7D%0A%0A%0A    \n-var \n count1, \n@@ -377,12 +377,9 @@\n nt2 \n-int \n+:\n = 0,\n@@ -754,70 +754,8 @@\n  if \n-count1 == 0 %7B%0A%0A            fmt.Println(%22N%22)%0A%0A        %7Delse if \n figb\n@@ -876,72 +876,8 @@\n  %7B%0A%0A\n-        if count2 == 0 %7B%0A%0A            fmt.Println(%22N%22)%0A        %7D\n %0A%0A  \n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-03-21_20-54-19",
+            "content": "@@ -267,27 +267,24 @@\n n(&figbaruel\n-%5Bi%5D\n )%0A    %7D%0A    \n",
+            "lines": "67"
+        },
+        {
+            "label": "2026-03-21_20-57-02",
+            "content": "@@ -909,33 +909,8 @@\n  %7D%0A%0A\n-    fmt.Print(%22%5Cn%22)%0A    %0A\n     \n",
+            "lines": "67"
+        },
+        {
+            "label": "2026-03-21_20-58-05",
+            "content": "@@ -883,25 +883,24 @@\n gbaruel%5Bi%5D)%0A\n-%0A\n         %7D el\n@@ -900,69 +900,17 @@\n    %7D\n- else if figbaruel%5Bi%5D == figbaruel%5Btotbaruel - 1%5D %7B%0A%0A        \n+%0A%0A    %7D%0A%0A\n     \n@@ -925,37 +925,24 @@\n t(%22%5Cn%22)%0A    \n-    %7D%0A%0A    %7D%0A\n %0A    for i :\n@@ -1016,33 +1016,32 @@\n mt.Println(%22N%22)%0A\n-%0A\n         %7D else i\n@@ -1025,37 +1025,41 @@\n n(%22N%22)%0A        %7D\n- else\n+%0A%0A       \n  if figalbum%5Bi%5D \n@@ -1112,96 +1112,8 @@\n %5Bi%5D)\n-%0A%0A        %7D else if figalbum%5Bi%5D == figalbum%5Btotalbum - 1%5D %7B%0A%0A            fmt.Print(%22%5Cn%22)\n %0A   \n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-03-21_21-04-41",
+            "content": "@@ -883,24 +883,25 @@\n gbaruel%5Bi%5D)%0A\n+%0A\n         %7D%0A%0A \n@@ -901,17 +901,69 @@\n    %7D\n+ else if figbaruel%5Bi%5D == figbaruel%5Btotbaruel - 1%5D %7B\n %0A%0A    \n-%7D%0A%0A\n+    \n     \n@@ -978,24 +978,37 @@\n t(%22%5Cn%22)%0A    \n+    %7D%0A%0A    %7D%0A\n %0A    for i :\n@@ -1090,16 +1090,17 @@\n ln(%22N%22)%0A\n+%0A\n         \n@@ -1100,25 +1100,21 @@\n        %7D\n-%0A%0A       \n+ else\n  if figa\n@@ -1167,24 +1167,112 @@\n figalbum%5Bi%5D)\n+%0A%0A        %7D else if figalbum%5Bi%5D == figalbum%5Btotalbum - 1%5D %7B%0A%0A            fmt.Print(%22%5Cn%22)\n %0A        %7D%0A \n",
+            "lines": "74"
+        },
+        {
+            "label": "2026-03-21_21-05-21",
+            "content": "@@ -801,18 +801,16 @@\n intln(%22N\n-%5Cn\n %22)%0A%0A    \n@@ -869,16 +869,17 @@\n intf(%22%25d\n+ \n %22, figba\n@@ -1021,18 +1021,16 @@\n intln(%22N\n-%5Cn\n %22)%0A     \n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-03-21_21-06-14",
+            "content": "@@ -801,16 +801,18 @@\n intln(%22N\n+%5Cn\n %22)%0A%0A    \n@@ -1022,16 +1022,18 @@\n intln(%22N\n+%5Cn\n %22)%0A     \n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-03-21_21-06-53",
+            "content": "@@ -865,25 +865,24 @@\n t.Printf(%22%25d\n- \n %22, figbaruel\n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-03-21_21-07-09",
+            "content": "@@ -842,28 +842,16 @@\n  != 0 %7B%0A\n-            \n %0A       \n@@ -891,198 +891,26 @@\n i%5D)%0A\n-%0A            if figbaruel%5Bi%5D != figbaruel%5Btotbaruel - 1%5D %7B%0A                %0A                print(%22 %22)    %0A%0A            %7D else %7B%0A%0A                print(%22%5Cn%22)%0A            %7D%0A    \n+        %7D%0A%0A\n     %7D%0A%0A\n-    %7D%0A%0A\n     \n@@ -1112,177 +1112,8 @@\n %5Bi%5D)\n-%0A%0A            if figalbum%5Bi%5D != figalbum%5Btotalbum - 1%5D %7B%0A                %0A                print(%22 %22)    %0A%0A            %7D else %7B%0A%0A                print(%22%5Cn%22)%0A            %7D\n %0A   \n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-03-21_21-11-59",
+            "content": "@@ -924,25 +924,25 @@\n igbaruel%5Bi%5D \n-=\n+!\n = figbaruel%5B\n@@ -998,18 +998,17 @@\n  print(%22\n-%5Cn\n+ \n %22)    %0A%0A\n@@ -1052,17 +1052,18 @@\n  print(%22\n- \n+%5Cn\n %22)%0A     \n",
+            "lines": "87"
+        },
+        {
+            "label": "2026-03-21_21-12-45",
+            "content": "@@ -877,24 +877,25 @@\n t.Printf(%22%25d\n+ \n %22, figbaruel\n@@ -990,33 +990,34 @@\n          print(%22\n- \n+%5Cn\n %22)    %0A%0A        \n@@ -1045,34 +1045,33 @@\n          print(%22\n-%5Cn\n+ \n %22)%0A            %7D\n@@ -1276,16 +1276,17 @@\n intf(%22%25d\n+ \n %22, figal\n",
+            "lines": "87"
+        },
+        {
+            "label": "2026-03-21_21-13-41",
+            "content": "@@ -834,32 +834,44 @@\n aruel%5Bi%5D != 0 %7B%0A\n+            \n %0A            fmt\n@@ -877,25 +877,24 @@\n t.Printf(%22%25d\n- \n %22, figbaruel\n@@ -902,26 +902,198 @@\n i%5D)%0A\n-        %7D%0A%0A\n+%0A            if figbaruel%5Bi%5D == figbaruel%5Btotbaruel - 1%5D %7B%0A                %0A                print(%22 %22)    %0A%0A            %7D else %7B%0A%0A                print(%22%5Cn%22)%0A            %7D%0A    \n     %7D%0A%0A\n+    %7D%0A%0A\n     \n@@ -1275,17 +1275,16 @@\n intf(%22%25d\n- \n %22, figal\n@@ -1286,24 +1286,193 @@\n figalbum%5Bi%5D)\n+%0A%0A            if figalbum%5Bi%5D != figalbum%5Btotalbum - 1%5D %7B%0A                %0A                print(%22 %22)    %0A%0A            %7D else %7B%0A%0A                print(%22%5Cn%22)%0A            %7D\n %0A        %7D%0A \n",
+            "lines": "87"
+        },
+        {
+            "label": "2026-03-21_21-14-31",
+            "content": "@@ -717,62 +717,48 @@\n     \n-if count1 == 0 %7B%0A%0A            fmt.Println(%22N%22)\n+for i := 0 ; i %3C totbaruel ; i++ %7B\n %0A%0A    \n-%7D%0A\n     \n@@ -757,33 +757,33 @@\n         if count\n-2\n+1\n  == 0 %7B%0A%0A       \n@@ -807,68 +807,23 @@\n %22N%22)\n-%0A    %7D\n %0A%0A    \n-%0A\n     \n-for i := 0 ; i %3C totbaruel ; i++ %7B%0A%0A       \n+%7Delse\n  if \n@@ -889,32 +889,33 @@\n l%5Bi%5D)%0A        %7D%0A\n+%0A\n     %7D%0A%0A    fmt.P\n@@ -1025,26 +1025,111 @@\n n(%22N%22)%0A        %7D\n+%0A%0A        if figalbum%5Bi%5D != 0 %7B%0A%0A            fmt.Printf(%22%25d %22, figalbum%5Bi%5D)%0A        %7D\n %0A    %7D%0A%0A%7D%0A\n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-03-21_21-16-36",
+            "content": "@@ -928,16 +928,17 @@\n intf(%22%25d\n+ \n %22, figba\n@@ -950,89 +950,8 @@\n i%5D)%0A\n-            if i != totbaruel - 1 %7B%0A                fmt.Print(%22 %22)%0A            %7D%0A\n     \n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-03-21_21-33-21",
+            "content": "@@ -945,17 +945,16 @@\n uel%5Bi%5D)%0A\n-%0A\n         \n@@ -977,17 +977,17 @@\n aruel - \n-2\n+1\n  %7B%0A     \n",
+            "lines": "73"
+        },
+        {
+            "label": "2026-03-21_21-34-34",
+            "content": "@@ -941,24 +941,25 @@\n gbaruel%5Bi%5D)%0A\n+%0A\n             \n@@ -978,18 +978,64 @@\n aruel - \n-1 \n+2 %7B%0A                fmt.Print(%22 %22)%0A            %7D\n %0A       \n",
+            "lines": "74"
+        },
+        {
+            "label": "2026-03-21_21-35-23",
+            "content": "@@ -765,62 +765,14 @@\n %22)%0A%0A\n-    \n     %7D%0A\n-    for i := 0 ; i %3C totbaruel ; i++ %7B%0A%0A    \n     \n@@ -771,33 +771,33 @@\n   %7D%0A    if count\n-1\n+2\n  == 0 %7B%0A%0A       \n@@ -821,19 +821,60 @@\n %22N%22)\n+%0A    %7D\n %0A%0A    \n+%0A\n     \n-%7D\n+for i := 0 ; i %3C totbaruel ; i++ %7B%0A\n %0A   \n@@ -941,25 +941,24 @@\n gbaruel%5Bi%5D)%0A\n-%0A\n             \n@@ -983,54 +983,8 @@\n - 1 \n-%7B%0A                fmt.Print(%22 %22)%0A            %7D\n %0A   \n@@ -986,25 +986,24 @@\n  %0A        %7D%0A\n-%0A\n     %7D%0A%0A    f\n@@ -1129,173 +1129,8 @@\n    %7D\n-%0A%0A        if figalbum%5Bi%5D != 0 %7B%0A%0A            fmt.Printf(%22%25d%22, figalbum%5Bi%5D)%0A%0A            if i != totalbum - 1 %7B%0A                fmt.Print(%22 %22)%0A            %7D%0A        %7D\n %0A   \n",
+            "lines": "71"
+        },
+        {
+            "label": "2026-03-21_21-37-23",
+            "content": "@@ -803,32 +803,98 @@\n baruel ; i++ %7B%0A%0A\n+        if count1 == 0 %7B%0A%0A            fmt.Println(%22N%22)%0A%0A        %7D%0A\n         if figba\n@@ -1108,32 +1108,98 @@\n talbum ; i++ %7B%0A%0A\n+        if count2 == 0 %7B%0A%0A            fmt.Println(%22N%22)%0A        %7D%0A%0A\n         if figal\n",
+            "lines": "83"
+        },
+        {
+            "label": "2026-03-21_21-37-58",
+            "content": "@@ -717,24 +717,65 @@\n     \n-primeiro := true\n+if count1 == 0 %7B%0A%0A            fmt.Println(%22N%22)%0A%0A        %7D\n %0A   \n@@ -859,82 +859,80 @@\n     \n-if !primeiro %7B%0A            %0A                fmt.Print(%22 %22)%0A        \n+fmt.Printf(%22%25d%22, figbaruel%5Bi%5D)%0A%0A            if i != totbaruel - 1 %7B%0A\n     \n-%7D%0A%0A\n     \n@@ -949,28 +949,19 @@\n t.Print(\n-figbaruel%5Bi%5D\n+%22 %22\n )%0A      \n@@ -970,24 +970,9 @@\n     \n-primeiro = false\n+%7D\n %0A   \n",
+            "lines": "73"
+        },
+        {
+            "label": "2026-03-21_21-44-16",
+            "content": "@@ -966,24 +966,25 @@\n    %7D%0A%0A    %7D%0A\n+%0A\n     fmt.Prin\n@@ -996,17 +996,16 @@\n %22)%0A    %0A\n-%0A\n     for \n@@ -1082,86 +1082,78 @@\n     \n-if !primeiro %7B%0A                %0A                fmt.Print(%22 %22)%0A        \n+fmt.Printf(%22%25d%22, figalbum%5Bi%5D)%0A%0A            if i != totalbum - 1 %7B%0A\n     \n-%7D%0A%0A\n     \n@@ -1173,57 +1173,27 @@\n rint\n-f\n (%22\n-%25d%22, figalbum%5Bi%5D)%0A            primeiro = false\n+ %22)%0A            %7D\n %0A   \n",
+            "lines": "71"
+        },
+        {
+            "label": "2026-03-21_21-46-25",
+            "content": "@@ -1077,19 +1077,16 @@\n         \n- //\n  if !pri\n@@ -1121,19 +1121,16 @@\n         \n- //\n      fmt\n@@ -1152,19 +1152,16 @@\n         \n- //\n  %7D%0A%0A    \n@@ -1177,19 +1177,24 @@\n mt.Print\n-ln(\n+f(%22%25d%22, \n figalbum\n@@ -1213,11 +1213,8 @@\n     \n- //\n  pri\n",
+            "lines": "73"
+        },
+        {
+            "label": "2026-03-21_21-47-17",
+            "content": "@@ -785,71 +785,8 @@\n  if \n-count1 == 0 %7B%0A%0A            fmt.Println(%22N%22)%0A%0A        %7D else if \n figb\n@@ -1050,83 +1050,8 @@\n  if \n-count2 == 0 %7B%0A%0A            fmt.Println(%22N%22)%0A            %0A        %7D else if \n figa\n",
+            "lines": "73"
+        },
+        {
+            "label": "2026-03-21_21-49-41",
+            "content": "@@ -613,32 +613,102 @@\n ak%0A            %7D\n+%0A%0A            count1 += figbaruel%5Bj%5D%0A            count2 += figalbum%5Bi%5D\n %0A        %7D%0A    %7D\n@@ -730,17 +730,16 @@\n := true%0A\n-%0A\n     for \n@@ -773,32 +773,95 @@\n + %7B%0A%0A        if \n+count1 == 0 %7B%0A%0A            fmt.Println(%22N%22)%0A%0A        %7D else if \n figbaruel%5Bi%5D != \n@@ -856,32 +856,33 @@\n aruel%5Bi%5D != 0 %7B%0A\n+%0A\n             coun\n@@ -881,16 +881,146 @@\n     \n-count1++\n+if !primeiro %7B%0A            %0A                fmt.Print(%22 %22)%0A            %7D%0A%0A            fmt.Print(figbaruel%5Bi%5D)%0A            primeiro = false\n %0A   \n@@ -1022,29 +1022,55 @@\n e%0A        %7D%0A\n+%0A\n     %7D\n+%0A    fmt.Print(%22%5Cn%22)%0A    \n %0A%0A    for i \n@@ -1113,464 +1113,8 @@\n  if \n-figalbum%5Bi%5D != 0 %7B%0A            count2++%0A        %7D%0A    %7D%0A%0A    if count1 == 0 %7B%0A        fmt.Println(%22N%22)%0A%0A    %7D else %7B%0A%0A        for i := 0 ; i %3C totbaruel ; i++ %7B%0A    %0A            if figbaruel%5Bi%5D != 0 %7B%0A    %0A                if !primeiro %7B%0A                %0A                    fmt.Print(%22 %22)%0A                %7D%0A    %0A                fmt.Print(figbaruel%5Bi%5D)%0A                primeiro = false%0A            %7D%0A    %0A        %7D%0A        fmt.Print(%22%5Cn%22)%0A    %7D%0A    %0A    if \n coun\n@@ -1119,24 +1119,29 @@\n unt2 == 0 %7B%0A\n+%0A    \n         fmt.\n@@ -1157,146 +1157,21 @@\n N%22)%0A\n-%0A\n     \n-%7D else %7B%0A%0A        for i := 0 ; i %3C totalbum ; i++ %7B%0A    %0A            if count2 == 0 %7B%0A    %0A                fmt.Println(%22N%22)%0A    %0A    \n+        %0A\n     \n@@ -1203,25 +1203,17 @@\n  != 0 %7B%0A\n-    %0A    \n+%0A\n         \n@@ -1246,33 +1246,25 @@\n             \n-    %0A    \n+%0A\n             \n@@ -1301,25 +1301,14 @@\n     \n-    \n // %7D%0A\n-    %0A   \n+%0A\n     \n@@ -1307,33 +1307,32 @@\n  %7D%0A%0A            \n- \n fmt.Println(figa\n@@ -1352,20 +1352,16 @@\n         \n-    \n // prime\n@@ -1372,30 +1372,16 @@\n = false%0A\n-            %7D%0A\n         \n@@ -1389,11 +1389,10 @@\n %0A    %7D%0A%0A\n-%0A\n %7D%0A\n",
+            "lines": "81"
+        },
+        {
+            "label": "2026-03-21_21-57-25",
+            "content": "@@ -1502,32 +1502,35 @@\n %0A               \n+ //\n  if !primeiro %7B%0A\n@@ -1521,32 +1521,32 @@\n  if !primeiro %7B%0A\n-\n                 \n@@ -1557,32 +1557,35 @@\n %0A               \n+ //\n      fmt.Print(%22\n@@ -1595,32 +1595,35 @@\n %0A               \n+ //\n  %7D%0A    %0A        \n@@ -1651,24 +1651,24 @@\n igalbum%5Bi%5D)%0A\n-\n             \n@@ -1662,32 +1662,35 @@\n %0A               \n+ //\n  primeiro = fals\n",
+            "lines": "101"
+        },
+        {
+            "label": "2026-03-21_21-58-00",
+            "content": "@@ -1499,66 +1499,8 @@\n    %0A\n-                fmt.Println(figalbum%5Bi%5D)%0A                %0A\n     \n@@ -1597,32 +1597,73 @@\n          %7D%0A    %0A\n+                fmt.Println(figalbum%5Bi%5D)%0A\n                 \n",
+            "lines": "101"
+        },
+        {
+            "label": "2026-03-21_21-58-16",
+            "content": "@@ -1516,24 +1516,26 @@\n    fmt.Print\n+ln\n (figalbum%5Bi%5D\n@@ -1536,16 +1536,32 @@\n bum%5Bi%5D)%0A\n+                \n %0A       \n",
+            "lines": "102"
+        },
+        {
+            "label": "2026-03-21_21-59-52",
+            "content": "@@ -1705,27 +1705,8 @@\n    %7D\n-%0A%0A        println()\n %0A   \n",
+            "lines": "102"
+        },
+        {
+            "label": "2026-03-21_22-00-18",
+            "content": "@@ -1719,20 +1719,16 @@\n println(\n-%22%5Cn%22\n )%0A    %7D%0A\n",
+            "lines": "104"
+        },
+        {
+            "label": "2026-03-21_22-00-26",
+            "content": "@@ -1503,32 +1503,55 @@\n                 \n+fmt.Print(figalbum%5Bi%5D)%0A\n %0A               \n@@ -1648,59 +1648,8 @@\n     \n-            %0A                fmt.Print(figalbum%5Bi%5D)\n %0A   \n",
+            "lines": "104"
+        },
+        {
+            "label": "2026-03-21_22-01-24",
+            "content": "@@ -643,27 +643,24 @@\n  %7D%0A%0A    \n-firstbaruel\n+primeiro\n  := true\n@@ -1046,27 +1046,24 @@\n     if !\n-firstbaruel\n+primeiro\n  %7B%0A     \n@@ -1192,19 +1192,16 @@\n     \n-firstbaruel\n+primeiro\n  = f\n@@ -1273,31 +1273,8 @@\n    %0A\n-    firstalbum := true%0A\n     \n@@ -1532,26 +1532,24 @@\n     if !\n-firstalbum\n+primeiro\n  %7B%0A     \n@@ -1693,18 +1693,16 @@\n     \n-firstalbum\n+primeiro\n  = f\n",
+            "lines": "104"
+        },
+        {
+            "label": "2026-03-21_22-03-17",
+            "content": "@@ -1260,19 +1260,21 @@\n mt.Print\n-ln(\n+(%22%5Cn%22\n )%0A    %7D%0A\n@@ -1762,32 +1762,33 @@\n %7D%0A        %7D%0A\n+%0A\n         \n fmt.Println(\n@@ -1779,22 +1779,21 @@\n     \n-fmt.P\n+p\n rintln(\n+%22%5Cn%22\n )\n-%0A\n %0A   \n",
+            "lines": "105"
+        },
+        {
+            "label": "2026-03-21_22-04-00",
+            "content": "package main\nimport \"fmt\"\n\nfunc main() {\n    \n    var totalbum, totbaruel int\n    fmt.Scanln(&totalbum)\n    fmt.Scanln(&totbaruel)\n\n    figalbum := make([]int, totalbum)\n    figbaruel := make([]int, totbaruel)\n\n    for i := 0 ; i < totbaruel ; i++ {\n\n        fmt.Scan(&figbaruel[i])\n    }\n    for i := 0 ; i < totalbum ; i++ {\n\n        figalbum[i] = i + 1\n    }\n\n\n    var count1, count2 int = 0, 0\n    for i := 0 ; i < totalbum ; i++ {\n\n        for j := 0 ; j < totbaruel ; j++ {\n\n\n            if figalbum[i] == figbaruel[j] {\n\n                figalbum[i] = 0\n                figbaruel[j] = 0\n                break\n            }\n        }\n    }\n\n    firstbaruel := true\n\n    for i := 0 ; i < totbaruel ; i++ {\n\n        if figbaruel[i] != 0 {\n            count1++\n        }\n    }\n\n    for i := 0 ; i < totalbum ; i++ {\n\n        if figalbum[i] != 0 {\n            count2++\n        }\n    }\n\n    if count1 == 0 {\n        fmt.Println(\"N\")\n\n    } else {\n\n        for i := 0 ; i < totbaruel ; i++ {\n    \n            if figbaruel[i] != 0 {\n    \n                if !firstbaruel {\n                \n                    fmt.Print(\" \")\n                }\n    \n                fmt.Print(figbaruel[i])\n                firstbaruel = false\n            }\n    \n        }\n        fmt.Println()\n    }\n    \n    firstalbum := true\n    if count2 == 0 {\n        fmt.Println(\"N\")\n\n    } else {\n\n        for i := 0 ; i < totalbum ; i++ {\n    \n            if count2 == 0 {\n    \n                fmt.Println(\"N\")\n    \n            } else if figalbum[i] != 0 {\n    \n                \n                if !firstalbum {\n                    \n                    fmt.Print(\" \")\n                }\n                \n                fmt.Print(figalbum[i])\n                firstalbum = false\n            }\n        }\n        fmt.Println()\n\n    }\n\n\n}\n",
+            "lines": "105"
+        }
+    ]
+}

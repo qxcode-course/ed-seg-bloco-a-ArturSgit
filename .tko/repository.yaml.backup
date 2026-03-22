@@ -10,7 +10,7 @@ sources:
   target: https://github.com/qxcodeed/arcade.git
   type: git
   writeable: false
-  cache_timestamp: '2026-03-21 18:02:55'
+  cache_timestamp: '2026-03-21 21:06:37'
   quests: null
   tasks: null
 expanded:
@@ -21,6 +21,7 @@ tasks:
   ed@mumia: '{rate:100}'
   ed@fuga: '{rate:100}'
   ed@pedra: '{rate:100}'
+  ed@casais: '{rate:100}'
 flags:
   painel: 0
   quests: 0
@@ -29,4 +30,4 @@ flags:
   task_graph_mode: 0
   show_time: 0
 lang: go
-selected: ed@casais
+selected: ed@baruel
