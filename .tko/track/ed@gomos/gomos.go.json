@@ -1,0 +1,84 @@
+{
+    "patches": [
+        {
+            "label": "2026-03-23_10-15-53",
+            "content": "@@ -475,79 +475,12 @@\n     \n-%7D%0A%0A\n     \n-for i := 0 ; i %3C tamvetor ; i++ %7B%0A%0A        fmt.Println(gomos%5Bi%5D)\n %0A   \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-03-23_10-17-43",
+            "content": "@@ -100,16 +100,41 @@\n nt %0A    \n+tamvetor := 2 * qtdgomos%0A\n %0A    fmt\n@@ -165,37 +165,8 @@\n ion)\n-%0A    tamvetor := 2 * qtdgomos\n %0A%0A  \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-03-23_10-22-06",
+            "content": "@@ -240,25 +240,120 @@\n  ; i\n- += 2 %7B%0A%0A\n+++ %7B%0A%0A        for j := i + 1 ; j %3C tamvetor ; j++ %7B%0A%0A            for q := 0 ; q %3C qtdgomos ; q++ %7B%0A%0A    \n         \n fmt.\n@@ -344,24 +344,28 @@\n             \n+    \n fmt.Scan(&px\n@@ -375,24 +375,32 @@\n py)%0A        \n+      \n+  \n gomos%5Bi%5D = p\n@@ -413,19 +413,23 @@\n     \n+       \n+ \n gomos%5B\n-i + 1\n+j\n %5D = \n@@ -435,24 +435,55 @@\n  py%0A        \n+    %7D%0A%0A        %7D%0A        i += 2\n %0A    %7D%0A%0A    \n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-03-23_10-28-35",
+            "content": "@@ -1,419 +1,51 @@\n-package main%0Aimport %22fmt%22%0Afunc main() %7B%0A%0A    var qtdgomos int%0A    direction := %22%22%0A    var px, py int %0A    %0A    fmt.Scan(&qtdgomos, &direction)%0A    tamvetor := 2 * qtdgomos%0A%0A    gomos := make(%5B%5Dint, tamvetor)%0A%0A    for i := 0 ; i %3C tamvetor ; i += 2 %7B%0A%0A        fmt.Scan(&px, &py)%0A        gomos%5Bi%5D = px%0A        gomos%5Bi + 1%5D = py%0A        %0A    %7D%0A%0A    for i := 0 ; i %3C tamvetor ; i++ %7B%0A%0A        fmt.Println(gomos%5Bi%5D)%0A    %7D%0A%7D\n+@@ -19,16 +19,17 @@%0A t %2522fmt%2522%250A%0A+%250A%0A func mai\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-03-23_10-34-13",
+            "content": "@@ -174,49 +174,13 @@\n     \n-before := make(%5B%5Dint, tamvetor)%0A    after\n+gomos\n  := \n@@ -283,335 +283,62 @@\n     \n-before%5Bi%5D = px%0A        before%5Bi + 1%5D = py%0A        \n+gomos%5Bi%5D = px\n %0A    \n-%7D%0A%0A\n     \n-if qtdgomos %3E 1 %7B%0A%0A        for i := 0 ; i %3C tamvetor ; i += 2 %7B%0A               %0A            for j := 2 ; j %3C tamvetor ; j += 2 %7B%0A%0A                after%5Bj%5D = before%5Bi%5D%0A                after%5Bj + 1%5D = before%5Bi + 1%5D%0A            %7D%0A            %0A    %0A        %7D%0A    %7D%0A%0A    \n+gomos%5Bi + 1%5D = py%0A        %0A    %7D\n %0A%0A  \n@@ -398,13 +398,13 @@\n tln(\n-after\n+gomos\n %5Bi%5D)\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-03-23_11-01-49",
+            "content": "@@ -635,114 +635,13 @@\n   %7D%0A\n-%0A\n     %7D\n- else %7B%0A%0A        if direction == %22L%22 %7B%0A            fmt.Printf(%22%25d %25d%22, px - 1, py)%0A        %7D%0A    %7D%0A%0A\n %0A%0A  \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-03-23_11-04-12",
+            "content": "@@ -680,64 +680,8 @@\n %22 %7B%0A\n-            after%5B0%5D = px - 1%0A            after%5B1%5D = py%0A\n     \n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-03-23_11-05-05",
+            "content": "@@ -805,11 +805,81 @@\n   %0A%0A    \n+for i := 0 ; i %3C tamvetor ; i++ %7B%0A%0A        fmt.Println(after%5Bi%5D)%0A    %7D\n %0A%7D%0A\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-03-23_11-05-21",
+            "content": "@@ -676,24 +676,75 @@\n = %22L%22 %7B%0A    \n+        after%5B0%5D = px - 1%0A            after%5B1%5D = py\n %0A           \n@@ -765,10 +765,8 @@\n d %25d\n-%5Cn\n %22, p\n",
+            "lines": "50"
+        },
+        {
+            "label": "2026-03-23_11-05-37",
+            "content": "@@ -636,356 +636,8 @@\n  %7D%0A%0A\n-        switch direction %7B%0A        case %22L%22:%0A            after%5B0%5D = px - 1%0A            after%5B1%5D = py%0A%0A        case %22R%22:%0A            after%5B0%5D = px + 1%0A            after%5B1%5D = py%0A%0A        case %22U%22:%0A            after%5B0%5D = px %0A            after%5B1%5D = py + 1%0A%0A        case %22D%22:%0A            after%5B0%5D = px%0A            after%5B1%5D = py - 1%0A        %7D%0A%0A        %0A%0A\n     \n@@ -658,14 +658,10 @@\n     \n-switch\n+if\n  dir\n@@ -671,267 +671,66 @@\n ion \n-%7B%0A        case %22L%22:%0A            fmt.Printf(%22%25d %25d%5Cn%22, px - 1, py)%0A%0A        case %22R%22:%0A            fmt.Printf(%22%25d %25d%5Cn%22, px + 1, py)%0A%0A        case %22U%22:%0A            fmt.Printf(%22%25d %25d%5Cn%22, px, py + 1)%0A%0A        case %22D%22:%0A            fmt.Printf(%22%25d %25d%5Cn%22, px, py - 1\n+== %22L%22 %7B%0A    %0A            fmt.Printf(%22%25d %25d%5Cn%22, px - 1, py\n )%0A  \n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-03-23_11-15-10",
+            "content": "@@ -982,113 +982,8 @@\n     \n-for i := 0 ; i %3C tamvetor ; i += 2 %7B%0A%0A            fmt.Printf(%22%25d %25d%5Cn%22, after%5Bi%5D, after%5Bi + 1%5D)%0A        %7D\n %0A%0A  \n",
+            "lines": "78"
+        },
+        {
+            "label": "2026-03-23_11-17-25",
+            "content": "@@ -434,11 +434,8 @@\n tor \n-- 2\n ; i \n@@ -453,25 +453,24 @@\n            %0A\n-%0A\n             \n@@ -473,19 +473,69 @@\n     \n-after%5Bi\n+for j := 2 ; j %3C tamvetor ; j\n  +\n+=\n  2\n+ %7B%0A%0A                after%5Bj\n %5D = \n@@ -560,19 +560,23 @@\n     \n+    \n after%5B\n-i + 3\n+j + 1\n %5D = \n@@ -589,16 +589,30 @@\n %5Bi + 1%5D%0A\n+            %7D%0A\n         \n",
+            "lines": "81"
+        },
+        {
+            "label": "2026-03-23_11-23-39",
+            "content": "@@ -636,25 +636,18 @@\n er%5B0%5D = \n-before%5B0%5D\n+px\n  - 1%0A   \n@@ -662,33 +662,26 @@\n  after%5B1%5D = \n-before%5B1%5D\n+py\n %0A%0A        ca\n@@ -711,25 +711,18 @@\n er%5B0%5D = \n-before%5B0%5D\n+px\n  + 1%0A   \n@@ -741,25 +741,18 @@\n er%5B1%5D = \n-before%5B1%5D\n+py\n %0A%0A      \n@@ -782,33 +782,27 @@\n  after%5B0%5D = \n-before%5B0%5D\n+px \n %0A           \n@@ -813,25 +813,18 @@\n er%5B1%5D = \n-before%5B1%5D\n+py\n  + 1%0A%0A  \n@@ -866,17 +866,10 @@\n %5D = \n-before%5B0%5D\n+px\n %0A   \n@@ -892,17 +892,10 @@\n %5D = \n-before%5B1%5D\n+py\n  - 1\n",
+            "lines": "79"
+        },
+        {
+            "label": "2026-03-23_11-25-38",
+            "content": "@@ -857,17 +857,17 @@\n fore%5B1%5D \n--\n++\n  1%0A%0A    \n@@ -946,17 +946,17 @@\n fore%5B1%5D \n-+\n+-\n  1%0A     \n",
+            "lines": "79"
+        },
+        {
+            "label": "2026-03-23_11-32-46",
+            "content": "@@ -1306,17 +1306,17 @@\n  px, py \n--\n++\n  1)%0A%0A   \n@@ -1367,25 +1367,25 @@\n %5Cn%22, px, py \n-+\n+-\n  1)%0A        \n",
+            "lines": "79"
+        },
+        {
+            "label": "2026-03-23_11-33-05",
+            "content": "package main\nimport \"fmt\"\nfunc main() {\n\n    var qtdgomos int\n    direction := \"\"\n    var px, py int \n    \n    fmt.Scan(&qtdgomos, &direction)\n    tamvetor := 2 * qtdgomos\n\n    before := make([]int, tamvetor)\n    after := make([]int, tamvetor)\n\n    for i := 0 ; i < tamvetor ; i += 2 {\n\n        fmt.Scan(&px, &py)\n        before[i] = px\n        before[i + 1] = py\n        \n    }\n\n    if qtdgomos > 1 {\n\n        for i := 0 ; i < tamvetor - 2; i += 2 {\n               \n\n            after[i + 2] = before[i]\n            after[i + 3] = before[i + 1]\n            \n    \n        }\n\n        switch direction {\n        case \"L\":\n            after[0] = before[0] - 1\n            after[1] = before[1]\n\n        case \"R\":\n            after[0] = before[0] + 1\n            after[1] = before[1]\n\n        case \"U\":\n            after[0] = before[0]\n            after[1] = before[1] - 1\n\n        case \"D\":\n            after[0] = before[0]\n            after[1] = before[1] + 1\n        }\n\n        for i := 0 ; i < tamvetor ; i += 2 {\n\n            fmt.Printf(\"%d %d\\n\", after[i], after[i + 1])\n        }\n\n    } else {\n\n        switch direction {\n        case \"L\":\n            fmt.Printf(\"%d %d\\n\", px - 1, py)\n\n        case \"R\":\n            fmt.Printf(\"%d %d\\n\", px + 1, py)\n\n        case \"U\":\n            fmt.Printf(\"%d %d\\n\", px, py - 1)\n\n        case \"D\":\n            fmt.Printf(\"%d %d\\n\", px, py + 1)\n        }\n    }\n\n\n\n    \n\n    \n}\n",
+            "lines": "79"
+        }
+    ]
+}
