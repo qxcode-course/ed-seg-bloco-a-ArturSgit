@@ -1,5 +1,6 @@
 package main
 import "fmt"
+
 func main() {
 
     var qtdgomos int
@@ -17,18 +18,14 @@ func main() {
         fmt.Scan(&px, &py)
         before[i] = px
         before[i + 1] = py
-        
     }
 
     if qtdgomos > 1 {
 
         for i := 0 ; i < tamvetor - 2; i += 2 {
-               
-
+            
             after[i + 2] = before[i]
             after[i + 3] = before[i + 1]
-            
-    
         }
 
         switch direction {
@@ -70,10 +67,4 @@ func main() {
             fmt.Printf("%d %d\n", px, py + 1)
         }
     }
-
-
-
-    
-
-    
 }

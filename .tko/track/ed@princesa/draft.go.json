@@ -2,8 +2,63 @@
     "patches": [
         {
             "label": "2026-03-10_16-38-13",
-            "content": "package main\nimport \"fmt\"\nfunc main() {\n    fmt.Println(\"qxcode\")\n}\n",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import %22\n@@ -19,18 +19,16 @@\n t %22fmt%22%0A\n-%0A%0A\n func mai\n@@ -37,62 +37,32 @@\n ) %7B%0A\n-%0A%09var n int%0A%09var e int%0A%0A%09fmt.Scan(n,e)%0A%0A%09fmt.Print(n,e\n+    fmt.Println(%22qxcode%22\n )%0A%7D%0A\n",
             "lines": "5"
+        },
+        {
+            "label": "2026-04-10_08-47-11",
+            "content": "@@ -74,13 +74,10 @@\n can(\n-&\n n,\n- &\n e)%0A%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-10_08-48-14",
+            "content": "@@ -25,678 +25,8 @@\n t%22%0A%0A\n-// funcao para inicializar%0Afunc initial(n int, e int)%7B%0A%0A%09// inicializacao%0A%09vivos := make(%5B%5Dint, n)%0A%09for i := 0 ; i %3C n ; i++ %7B%0A%09%09vivos%5Bi%5D = i + 1 %0A%09%7D%0A%0A%09// serve para encontrar no vetor a espada%0A%09index_espada := e - 1%0A%0A%09for len(vivos) %3E 1 %7B%0A%0A%09%09impressao(vivos, index_espada)%0A%0A%09%09index_alvo := (index_espada + 1) %25 len(vivos)%0A%0A%09%09vivos = append(vivos%5B:index_alvo%5D, vivos%5Bindex_alvo + 1:%5D... )%0A%0A%09%09index_espada = index_alvo %25 len(vivos)%0A%09%7D%0A%0A%09impressao(vivos, 0)%0A%0A%0A%7D%0A%0Afunc impressao(vivos%5B%5D int, index_espada int)%7B%0A%0A%09fmt.Print(%22%5B%22)%0A%0A%09for i, v := range vivos %7B%0A%09%09%0A%09%09if i == index_espada %7B%0A%0A%09%09%09fmt.Printf(%22%25d%3E%22, v)%0A%0A%09%09%7D else  %7B%0A%0A%09%09%09fmt.Printf(%22%25d%22, v)%0A%09%09%7D%0A%09%7D%0A%0A%09fmt.Print(%22%5D%22)%0A%7D%0A%0A\n %0Afun\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-04-13_09-14-37",
+            "content": "@@ -474,28 +474,17 @@\n (vivos, \n-index_espada\n+0\n )%0A%0A%0A%7D%0A%0Af\n@@ -768,25 +768,7 @@\n n,e)\n-%0A%0A%09impressao(n, e)\n %0A%7D%0A\n",
+            "lines": "61"
+        },
+        {
+            "label": "2026-04-13_09-16-10",
+            "content": "@@ -779,22 +779,24 @@\n n,e)%0A%0A%09i\n-nitial\n+mpressao\n (n, e)%0A%7D\n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-04-13_09-16-35",
+            "content": "@@ -760,16 +760,33 @@\n n, &e)%0A%0A\n+%09fmt.Print(n,e)%0A%0A\n %09initial\n",
+            "lines": "63"
+        },
+        {
+            "label": "2026-04-13_09-16-53",
+            "content": "@@ -474,17 +474,28 @@\n (vivos, \n-0\n+index_espada\n )%0A%0A%0A%7D%0A%0Af\n",
+            "lines": "61"
+        },
+        {
+            "label": "2026-04-13_09-17-33",
+            "content": "@@ -621,17 +621,16 @@\n ntf(%22%25d%3E\n- \n %22, v)%0A%0A%09\n@@ -658,17 +658,16 @@\n intf(%22%25d\n- \n %22, v)%0A%09%09\n",
+            "lines": "61"
+        },
+        {
+            "label": "2026-04-13_09-18-11",
+            "content": "@@ -618,17 +618,16 @@\n Printf(%22\n- \n %25d%3E %22, v\n@@ -661,11 +661,11 @@\n tf(%22\n- \n %25d\n+ \n %22, v\n",
+            "lines": "61"
+        },
+        {
+            "label": "2026-04-13_09-18-33",
+            "content": "@@ -662,11 +662,11 @@\n tf(%22\n+ \n %25d\n- \n %22, v\n@@ -692,10 +692,8 @@\n t(%22%5D\n-%5Cn\n %22)%0A%7D\n",
+            "lines": "61"
+        },
+        {
+            "label": "2026-04-13_09-19-10",
+            "content": "@@ -543,17 +543,16 @@\n Print(%22%5B\n- \n %22)%0A%0A%09for\n@@ -618,16 +618,17 @@\n Printf(%22\n+ \n %25d%3E %22, v\n",
+            "lines": "61"
+        },
+        {
+            "label": "2026-04-13_09-20-13",
+            "content": "package main\n\nimport \"fmt\"\n\n// funcao para inicializar\nfunc initial(n int, e int){\n\n\t// inicializacao\n\tvivos := make([]int, n)\n\tfor i := 0 ; i < n ; i++ {\n\t\tvivos[i] = i + 1 \n\t}\n\n\t// serve para encontrar no vetor a espada\n\tindex_espada := e - 1\n\n\tfor len(vivos) > 1 {\n\n\t\timpressao(vivos, index_espada)\n\n\t\tindex_alvo := (index_espada + 1) % len(vivos)\n\n\t\tvivos = append(vivos[:index_alvo], vivos[index_alvo + 1:]... )\n\n\t\tindex_espada = index_alvo % len(vivos)\n\t}\n\n\timpressao(vivos, 0)\n\n\n}\n\nfunc impressao(vivos[] int, index_espada int){\n\n\tfmt.Print(\"[ \")\n\n\tfor i, v := range vivos {\n\t\t\n\t\tif i == index_espada {\n\n\t\t\tfmt.Printf(\"%d> \", v)\n\n\t\t} else  {\n\n\t\t\tfmt.Printf(\"%d \", v)\n\t\t}\n\t}\n\n\tfmt.Print(\"]\\n\")\n}\n\n\nfunc main() {\n\n\tvar n int\n\tvar e int\n\n\tfmt.Scan(&n, &e)\n\n\tinitial(n, e)\n}\n",
+            "lines": "61"
         }
     ]
 }

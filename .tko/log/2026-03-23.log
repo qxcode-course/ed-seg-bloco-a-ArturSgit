@@ -24,3 +24,5 @@
 2026-03-23 11:25:38, EXEC, v:1, k:ed@gomos, mode:FULL, rate:50, size:79
 2026-03-23 11:32:46, EXEC, v:1, k:ed@gomos, mode:FULL, rate:66, size:79
 2026-03-23 11:33:05, EXEC, v:1, k:ed@gomos, mode:FULL, rate:100, size:79
+2026-03-23 11:34:38, EXEC, v:1, k:ed@gomos, mode:FULL, rate:100, size:70
+2026-03-23 11:34:44, MOVE, v:1, k:ed@gomos, mode:BACK
