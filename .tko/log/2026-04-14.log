@@ -1,0 +1,13 @@
+2026-04-14 08:15:47, MOVE, v:1, k:ed@apagando, mode:PICK
+2026-04-14 15:00:14, MOVE, v:1, k:ed@apagando, mode:PICK
+2026-04-14 15:00:21, EXEC, v:1, k:ed@apagando, mode:FULL, size:10, fail:COMP
+2026-04-14 15:07:20, EXEC, v:1, k:ed@apagando, mode:FULL, size:18, fail:COMP
+2026-04-14 15:13:05, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:20
+2026-04-14 15:16:17, EXEC, v:1, k:ed@apagando, mode:FULL, size:26, fail:COMP
+2026-04-14 15:16:31, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:25
+2026-04-14 15:22:12, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:25
+2026-04-14 15:22:40, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:26
+2026-04-14 15:24:18, EXEC, v:1, k:ed@apagando, mode:FULL, size:26, fail:COMP
+2026-04-14 15:25:34, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:25
+2026-04-14 15:26:32, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:25
+2026-04-14 15:46:58, EXEC, v:1, k:ed@apagando, mode:FULL, rate:0, size:25

@@ -1,0 +1,154 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-14_15-00-16",
+            "content": "@@ -51,174 +51,8 @@\n     \n-var pessoas_inicial int%0A    fmt.Scan(&pessoas_inicial)%0A    vetor_pessoas_inicial := make(%5B%5D int, pessoas_inicial)%0A    %0A    for range pessoas_inicial%7B%0A%0A        %0A%0A    %7D\n %0A   \n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-04-14_15-07-20",
+            "content": "@@ -177,13 +177,8 @@\n  for\n- i :=\n  ran\n@@ -197,24 +197,16 @@\n nicial%7B%0A\n-        \n %0A       \n@@ -210,119 +210,9 @@\n     \n-var pessoas int%0A        fmt.Scan(pessoas)%0A        vetor_pessoas_inicial%5Bi%5D = pessoas%0A        fmt.Print(pessoas)\n+%0A\n %0A   \n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-04-14_15-13-05",
+            "content": "@@ -194,32 +194,41 @@\n essoas_inicial%7B%0A\n+        %0A\n         var pess\n@@ -231,33 +231,24 @@\n pessoas int%0A\n-        %0A\n         fmt.\n@@ -307,87 +307,8 @@\n soas\n-   %0A    %7D%0A%0A    for i := range pessoas_inicial%7B%0A        var pessoas int%0A        \n %0A   \n@@ -326,42 +326,16 @@\n int(\n-vetor_\n pessoas\n-_inicial%5Bi%5D)%0A        \n+)\n %0A   \n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-04-14_15-16-17",
+            "content": "@@ -342,32 +342,56 @@\n essoas_inicial%7B%0A\n+        var pessoas int%0A\n         %0A       \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-14_15-16-31",
+            "content": "@@ -183,15 +183,13 @@\n  := \n-0 ; i %3C\n+range\n  pes\n@@ -204,15 +204,8 @@\n cial\n- ; i++ \n %7B%0A  \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-14_15-22-11",
+            "content": "@@ -165,33 +165,8 @@\n al)%0A\n-    var pessoas int%0A    %0A\n     \n@@ -211,16 +211,40 @@\n ; i++ %7B%0A\n+        var pessoas int%0A\n         \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-14_15-22-40",
+            "content": "@@ -338,18 +338,16 @@\n r i \n-=: 0 ; i %3C\n+:= range\n  pes\n@@ -350,39 +350,32 @@\n  pessoas_inicial\n- ; i++ \n %7B%0A        %0A     \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-14_15-24-18",
+            "content": "@@ -157,24 +157,49 @@\n as_inicial)%0A\n+    var pessoas int%0A    %0A\n     %0A    for\n@@ -196,37 +196,39 @@\n   %0A    for i := \n-range\n+0 ; i %3C\n  pessoas_inicial\n@@ -231,33 +231,16 @@\n cial\n-%7B%0A        var pessoas int\n+ ; i++ %7B\n %0A   \n@@ -258,25 +258,24 @@\n    fmt.Scan(\n-&\n pessoas)%0A   \n@@ -338,16 +338,18 @@\n r i \n-:= range\n+=: 0 ; i %3C\n  pes\n@@ -360,16 +360,23 @@\n _inicial\n+ ; i++ \n %7B%0A      \n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-04-14_15-25-34",
+            "content": "@@ -381,18 +381,9 @@\n rint\n-f(%22%25d%5Cn%22, \n+(\n veto\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-14_15-26-32",
+            "content": "@@ -382,17 +382,18 @@\n intf(%22%25d\n- \n+%5Cn\n %22, vetor\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-14_15-46-58",
+            "content": "@@ -43,36 +43,32 @@\n in() %7B%0A%0A    var \n-qtd_\n pessoas_inicial \n@@ -77,36 +77,32 @@\n t%0A    fmt.Scan(&\n-qtd_\n pessoas_inicial)\n@@ -106,16 +106,17 @@\n al)%0A\n-%0A\n     \n-map\n+vetor\n _pes\n@@ -140,26 +140,16 @@\n ake(\n-map%5Bint\n+%5B\n %5D int, \n-qtd_\n pess\n@@ -164,25 +164,8 @@\n ial)\n-%0A%0A    var key int\n %0A   \n@@ -175,36 +175,30 @@\n    for i := \n-0 ; i %3C qtd_\n+range \n pessoas_inic\n@@ -200,23 +200,16 @@\n _inicial\n- ; i++ \n %7B%0A      \n@@ -222,24 +222,33 @@\n pessoas int%0A\n+        %0A\n         fmt.\n@@ -274,42 +274,13 @@\n     \n-key = pessoas%0A        %0A        map\n+vetor\n _pes\n@@ -296,407 +296,76 @@\n ial%5B\n-key\n+i\n %5D = \n-key%0A    %0A    %7D%0A%0A    var qtd_pessoas_sairam int %0A    fmt.Scan(&qtd_pessoas_inicial)%0A%0A    for i := 0 ; i %3C qtd_pessoas_sairam ; i++ %7B%0A        var pessoas_sairam int%0A        fmt.Scan(&pessoas_sairam)%0A        var pessoas int%0A%0A%0A        if pessoas_sairam == map_pessoas_inicial%5Bkey%5D %7B%0A%0A            map_pessoas_inicial%5Bkey%5D = 0%0A        %7D%0A%0A        if map_pessoas_inicial%5Bkey%5D != 0 %7B%0A            %0A    \n+pessoas   %0A    %7D%0A%0A    for i := range pessoas_inicial%7B%0A        %0A\n     \n@@ -390,11 +390,13 @@\n  %22, \n-map\n+vetor\n _pes\n@@ -412,11 +412,9 @@\n ial%5B\n-key\n+i\n %5D)%0A \n@@ -424,23 +424,18 @@\n     \n-%7D\n %0A    \n-    \n+%7D\n %0A    \n-%7D\n %0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-04-15_08-55-03",
+            "content": "@@ -563,16 +563,41 @@\n sairam)%0A\n+        var pessoas int%0A%0A\n %0A       \n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-04-15_08-55-24",
+            "content": "@@ -300,16 +300,38 @@\n essoas)%0A\n+        key = pessoas%0A\n         \n@@ -363,26 +363,18 @@\n ial%5B\n-pessoas%5D = pessoas\n+key%5D = key\n %0A   \n@@ -436,30 +436,31 @@\n qtd_pessoas_\n-sairam\n+inicial\n )%0A%0A    for i\n@@ -579,15 +579,24 @@\n  if \n-_, ok :\n+pessoas_sairam =\n = ma\n@@ -617,29 +617,14 @@\n ial%5B\n-pessoas_sairam%5D; ok%7B \n+key%5D %7B\n %0A%0A  \n@@ -637,15 +637,8 @@\n     \n-delete(\n map_\n@@ -656,36 +656,22 @@\n cial\n-, pessoas_sairam)%0A   \n+%5Bkey%5D = 0%0A\n     \n- %7D%0A\n     \n@@ -681,22 +681,14 @@\n     \n-for i := range\n+    if\n  map\n@@ -703,20 +703,46 @@\n _inicial\n- %7B%0A%0A\n+%5Bkey%5D != 0 %7B%0A            %0A    \n         \n@@ -783,11 +783,32 @@\n ial%5B\n-i%5D)\n+key%5D)%0A        %7D%0A        \n %0A   \n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-04-15_09-21-28",
+            "content": "@@ -177,16 +177,33 @@\n inicial)\n+%0A%0A    var key int\n %0A    %0A  \n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-04-15_09-21-45",
+            "content": "@@ -30,19 +30,8 @@\n mt%22%0A\n-    %22sort%22%0A\n )%0Afu\n@@ -182,69 +182,8 @@\n al)%0A\n-    slice_chaves := make(%5B%5Dint, 0, len(map_pessoas_inicial))%0A\n     \n@@ -192,33 +192,35 @@\n    for i := \n-range map\n+0 ; i %3C qtd\n _pessoas_ini\n@@ -215,32 +215,38 @@\n _pessoas_inicial\n+ ; i++\n  %7B%0A        var p\n@@ -342,15 +342,8 @@\n soas\n-%0A%0A    %7D\n %0A   \n@@ -344,24 +344,26 @@\n as%0A    %0A    \n+%7D%0A\n %0A    var qtd\n@@ -417,20 +417,16 @@\n sairam)%0A\n-    \n %0A    for\n@@ -435,33 +435,40 @@\n  := \n-range map_pessoas_inicial\n+0 ; i %3C qtd_pessoas_sairam ; i++\n  %7B%0A \n@@ -531,24 +531,16 @@\n sairam)%0A\n-        \n %0A       \n@@ -594,28 +594,16 @@\n %5D; ok%7B %0A\n-            \n %0A       \n@@ -599,32 +599,39 @@\n %7B %0A%0A            \n+delete(\n map_pessoas_inic\n@@ -637,157 +637,34 @@\n cial\n-%5Bi%5D = 0 %0A            %0A            if map_pessoas_inicial%5Bi%5D != 0%7B%0A                %0A                slice_chaves = append(slice_chaves, i)%0A   \n+, pessoas_sairam)%0A\n         \n  %7D%0A \n@@ -663,72 +663,10 @@\n     \n- \n %7D%0A\n-        %7D%0A        // ordenar%0A        sort.Ints(slice_chaves)%0A\n     \n@@ -675,19 +675,16 @@\n %0A    for\n- _,\n  i := ra\n@@ -691,20 +691,27 @@\n nge \n-slice_chaves\n+map_pessoas_inicial\n  %7B%0A%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-04-15_09-34-21",
+            "content": "@@ -272,19 +272,17 @@\n  := \n-0 ; i %3C qtd\n+range map\n _pes\n@@ -297,14 +297,8 @@\n cial\n- ; i++\n  %7B%0A \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-04-15_09-35-49",
+            "content": "@@ -721,30 +721,17 @@\n inicial%5B\n-pessoas_sairam\n+i\n %5D = 0 %0A \n@@ -777,30 +777,17 @@\n inicial%5B\n-pessoas_sairam\n+i\n %5D != 0%7B%0A\n@@ -1035,8 +1035,9 @@\n %0A    %7D%0A%7D\n+%0A\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-04-15_09-38-28",
+            "content": "@@ -516,40 +516,33 @@\n  := \n-0 ; i %3C qtd_pessoas_sairam ; i++\n+range map_pessoas_inicial\n  %7B%0A \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-04-15_09-39-30",
+            "content": "@@ -774,103 +774,49 @@\n     \n-%7D%0A\n     \n-%7D%0A    %0A    for i := range map_pessoas_inicial %7B%0A        %0A        if map_pessoas_inicial%5Bi\n+if map_pessoas_inicial%5Bpessoas_sairam\n %5D !=\n@@ -823,33 +823,40 @@\n  0%7B%0A            \n-%0A\n+    %0A   \n             slic\n@@ -847,24 +847,25 @@\n             \n+ \n slice_chaves\n@@ -903,20 +903,32 @@\n     \n-%7D%0A\n     %7D%0A\n+        %7D%0A   \n     \n+ \n // o\n@@ -934,16 +934,20 @@\n ordenar%0A\n+    \n     sort\n@@ -966,16 +966,23 @@\n chaves)%0A\n+    %7D%0A%0A\n     for \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-04-15_09-42-44",
+            "content": "@@ -411,16 +411,17 @@\n pessoas%0A\n+%0A\n     %7D%0A  \n@@ -419,24 +419,29 @@\n %0A    %7D%0A    %0A\n+    %0A\n     var qtd_\n@@ -953,16 +953,58 @@\n %7D%0A    %7D%0A\n+    // ordenar%0A    sort.Ints(slice_chaves)\n %0A    for\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-04-15_09-48-35",
+            "content": "@@ -26,16 +26,27 @@\n   %22fmt%22%0A\n+    %22sort%22%0A\n )%0Afunc m\n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-04-15_09-48-46",
+            "content": "@@ -1034,24 +1034,6 @@\n    %7D\n-%0A%0A    fmt.Printf()\n %0A%7D\n",
+            "lines": "47"
+        },
+        {
+            "label": "2026-04-15_09-49-39",
+            "content": "@@ -1027,24 +1027,25 @@\n l%5Bi%5D)%0A    %7D%0A\n+%0A\n     fmt.Prin\n@@ -1049,10 +1049,9 @@\n rint\n-ln\n+f\n ()%0A%7D\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-04-15_09-49-54",
+            "content": "@@ -400,25 +400,16 @@\n pessoas%0A\n-        %0A\n     %7D%0A  \n",
+            "lines": "48"
+        },
+        {
+            "label": "2026-04-15_10-39-33",
+            "content": "@@ -404,71 +404,8 @@\n oas%0A\n-        slice_chaves = append(slice_chaves, pessoas)%0A%0A        %0A\n     \n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-04-15_11-46-02",
+            "content": "@@ -841,19 +841,16 @@\n     %0A   \n- //\n  for i :\n@@ -887,27 +887,24 @@\n         %0A   \n- //\n      if map_\n@@ -949,18 +949,16 @@\n     \n-//\n         \n  sli\n@@ -949,25 +949,24 @@\n             \n- \n slice_chaves\n@@ -995,19 +995,16 @@\n , i)%0A   \n- //\n      %7D%0A \n@@ -1009,11 +1009,8 @@\n %0A   \n- //\n  %7D%0A%0A\n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-04-15_11-47-06",
+            "content": "@@ -248,28 +248,8 @@\n    %0A\n-    var pessoas int%0A\n     \n@@ -285,32 +285,56 @@\n inicial ; i++ %7B%0A\n+        var pessoas int%0A\n         fmt.Scan\n@@ -1066,60 +1066,8 @@\n  %7B%0A%0A\n-        if map_pessoas_inicial%5Bpessoas%5D != 0 %7B%0A%0A    \n     \n@@ -1112,26 +1112,16 @@\n ial%5Bi%5D)%0A\n-        %7D%0A\n     %7D%0A  \n",
+            "lines": "52"
+        },
+        {
+            "label": "2026-04-15_11-49-38",
+            "content": "@@ -1136,23 +1136,38 @@\n (%22%25d %22, \n+map_\n pessoas\n+_inicial%5Bi%5D\n )%0A      \n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-04-15_11-50-30",
+            "content": "@@ -1031,23 +1031,17 @@\n  for _, \n-pessoas\n+i\n  := rang\n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-04-15_11-51-02",
+            "content": "package main\nimport (\n\n    \"fmt\"\n)\nfunc main() {\n\n    var qtd_pessoas_inicial int\n    fmt.Scan(&qtd_pessoas_inicial)\n\n    map_pessoas_inicial := make(map[int] int, qtd_pessoas_inicial)\n    slice_chaves := make([]int, 0, len(map_pessoas_inicial))\n    \n    var pessoas int\n    for i := 0 ; i < qtd_pessoas_inicial ; i++ {\n        fmt.Scan(&pessoas)\n        \n        map_pessoas_inicial[pessoas] = pessoas\n        slice_chaves = append(slice_chaves, pessoas)\n\n        \n        \n    }\n    \n    var qtd_pessoas_sairam int \n    fmt.Scan(&qtd_pessoas_sairam)\n    \n    for i := 0 ; i < qtd_pessoas_sairam ; i++ {\n        var pessoas_sairam int\n        fmt.Scan(&pessoas_sairam)\n        \n        if _, ok := map_pessoas_inicial[pessoas_sairam]; ok{ \n            \n            map_pessoas_inicial[pessoas_sairam] = 0 \n            \n        }\n    }\n    \n    // for i := range map_pessoas_inicial {\n        \n    //     if map_pessoas_inicial[i] != 0{\n            \n    //         slice_chaves = append(slice_chaves, i)\n    //     }\n    // }\n\n    for _, pessoas := range slice_chaves {\n\n        if map_pessoas_inicial[pessoas] != 0 {\n\n            fmt.Printf(\"%d \", pessoas)\n        }\n    }\n    fmt.Println()\n}",
+            "lines": "55"
+        }
+    ]
+}

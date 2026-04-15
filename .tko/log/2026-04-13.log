@@ -8,3 +8,7 @@
 2026-04-13 09:18:33, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0, size:61
 2026-04-13 09:19:10, EXEC, v:1, k:ed@princesa, mode:FULL, rate:0, size:61
 2026-04-13 09:20:13, EXEC, v:1, k:ed@princesa, mode:FULL, rate:100, size:61
+2026-04-13 09:21:56, MOVE, v:1, k:ed@princesa, mode:BACK
+2026-04-13 09:27:09, MOVE, v:1, k:ed@apagando, mode:PICK
+2026-04-13 09:27:29, MOVE, v:1, k:ed@apagando, mode:BACK
+2026-04-13 09:27:34, MOVE, v:1, k:ed@apagando, mode:PICK
