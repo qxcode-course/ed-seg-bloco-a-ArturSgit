@@ -1,0 +1,34 @@
+{
+    "patches": [
+        {
+            "label": "2026-04-20_20-03-01",
+            "content": "@@ -19,17 +19,16 @@\n t %22fmt%22%0A\n-%0A\n func mai\n@@ -41,829 +41,28 @@\n     \n-%0A    var qtd_string_principal int%0A    fmt.Scan(&qtd_string_principal)%0A    var qtd_string_buscas int%0A    fmt.Scan(&qtd_string_buscas)%0A%0A    vetor_string_principal := make(%5B%5Dstring, qtd_string_principal)%0A    vetor_string_buscas := make(%5B%5Dstring, qtd_string_buscas)%0A%0A    for i := 0 ; i %3C qtd_string_principal ; i++ %7B%0A        var local string%0A        fmt.Scan(&local)%0A%0A        vetor_string_principal%5Bi%5D = local%0A    %7D%0A    for i := 0 ; i %3C qtd_string_buscas ; i++ %7B%0A        var local string%0A        fmt.Scan(&local)%0A%0A        vetor_string_buscas%5Bi%5D = local%0A    %7D%0A%0A    count := 0%0A    for i := 0 ; i %3C qtd_string_buscas ; i++ %7B%0A%0A        for j := 0 ; j %3C qtd_string_principal ; j++ %7B%0A%0A            if vetor_string_buscas%5Bi%5D == vetor_string_principal%5Bj%5D %7B%0A%0A                count++%0A            %7D%0A        %7D%0A    %7D%0A%0A    fmt.Println(count)%0A\n+fmt.Println(%22qxcode%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-04-20_20-27-30",
+            "content": "@@ -29,343 +29,69 @@\n unc \n-avaliarStrings(string %5B%5Dstring, consultas %5B%5Dstrings) %5B%5Dint %7B%0A    %0A    counts := make(map%5Bstring%5Dint)%0A%0A    for _, v := range strings %7B%0A        counts%5Bs%5D++%0A    %7D%0A%0A    resultados := make(%5B%5Dint, len(consultas))%0A%0A    for i, q := range consultas %7B%0A        resultados%5Bi%5D = counts%5Bq%5D%0A    %7D%0A%0A    return resultados%0A%7D%0A%0Afunc main() %7B%0A    %0A    var \n+main() %7B%0A    %0A    var qtd_string_principal int%0A    fmt.Scan(&\n qtd_\n@@ -102,28 +102,25 @@\n ng_principal\n- int\n+)\n %0A    var qtd\n@@ -138,21 +138,16 @@\n cas int%0A\n-    %0A\n     fmt.\n@@ -167,36 +167,43 @@\n ing_\n-principal)%0A    stringEntrada\n+buscas)%0A%0A    vetor_string_principal\n  := \n@@ -239,24 +239,81 @@\n ncipal)%0A    \n+vetor_string_buscas := make(%5B%5Dstring, qtd_string_buscas)%0A\n %0A    for i :\n@@ -363,52 +363,29 @@\n     \n-%0A        fmt.Scan(&stringEntrada%5Bi%5D)\n+var local string\n %0A    \n-%7D%0A%0A\n     \n@@ -398,88 +398,63 @@\n an(&\n-qtd_string_buscas)%0A    stringConsultas := make(%5B%5Dstring, qtd_string_buscas)\n+local)%0A%0A        vetor_string_principal%5Bi%5D = local\n %0A    \n+%7D\n %0A   \n@@ -497,32 +497,48 @@\n ; i++ %7B%0A        \n+var local string\n %0A        fmt.Sca\n@@ -544,99 +544,76 @@\n an(&\n-stringConsultas%5Bi%5D)%0A    %7D%0A%0A    resultado := avaliarStrings(stringEntrada, stringConsultas)%0A\n+local)%0A%0A        vetor_string_buscas%5Bi%5D = local%0A    %7D%0A%0A    count := 0\n %0A   \n@@ -622,41 +622,55 @@\n or i\n-, v\n  := \n-range resultado\n+0 ; i %3C qtd_string_buscas ; i++\n  %7B%0A\n+%0A\n         \n %0A   \n@@ -669,40 +669,60 @@\n     \n-%0A        fmt.Print(v)%0A   \n+for j := 0 ; j %3C qtd_string_principal ; j++ %7B%0A%0A\n      \n-%0A \n     \n@@ -731,33 +731,67 @@\n  if \n-i %3C len(resultado) - 1 %7B%0A\n+vetor_string_buscas%5Bi%5D == vetor_string_principal%5Bj%5D %7B%0A%0A    \n     \n@@ -795,19 +795,27 @@\n         \n-%0A\n+ \n   \n+count++%0A\n         \n@@ -820,25 +820,11 @@\n     \n-// fmt.Print(%22 %22)\n+  %7D\n %0A   \n@@ -832,24 +832,25 @@\n     %7D%0A    %7D%0A\n+%0A\n     fmt.Prin\n@@ -857,26 +857,14 @@\n tln(\n-)%0A%0A    %0A    %0A%0A    \n+count)\n %0A%0A%7D%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-04-20_20-52-49",
+            "content": "@@ -46,25 +46,16 @@\n s(string\n-Consultas\n  %5B%5Dstrin\n@@ -57,29 +57,25 @@\n string, \n-stringEntrada\n+consultas\n  %5B%5Dstrin\n@@ -75,16 +75,17 @@\n %5B%5Dstring\n+s\n ) %5B%5Dint \n@@ -151,32 +151,24 @@\n range string\n-Consulta\n s %7B%0A        \n@@ -174,17 +174,17 @@\n  counts%5B\n-v\n+s\n %5D++%0A    \n@@ -220,23 +220,17 @@\n nt, len(\n-stringC\n+c\n onsultas\n@@ -255,23 +255,17 @@\n = range \n-stringC\n+c\n onsultas\n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-04-20_21-06-46",
+            "content": "@@ -1040,24 +1040,27 @@\n %0A           \n+ //\n  fmt.Print(%22\n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-04-20_21-06-57",
+            "content": "@@ -46,16 +46,24 @@\n s(string\n+Consulta\n s %5B%5Dstri\n@@ -68,33 +68,31 @@\n ring, string\n-Consultas\n+Entrada\n  %5B%5Dstring) %5B\n@@ -167,16 +167,24 @@\n e string\n+Consulta\n s %7B%0A    \n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-04-20_21-08-42",
+            "content": "package main\nimport \"fmt\"\n\nfunc avaliarStrings(strings []string, stringConsultas []string) []int {\n    \n    counts := make(map[string]int)\n\n    for _, v := range strings {\n        counts[v]++\n    }\n\n    resultados := make([]int, len(stringConsultas))\n\n    for i, q := range stringConsultas {\n        resultados[i] = counts[q]\n    }\n\n    return resultados\n}\n\nfunc main() {\n    \n    var qtd_string_principal int\n    var qtd_string_buscas int\n    \n    fmt.Scan(&qtd_string_principal)\n    stringEntrada := make([]string, qtd_string_principal)\n    \n    for i := 0 ; i < qtd_string_principal ; i++ {\n        \n        fmt.Scan(&stringEntrada[i])\n    }\n\n    fmt.Scan(&qtd_string_buscas)\n    stringConsultas := make([]string, qtd_string_buscas)\n    \n    for i := 0 ; i < qtd_string_buscas ; i++ {\n        \n        fmt.Scan(&stringConsultas[i])\n    }\n\n    resultado := avaliarStrings(stringEntrada, stringConsultas)\n\n    for i, v := range resultado {\n        \n        fmt.Print(v)\n        \n        if i < len(resultado) - 1 {\n         \n            fmt.Print(\" \")\n        }\n    }\n    fmt.Println()\n\n    \n    \n\n    \n\n}\n",
+            "lines": "60"
+        }
+    ]
+}
