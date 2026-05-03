@@ -66,3 +66,4 @@
 2026-04-20 21:06:57, EXEC, v:1, k:ed@buscas, mode:FULL, rate:0, size:60
 2026-04-20 21:08:42, EXEC, v:1, k:ed@buscas, mode:FULL, rate:100, size:60
 2026-04-20 21:08:54, MOVE, v:1, k:ed@buscas, mode:BACK
+2026-04-20 21:10:30, MOVE, v:1, k:ed@rotacoes, mode:PICK

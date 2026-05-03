@@ -1,0 +1,32 @@
+2026-04-27 15:53:58, MOVE, v:1, k:ed@rotacoes, mode:PICK
+2026-04-27 15:54:01, MOVE, v:1, k:ed@rotacoes, mode:BACK
+2026-04-27 15:59:03, SELF, v:1, k:ed@pintando, self:1, rate:100, study:300
+2026-04-27 15:59:39, SELF, v:1, k:ed@mumia, self:1, rate:100, study:50
+2026-04-27 16:00:00, MOVE, v:1, k:ed@fuga, mode:PICK
+2026-04-27 16:00:03, MOVE, v:1, k:ed@fuga, mode:BACK
+2026-04-27 16:00:20, SELF, v:1, k:ed@fuga, self:1, rate:100, study:90
+2026-04-27 16:00:21, MOVE, v:1, k:ed@fuga, mode:PICK
+2026-04-27 16:00:23, MOVE, v:1, k:ed@fuga, mode:BACK
+2026-04-27 16:00:35, MOVE, v:1, k:ed@pedra, mode:PICK
+2026-04-27 16:00:32, MOVE, v:1, k:ed@pedra, mode:BACK
+2026-04-27 16:01:10, SELF, v:1, k:ed@pedra, self:1, rate:100, study:240
+2026-04-27 16:01:57, SELF, v:1, k:ed@casais, self:1, rate:100, study:50
+2026-04-27 16:01:58, MOVE, v:1, k:ed@casais, mode:PICK
+2026-04-27 16:01:59, MOVE, v:1, k:ed@casais, mode:BACK
+2026-04-27 16:02:09, MOVE, v:1, k:ed@baruel, mode:PICK
+2026-04-27 16:02:10, MOVE, v:1, k:ed@baruel, mode:BACK
+2026-04-27 16:02:26, SELF, v:1, k:ed@baruel, self:1, rate:100, study:123
+2026-04-27 16:02:26, MOVE, v:1, k:ed@baruel, mode:PICK
+2026-04-27 16:02:27, MOVE, v:1, k:ed@baruel, mode:BACK
+2026-04-27 16:02:30, MOVE, v:1, k:ed@gomos, mode:PICK
+2026-04-27 16:02:31, MOVE, v:1, k:ed@gomos, mode:BACK
+2026-04-27 16:02:55, SELF, v:1, k:ed@gomos, self:1, rate:100, study:110
+2026-04-27 16:02:49, MOVE, v:1, k:ed@gomos, mode:PICK
+2026-04-27 16:02:50, MOVE, v:1, k:ed@gomos, mode:BACK
+2026-04-27 16:03:21, SELF, v:1, k:ed@princesa, self:1, rate:100, study:100
+2026-04-27 16:03:22, MOVE, v:1, k:ed@princesa, mode:PICK
+2026-04-27 16:03:23, MOVE, v:1, k:ed@princesa, mode:BACK
+2026-04-27 16:04:03, SELF, v:1, k:ed@apagando, self:1, rate:100, study:260
+2026-04-27 16:04:24, SELF, v:1, k:ed@manipulacao, self:1, rate:100, study:170
+2026-04-27 16:04:30, SELF, v:1, k:ed@especiais, self:1, rate:100, study:120
+2026-04-27 16:05:06, SELF, v:1, k:ed@buscas, self:1, rate:100, study:100
