@@ -1,0 +1,6 @@
+2026-05-05 14:00:38, MOVE, v:1, k:ed@editorint, mode:DOWN
+2026-05-05 14:00:41, MOVE, v:1, k:ed@editorint, mode:PICK
+2026-05-05 15:47:01, EXEC, v:1, k:src@go, mode:FREE, size:259
+2026-05-05 15:48:01, EXEC, v:1, k:src@go, mode:FREE
+2026-05-05 16:41:22, MOVE, v:1, k:ed@editorint, mode:PICK
+2026-05-05 16:41:39, MOVE, v:1, k:ed@editorint, mode:BACK
