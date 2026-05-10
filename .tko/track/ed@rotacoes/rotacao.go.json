@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-10_19-38-36",
+            "content": "@@ -37,49 +37,8 @@\n () %7B\n-%0A%0A%09scanner := bufio.NewScanner(os.Studin)\n %0A   \n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-05-10_19-38-53",
+            "content": "@@ -17,55 +17,13 @@\n ort \n-(%0A%09\n %22fmt%22\n-%0A%09%22bufio%22%0A%09%22os%22%0A%09%22strconv%22%0A%09%22strings%22%0A)\n %0A%0Afu\n@@ -73,27 +73,13 @@\n s.St\n+u\n din)\n-%0A%0A%09if !scanner.\n %0A   \n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-05-10_19-43-02",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import (\n@@ -15,16 +15,23 @@\n mport (%0A\n+%09%22fmt%22%0A\n %09%22bufio%22\n@@ -134,148 +134,12 @@\n ner.\n-Scan() %7B%0A%09%09return%0A%09%7D%0A%0A%09firstLine := strings.Fields(scanner.Text())%0A%09if len(firstLine) %3C 2 %7B%0A%09%09return%0A%09%7D%0A%0A%09t, _ := strconv.Atoi(firstLine%5B0%5D)%0A\n+%0A    \n %0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-10_19-52-43",
+            "content": "@@ -269,77 +269,7 @@\n 0%5D)%0A\n-%09r, _ := strconv.Atoi(firstLine%5B1%5D)%0A%0A%09if !scanner.Scan() %7B%0A%09%09return%0A%09%7D\n %0A%7D%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-10_20-01-56",
+            "content": "@@ -29,15 +29,8 @@\n io%22%0A\n-%09%22fmt%22%0A\n %09%22os\n@@ -60,173 +60,8 @@\n %0A)%0A%0A\n-func reverse(vet %5B%5Dint, primeiro int, ultimo int) %7B%0A%09for primeiro %3C ultimo %7B%0A%09%09vet%5Bprimeiro%5D, vet%5Bultimo%5D = vet%5Bultimo%5D, vet%5Bprimeiro%5D%0A%09%09primeiro++%0A%09%09ultimo--%0A%09%7D%0A%7D%0A%0A\n func\n@@ -70,16 +70,17 @@\n ain() %7B%0A\n+%0A\n %09scanner\n@@ -233,51 +233,8 @@\n %09%7D%0A%0A\n-%09// Convers%C3%A3o e uso imediato das vari%C3%A1veis%0A\n %09t, \n@@ -339,525 +339,7 @@\n n%0A%09%7D\n-%0A%0A%09elementoStr := strings.Fields(scanner.Text())%0A%09vet := make(%5B%5Dint, t)%0A%09for i := 0; i %3C t; i++ %7B%0A%09%09vet%5Bi%5D, _ = strconv.Atoi(elementoStr%5Bi%5D)%0A%09%7D%0A%0A%09if t %3E 0 %7B%0A%09%09r = r %25 t%0A%09%09if r %3E 0 %7B%0A%09%09%09// Aqui %C3%A9 onde t e r s%C3%A3o usados efetivamente%0A%09%09%09reverse(vet, 0, t-1)%0A%09%09%09reverse(vet, 0, r-1)%0A%09%09%09reverse(vet, r, t-1)%0A%09%09%7D%0A%09%7D%0A%0A%09// Melhoria na impress%C3%A3o do resultado%0A%09fmt.Print(%22%5B%22)%0A%09for i := 0; i %3C len(vet); i++ %7B%0A%09%09fmt.Print(vet%5Bi%5D)%0A%09%09if i %3C len(vet)-1 %7B%0A%09%09%09fmt.Print(%22 %22) // Adiciona espa%C3%A7o entre os n%C3%BAmeros%0A%09%09%7D%0A%09%7D%0A%09fmt.Println(%22%5D%22)\n %0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-10_20-17-31",
+            "content": "@@ -242,17 +242,16 @@\n ain() %7B%0A\n-%0A\n %09scanner\n@@ -400,16 +400,59 @@\n urn%0A%09%7D%0A%0A\n+%09// Convers%C3%A3o e uso imediato das vari%C3%A1veis%0A\n %09t, _ :=\n@@ -706,17 +706,16 @@\n t %3E 0 %7B%0A\n-%0A\n %09%09r = r \n@@ -718,17 +718,16 @@\n = r %25 t%0A\n-%0A\n %09%09if r %3E\n@@ -731,16 +731,64 @@\n r %3E 0 %7B%0A\n+%09%09%09// Aqui %C3%A9 onde t e r s%C3%A3o usados efetivamente%0A\n %09%09%09rever\n@@ -859,16 +859,55 @@\n %09%09%7D%0A%09%7D%0A%0A\n+%09// Melhoria na impress%C3%A3o do resultado%0A\n %09fmt.Pri\n@@ -947,17 +947,16 @@\n ; i++ %7B%0A\n-%0A\n %09%09fmt.Pr\n@@ -967,16 +967,96 @@\n vet%5Bi%5D)%0A\n+%09%09if i %3C len(vet)-1 %7B%0A%09%09%09fmt.Print(%22 %22) // Adiciona espa%C3%A7o entre os n%C3%BAmeros%0A%09%09%7D%0A\n %09%7D%0A%09fmt.\n@@ -1060,16 +1060,18 @@\n mt.Print\n+ln\n (%22%5D%22)%0A%7D%0A\n",
+            "lines": "64"
+        },
+        {
+            "label": "2026-05-10_20-17-53",
+            "content": "@@ -784,17 +784,16 @@\n Print(%22%5B\n- \n %22)%0A%09for \n@@ -845,52 +845,8 @@\n i%5D)%0A\n-%09%09if i %3C len(vet)-1 %7B%0A%09%09%09fmt.Print(%22 %22)%0A%09%09%7D%0A\n %09%7D%0A%09\n@@ -856,15 +856,14 @@\n .Print(%22\n- \n %5D%22)%0A%7D%0A\n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-05-10_20-18-50",
+            "content": "@@ -903,10 +903,8 @@\n rint\n-ln\n (%22 %5D\n",
+            "lines": "65"
+        },
+        {
+            "label": "2026-05-10_20-19-09",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc reverse(vet []int, primeiro int, ultimo int) {\n\tfor primeiro < ultimo {\n\t\tvet[primeiro], vet[ultimo] = vet[ultimo], vet[primeiro]\n\t\tprimeiro++\n\t\tultimo--\n\t}\n}\n\nfunc main() {\n\n\tscanner := bufio.NewScanner(os.Stdin)\n\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\n\tfirstLine := strings.Fields(scanner.Text())\n\tif len(firstLine) < 2 {\n\t\treturn\n\t}\n\n\tt, _ := strconv.Atoi(firstLine[0])\n\tr, _ := strconv.Atoi(firstLine[1])\n\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\n\telementoStr := strings.Fields(scanner.Text())\n\tvet := make([]int, t)\n\tfor i := 0; i < t; i++ {\n\t\tvet[i], _ = strconv.Atoi(elementoStr[i])\n\t}\n\n\tif t > 0 {\n\n\t\tr = r % t\n\n\t\tif r > 0 {\n\t\t\treverse(vet, 0, t-1)\n\t\t\treverse(vet, 0, r-1)\n\t\t\treverse(vet, r, t-1)\n\t\t}\n\t}\n\n\tfmt.Print(\"[ \")\n\tfor i := 0; i < len(vet); i++ {\n\n\t\tfmt.Print(vet[i])\n\t\tif i < len(vet)-1 {\n\t\t\tfmt.Print(\" \")\n\t\t}\n\t}\n\tfmt.Println(\" ]\")\n}\n",
+            "lines": "65"
+        }
+    ]
+}
