@@ -4,3 +4,4 @@
 2026-05-05 15:48:01, EXEC, v:1, k:src@go, mode:FREE
 2026-05-05 16:41:22, MOVE, v:1, k:ed@editorint, mode:PICK
 2026-05-05 16:41:39, MOVE, v:1, k:ed@editorint, mode:BACK
+2026-05-05 16:43:06, SELF, v:1, k:ed@editorint, self:1, study:200, concept:1
