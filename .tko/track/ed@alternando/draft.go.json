@@ -1,0 +1,84 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-11_08-29-16",
+            "content": "@@ -17,65 +17,59 @@\n ort \n-(%0A    \n %22fmt%22%0A\n-)%0A%0A\n func m\n-od(a, b int) int %7B%0Afunc main() %7B%0A    \n+ain() %7B%0A    fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-11_08-29-25",
+            "content": "@@ -10,21 +10,28 @@\n ain%0A\n-%0A\n import \n+(%0A    \n %22fmt%22\n+%0A)\n %0A%0Afu\n@@ -57,158 +57,25 @@\n t %7B%0A\n-%09return (a%25b + b) %25 b%0A%7D%0A%0Afunc main() %7B%0A%0A%09var n, e, f int%0A%09_, err := fmt.Scan(&n, &e, &f)%0A%09if err != nil %7B%0A%09%09return%0A%09%7D%0A%0A%09participants := make(%5B%5Dint, n)%0A\n+func main() %7B%0A    \n %0A%7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-05-11_08-36-46",
+            "content": "@@ -201,929 +201,7 @@\n  n)%0A\n-%09sina := f%0A%09pos := -1%0A%0A%09for i := 0; i %3C n; i++ %7B%0A%0A%09%09valor := (i + 1) * sinal%0A%09%09participants%5Bi%5D = valor%0A%09%09if (i + 1) == e %7B%0A%09%09%09pos = i%0A%09%09%7D%0A%09%09sinal *= -1%0A%09%7D%0A%0A%09for len(participants) %3E 1 %7B%0A%09%09imprimirEstado(participants, pos)%0A%0A%09%09atual := participants%5Bpos%5D%0A%09%09var removeIndex int%0A%0A%09%09if atual %3E 0 %7B%0A%09%09%09removeIndex = mod(pos+1, len(participants))%0A%09%09%7D else %7B%0A%09%09%09removeIndex = mod(pos-1, len(participants))%0A%09%09%7D%0A%0A        participants = append(participants%5B:removeIndex%5D, participants%5BremoveIndex+1:%5D...)%0A        if atual %3E 0 %7B%0A            if removeIndex %3C pos %7B%0A%0A                pos = mod(pos-1, len(participants))%0A            %7D%0A            pos = mod(pos, len(participants))%0A        %7D%0A%09%7D else %7B%0A%0A        if removirIndex %3C pos %7B%0A         %0A            pos = mod(pos-1, len(participants))%0A        %7D%0A        pos = mod(pos - 1, len(participants))%0A    %7D%0A    imprimirEstado(participants, 0)%0A%7D%0A%0Afunc imprimirEstado(lista %5B%5Dint, idxEspada int) %7B\n+%0A%7D\n %0A\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-11_09-15-04",
+            "content": "@@ -1126,185 +1126,4 @@\n ) %7B%0A\n-%0A    fmt.Printf(%22%5B%22)%0A    for i, p := range lista %7B%0A        %0A        if i == idxEspada %7B%0A%0A            if p %3E 0 %7B%0A                fmt.Printf(%22%25d%3E%22, p)%0A            %7D%0A        %7D%0A    %7D%0A%7D%0A\n",
+            "lines": "62"
+        },
+        {
+            "label": "2026-05-11_09-25-48",
+            "content": "@@ -1238,25 +1238,8 @@\n 0 %7B%0A\n-                %0A\n     \n@@ -1267,25 +1267,24 @@\n f(%22%25d%3E%22, p)%0A\n-%0A\n             \n@@ -1288,119 +1288,8 @@\n    %7D\n- else %7B%0A%0A                fmt.Printf(%22%3C%25d%22, p)%0A%0A            %7D%0A        %7D else %7B%0A%0A            fmt.Printf(%22 %25d%22, p)\n %0A   \n",
+            "lines": "74"
+        },
+        {
+            "label": "2026-05-11_09-38-39",
+            "content": "@@ -861,32 +861,35 @@\n ants))%0A        %7D\n+%0A%09%7D\n  else %7B%0A%0A       \n",
+            "lines": "83"
+        },
+        {
+            "label": "2026-05-11_09-40-08",
+            "content": "@@ -75,368 +75,8 @@\n %0A%7D%0A%0A\n-func imprimirEstado(lista %5B%5Dint, idxEspada int) %7B%0A%0A    fmt.Printf(%22%5B%22)%0A    for i, p := range lista %7B%0A        %0A        if i == idxEspada %7B%0A%0A            if p %3E 0 %7B%0A                %0A                fmt.Printf(%22%25d%3E%22, p)%0A%0A            %7D else %7B%0A%0A                fmt.Printf(%22%3C%25d%22, p)%0A%0A            %7D%0A        %7D else %7B%0A%0A            fmt.Printf(%22 %25d%22, p)%0A        %7D%0A    %7D%0A%7D%0A\n func\n@@ -1065,12 +1065,372 @@\n ants, 0)%0A%7D%0A%0A\n+func imprimirEstado(lista %5B%5Dint, idxEspada int) %7B%0A%0A    fmt.Printf(%22%5B%22)%0A    for i, p := range lista %7B%0A        %0A        if i == idxEspada %7B%0A%0A            if p %3E 0 %7B%0A                %0A                fmt.Printf(%22%25d%3E%22, p)%0A%0A            %7D else %7B%0A%0A                fmt.Printf(%22%3C%25d%22, p)%0A%0A            %7D%0A        %7D else %7B%0A%0A            fmt.Printf(%22 %25d%22, p)%0A        %7D%0A    %7D%0A%7D%0A\n",
+            "lines": "82"
+        },
+        {
+            "label": "2026-05-11_09-42-31",
+            "content": "@@ -122,17 +122,20 @@\n int) %7B%0A%0A\n-%09\n+    \n fmt.Prin\n@@ -142,17 +142,20 @@\n tf(%22%5B%22)%0A\n-%09\n+    \n for i, p\n@@ -172,19 +172,33 @@\n lista %7B%0A\n-%0A%09%09\n+        %0A        \n if i == \n@@ -214,108 +214,190 @@\n  %7B%0A%0A\n-%09%09%09if p %3E 0 %7B%0A%0A%09%09%09%09fmt.Printf(%22%25d%3E%22, p)%0A%0A%09%09%09%7D else %7B%0A%0A%09%09%09%09fmt.Printf(%22%3C%25d%22, p)%0A%0A%09%09%09%7D%0A%09%09%7D else %7B%0A%0A%09%09%09\n+            if p %3E 0 %7B%0A                %0A                fmt.Printf(%22%25d%3E%22, p)%0A%0A            %7D else %7B%0A%0A                fmt.Printf(%22%3C%25d%22, p)%0A%0A            %7D%0A        %7D else %7B%0A%0A            \n fmt.\n@@ -413,21 +413,30 @@\n %25d%22, p)%0A\n-%09%09%7D%0A%09\n+        %7D%0A    \n %7D%0A%7D%0Afunc\n@@ -562,17 +562,16 @@\n n)%0A%09sina\n-l\n  := f%0A%09p\n@@ -958,18 +958,24 @@\n ))%0A%09%09%7D%0A%0A\n-%09%09\n+        \n particip\n@@ -1049,18 +1049,24 @@\n 1:%5D...)%0A\n-%09%09\n+        \n if atual\n@@ -1072,19 +1072,28 @@\n l %3E 0 %7B%0A\n-%09%09%09\n+            \n if remov\n@@ -1100,36 +1100,48 @@\n eIndex %3C pos %7B%0A%0A\n-%09%09%09%09\n+                \n pos = mod(pos-1,\n@@ -1156,32 +1156,50 @@\n ticipants))%0A\n-%09%09%09%7D%0A%09%09%09\n+            %7D%0A            \n pos = mod(po\n@@ -1212,34 +1212,40 @@\n (participants))%0A\n-%09%09\n+        \n %7D else %7B%0A%0A%09%09%09if \n@@ -1238,19 +1238,24 @@\n else %7B%0A%0A\n-%09%09%09\n+        \n if remov\n@@ -1274,13 +1274,30 @@\n s %7B%0A\n-%0A%09%09%09%09\n+         %0A            \n pos \n@@ -1332,16 +1332,26 @@\n s))%0A\n-%09%09%09%7D%0A%09%09%09\n+        %7D%0A        \n pos \n@@ -1351,33 +1351,35 @@\n    pos = mod(pos\n--\n+ - \n 1, len(participa\n@@ -1384,22 +1384,26 @@\n pants))%0A\n-%09%09%7D%0A%09%09\n+    %7D%0A    \n imprimir\n@@ -1430,9 +1430,7 @@\n  0)%0A\n-%09\n %7D%0A\n-%7D\n %0A\n",
+            "lines": "82"
+        },
+        {
+            "label": "2026-05-11_09-45-47",
+            "content": "@@ -1074,33 +1074,34 @@\n e %7B%0A%0A%09%09%09if remov\n-e\n+ir\n Index %3C pos %7B%0A%0A%09\n",
+            "lines": "82"
+        },
+        {
+            "label": "2026-05-11_09-46-04",
+            "content": "@@ -322,27 +322,8 @@\n %0A%09%7D%0A\n-%09fmt.Println(%22 %5D%22)%0A\n %7D%0Afu\n",
+            "lines": "82"
+        },
+        {
+            "label": "2026-05-11_09-47-43",
+            "content": "@@ -136,17 +136,16 @@\n rintf(%22%5B\n- \n %22)%0A%09for \n",
+            "lines": "83"
+        },
+        {
+            "label": "2026-05-11_09-47-58",
+            "content": "@@ -253,35 +253,35 @@\n %09%09%09%09fmt.Printf(%22\n+%3C\n %25d\n-%3E\n %22, p)%0A%0A%09%09%09%7D%0A%09%09%7D \n",
+            "lines": "83"
+        },
+        {
+            "label": "2026-05-11_09-48-35",
+            "content": "@@ -18,18 +18,13 @@\n ort \n-(%0A%09\n %22fmt%22\n-%0A)\n %0A%0Afu\n@@ -49,36 +49,8 @@\n nt %7B\n-%0A%0A%09if b == 0 %7B%0A%09%09return 0%0A%09%7D\n %0A%09re\n@@ -136,15 +136,16 @@\n rint\n+f\n (%22%5B\n+ \n %22)%0A\n-%0A\n %09for\n@@ -172,26 +172,8 @@\n  %7B%0A%0A\n-%09%09fmt.Print(%22 %22)%0A%0A\n %09%09if\n@@ -265,11 +265,11 @@\n tf(%22\n-%3C\n %25d\n+%3E\n %22, p\n@@ -303,16 +303,17 @@\n Printf(%22\n+ \n %25d%22, p)%0A\n@@ -340,17 +340,16 @@\n %22 %5D%22)%0A%7D%0A\n-%0A\n func mai\n@@ -373,19 +373,16 @@\n  f int%0A%09\n-if \n _, err :\n@@ -403,17 +403,20 @@\n  &e, &f)\n-;\n+%0A%09if\n  err != \n@@ -421,17 +421,16 @@\n = nil %7B%0A\n-%0A\n %09%09return\n@@ -446,17 +446,16 @@\n ticipant\n-e\n s := mak\n@@ -523,42 +523,58 @@\n %0A%0A%09%09\n-participantes%5Bi%5D = (i + 1) * sinal\n+valor := (i + 1) * sinal%0A%09%09participants%5Bi%5D = valor\n %0A%09%09i\n@@ -586,25 +586,24 @@\n + 1) == e %7B%0A\n-%0A\n %09%09%09pos = i%0A%09\n@@ -643,17 +643,16 @@\n ticipant\n-e\n s) %3E 1 %7B\n@@ -680,17 +680,16 @@\n ticipant\n-e\n s, pos)%0A\n@@ -711,17 +711,16 @@\n ticipant\n-e\n s%5Bpos%5D%0A%09\n@@ -724,20 +724,27 @@\n %5D%0A%09%09var \n-alvo\n+removeIndex\n  int%0A%0A%09%09\n@@ -758,24 +758,30 @@\n l %3E 0 %7B%0A\n-%0A\n %09%09%09\n-alvo\n+removeIndex\n  = mod(p\n@@ -805,14 +805,12 @@\n pant\n-e\n s))%0A\n-%0A\n %09%09%7D \n@@ -820,16 +820,22 @@\n e %7B%0A\n-%0A\n %09%09%09\n-alvo\n+removeIndex\n  = m\n@@ -851,33 +851,32 @@\n  len(participant\n-e\n s))%0A%09%09%7D%0A%0A%09%09parti\n@@ -881,17 +881,16 @@\n ticipant\n-e\n s = appe\n@@ -907,16 +907,22 @@\n pant\n-e\n s%5B:\n-alvo\n+removeIndex\n %5D, p\n@@ -935,15 +935,21 @@\n pant\n-e\n s%5B\n-alvo\n+removeIndex\n +1:%5D\n@@ -957,18 +957,42 @@\n ..)%0A\n-%0A\n %09%09if a\n-lvo\n+tual %3E 0 %7B%0A%09%09%09if removeIndex\n  %3C p\n@@ -1000,43 +1000,134 @@\n s %7B%0A\n+%0A\n %09%09%09\n-pos--%0A\n+%09pos = mod(pos-1, len(participants))%0A%09\n %09%09%7D%0A\n-%0A%09%09if atual %3E 0\n+%09%09%09pos = mod(pos, len(participants))%0A%09%09%7D else %7B%0A%0A%09%09%09if removeIndex %3C pos\n  %7B%0A%0A%09%09%09\n+%09\n pos \n@@ -1127,32 +1127,34 @@\n %09%09%09pos = mod(pos\n+-1\n , len(participan\n@@ -1158,24 +1158,16 @@\n pant\n-e\n s))%0A%09%09\n+%09\n %7D\n- else %7B%0A\n %0A%09%09%09\n@@ -1198,17 +1198,16 @@\n ticipant\n-e\n s))%0A%09%09%7D%0A\n@@ -1207,19 +1207,16 @@\n ))%0A%09%09%7D%0A%09\n-%7D%0A%0A\n %09imprimi\n@@ -1238,13 +1238,15 @@\n pant\n-e\n s, 0)%0A\n+%09%7D%0A\n %7D%0A\n",
+            "lines": "83"
+        },
+        {
+            "label": "2026-05-11_09-50-53",
+            "content": "@@ -51,16 +51,17 @@\n ) int %7B%0A\n+%0A\n %09if b ==\n@@ -154,16 +154,17 @@\n  int) %7B%0A\n+%0A\n %09fmt.Pri\n@@ -171,16 +171,17 @@\n nt(%22%5B%22)%0A\n+%0A\n %09for i, \n@@ -199,16 +199,17 @@\n lista %7B%0A\n+%0A\n %09%09fmt.Pr\n@@ -217,16 +217,17 @@\n nt(%22 %22)%0A\n+%0A\n %09%09if i =\n@@ -240,16 +240,17 @@\n spada %7B%0A\n+%0A\n %09%09%09if p \n@@ -255,16 +255,17 @@\n p %3E 0 %7B%0A\n+%0A\n %09%09%09%09fmt.\n@@ -277,24 +277,25 @@\n f(%22%25d%3E%22, p)%0A\n+%0A\n %09%09%09%7D else %7B%0A\n@@ -294,16 +294,17 @@\n  else %7B%0A\n+%0A\n %09%09%09%09fmt.\n@@ -320,16 +320,17 @@\n %25d%22, p)%0A\n+%0A\n %09%09%09%7D%0A%09%09%7D\n@@ -337,16 +337,17 @@\n  else %7B%0A\n+%0A\n %09%09%09fmt.P\n@@ -404,16 +404,17 @@\n ain() %7B%0A\n+%0A\n %09var n, \n@@ -471,16 +471,17 @@\n = nil %7B%0A\n+%0A\n %09%09return\n@@ -541,16 +541,17 @@\n s := -1%0A\n+%0A\n %09for i :\n@@ -568,16 +568,17 @@\n ; i++ %7B%0A\n+%0A\n %09%09partic\n@@ -626,16 +626,17 @@\n  == e %7B%0A\n+%0A\n %09%09%09pos =\n@@ -791,16 +791,17 @@\n l %3E 0 %7B%0A\n+%0A\n %09%09%09alvo \n@@ -825,32 +825,33 @@\n participantes))%0A\n+%0A\n %09%09%7D else %7B%0A%09%09%09al\n@@ -845,16 +845,17 @@\n  else %7B%0A\n+%0A\n %09%09%09alvo \n@@ -896,27 +896,8 @@\n %09%7D%0A%0A\n-%09%09// Remove o alvo%0A\n %09%09pa\n@@ -973,377 +973,105 @@\n %0A%0A%09%09\n-// Reajusta o pos (o %C3%ADndice do portador mudou se o alvo estava antes dele)%0A%09%09if alvo %3C pos %7B%0A%09%09%09pos--%0A%09%09%7D%0A%0A%09%09// A espada AGORA deve ir para o vizinho do morto na dire%C3%A7%C3%A3o do ataque%0A%09%09if atual %3E 0 %7B%0A%09%09%09// Se atacou pra direita, a espada cai no %C3%ADndice que era do morto%0A%09%09%09pos = mod(pos, len(participantes))%0A%09%09%7D else %7B%0A%09%09%09// Se atacou pra esquerda, a espada recua um %C3%ADndice\n+if alvo %3C pos %7B%0A%09%09%09pos--%0A%09%09%7D%0A%0A%09%09if atual %3E 0 %7B%0A%0A%09%09%09pos = mod(pos, len(participantes))%0A%09%09%7D else %7B%0A\n %0A%09%09%09\n",
+            "lines": "95"
+        },
+        {
+            "label": "2026-05-11_09-51-31",
+            "content": "@@ -51,16 +51,43 @@\n ) int %7B%0A\n+%09if b == 0 %7B%0A%09%09return 0%0A%09%7D%0A\n %09return \n@@ -517,16 +517,27 @@\n al := f%0A\n+%09pos := -1%0A\n %09for i :\n@@ -597,149 +597,22 @@\n l%0A%09%09\n-sinal *= -1%0A%09%7D%0A%0A%09// Encontra a posi%C3%A7%C3%A3o inicial baseada no valor absoluto E%0A%09pos := 0%0A%09for i, v := range participantes %7B%0A%09%09if v == e %7C%7C v == -\n+if (i + 1) == \n e %7B%0A\n@@ -628,18 +628,23 @@\n i%0A%09%09\n-%09break%0A%09%09%7D\n+%7D%0A%09%09sinal *= -1\n %0A%09%7D%0A\n@@ -877,128 +877,8 @@\n %09%7D%0A%0A\n-%09%09// Armazena o valor de quem est%C3%A1 com a espada para ach%C3%A1-lo ap%C3%B3s a remo%C3%A7%C3%A3o%0A%09%09quemEstaComAEspada := participantes%5Bpos%5D%0A%0A\n %09%09//\n@@ -978,161 +978,104 @@\n / Re\n-encontra a\n+ajusta o\n  pos\n-i%C3%A7%C3%A3o de quem est%C3%A1 com a espada no novo slice%0A%09%09for i, v := range participantes %7B%0A%09%09%09if v == quemEstaComAEspada\n+ (o %C3%ADndice do portador mudou se o alvo estava antes dele)%0A%09%09if alvo %3C pos\n  %7B%0A%09%09%09\n-%09\n pos\n- = i%0A%09%09%09%09break%0A%09%09%09%7D\n+--\n %0A%09%09%7D\n@@ -1084,56 +1084,55 @@\n %09%09//\n+ A espada\n  AGORA \n-move a espada para o pr%C3%B3ximo sobrevivente\n+deve ir para o vizinho do morto\n  na \n@@ -1166,16 +1166,85 @@\n l %3E 0 %7B%0A\n+%09%09%09// Se atacou pra direita, a espada cai no %C3%ADndice que era do morto%0A\n %09%09%09pos =\n@@ -1243,34 +1243,32 @@\n %09%09%09pos = mod(pos\n-+1\n , len(participan\n@@ -1280,24 +1280,79 @@\n %0A%09%09%7D else %7B%0A\n+%09%09%09// Se atacou pra esquerda, a espada recua um %C3%ADndice%0A\n %09%09%09pos = mod\n",
+            "lines": "79"
+        },
+        {
+            "label": "2026-05-11_09-52-50",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc mod(a, b int) int {\n\treturn (a%b + b) % b\n}\n\nfunc imprimirEstado(lista []int, idxEspada int) {\n\tfmt.Print(\"[\")\n\tfor i, p := range lista {\n\t\tfmt.Print(\" \")\n\t\tif i == idxEspada {\n\t\t\tif p > 0 {\n\t\t\t\tfmt.Printf(\"%d>\", p)\n\t\t\t} else {\n\t\t\t\tfmt.Printf(\"<%d\", p)\n\t\t\t}\n\t\t} else {\n\t\t\tfmt.Printf(\"%d\", p)\n\t\t}\n\t}\n\tfmt.Println(\" ]\")\n}\n\nfunc main() {\n\tvar n, e, f int\n\tif _, err := fmt.Scan(&n, &e, &f); err != nil {\n\t\treturn\n\t}\n\n\tparticipantes := make([]int, n)\n\tsinal := f\n\tfor i := 0; i < n; i++ {\n\t\tparticipantes[i] = (i + 1) * sinal\n\t\tsinal *= -1\n\t}\n\n\t// Encontra a posi\u00e7\u00e3o inicial baseada no valor absoluto E\n\tpos := 0\n\tfor i, v := range participantes {\n\t\tif v == e || v == -e {\n\t\t\tpos = i\n\t\t\tbreak\n\t\t}\n\t}\n\n\tfor len(participantes) > 1 {\n\t\timprimirEstado(participantes, pos)\n\n\t\tatual := participantes[pos]\n\t\tvar alvo int\n\n\t\tif atual > 0 {\n\t\t\talvo = mod(pos+1, len(participantes))\n\t\t} else {\n\t\t\talvo = mod(pos-1, len(participantes))\n\t\t}\n\n\t\t// Armazena o valor de quem est\u00e1 com a espada para ach\u00e1-lo ap\u00f3s a remo\u00e7\u00e3o\n\t\tquemEstaComAEspada := participantes[pos]\n\n\t\t// Remove o alvo\n\t\tparticipantes = append(participantes[:alvo], participantes[alvo+1:]...)\n\n\t\t// Reencontra a posi\u00e7\u00e3o de quem est\u00e1 com a espada no novo slice\n\t\tfor i, v := range participantes {\n\t\t\tif v == quemEstaComAEspada {\n\t\t\t\tpos = i\n\t\t\t\tbreak\n\t\t\t}\n\t\t}\n\n\t\t// AGORA move a espada para o pr\u00f3ximo sobrevivente na dire\u00e7\u00e3o do ataque\n\t\tif atual > 0 {\n\t\t\tpos = mod(pos+1, len(participantes))\n\t\t} else {\n\t\t\tpos = mod(pos-1, len(participantes))\n\t\t}\n\t}\n\n\timprimirEstado(participantes, 0)\n}\n",
+            "lines": "85"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+2026-05-11 08:22:16, MOVE, v:1, k:ed@fractais_png, mode:PICK
+2026-05-11 08:22:18, MOVE, v:1, k:ed@fractais_png, mode:BACK
+2026-05-11 08:25:30, MOVE, v:1, k:ed@alternando, mode:DOWN
+2026-05-11 08:26:02, MOVE, v:1, k:ed@alternando, mode:PICK
+2026-05-11 08:29:16, EXEC, v:1, k:ed@alternando, mode:FULL, rate:0, size:5
+2026-05-11 08:29:25, EXEC, v:1, k:ed@alternando, mode:FULL, size:9, fail:COMP
+2026-05-11 08:36:46, EXEC, v:1, k:ed@alternando, mode:FULL, size:19, fail:COMP
+2026-05-11 09:15:04, EXEC, v:1, k:ed@alternando, mode:FULL, size:62, fail:COMP
+2026-05-11 09:25:48, EXEC, v:1, k:ed@alternando, mode:FULL, size:74, fail:COMP
+2026-05-11 09:38:37, EXEC, v:1, k:ed@alternando, mode:FULL, fail:COMP
+2026-05-11 09:38:39, EXEC, v:1, k:ed@alternando, mode:FULL, size:83, fail:COMP
+2026-05-11 09:40:08, EXEC, v:1, k:ed@alternando, mode:FULL, size:82, fail:COMP
+2026-05-11 09:42:31, EXEC, v:1, k:ed@alternando, mode:FULL, size:82, fail:COMP
+2026-05-11 09:45:47, EXEC, v:1, k:ed@alternando, mode:FULL, size:82, fail:COMP
+2026-05-11 09:46:04, EXEC, v:1, k:ed@alternando, mode:FULL, rate:0, size:82
+2026-05-11 09:47:38, EXEC, v:1, k:ed@alternando, mode:FULL, rate:0
+2026-05-11 09:47:43, EXEC, v:1, k:ed@alternando, mode:FULL, rate:0, size:83
+2026-05-11 09:47:58, EXEC, v:1, k:ed@alternando, mode:FULL, rate:0, size:83
+2026-05-11 09:48:35, EXEC, v:1, k:ed@alternando, mode:FULL, rate:0, size:83
+2026-05-11 09:50:53, EXEC, v:1, k:ed@alternando, mode:FULL, rate:46, size:95
+2026-05-11 09:51:31, EXEC, v:1, k:ed@alternando, mode:FULL, rate:46, size:79
+2026-05-11 09:52:03, EXEC, v:1, k:ed@alternando, mode:FULL, rate:46
+2026-05-11 09:52:51, EXEC, v:1, k:ed@alternando, mode:FULL, rate:100, size:85
+2026-05-11 09:53:32, EXEC, v:1, k:ed@alternando, mode:FULL, rate:100
+2026-05-11 09:53:35, MOVE, v:1, k:ed@alternando, mode:BACK
+2026-05-11 09:54:02, SELF, v:1, k:ed@alternando, self:1, rate:100, study:120, concept:1
+2026-05-11 09:54:03, MOVE, v:1, k:ed@alternando, mode:PICK
+2026-05-11 09:54:05, MOVE, v:1, k:ed@alternando, mode:BACK
