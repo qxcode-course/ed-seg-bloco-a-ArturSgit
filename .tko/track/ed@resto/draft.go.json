@@ -1,0 +1,14 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-11_10-22-01",
+            "content": "@@ -166,81 +166,6 @@\n  %7B%0A%0A\n-%09var n int%0A%09_, err := fmt.Scan(&n)%0A%09if err != nil %7B%0A%09%09return%0A%09%7D%0A%09solve(n)%0A%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-05-11_10-22-16",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc solve(n int) {\n\n\tif n == 0 {\n\t\treturn\n\t}\n\tdiv := n / 2\n\tresto := n % 2\n\tsolve(div)\n\n\tfmt.Printf(\"%d %d\\n\", div, resto)\n}\nfunc main() {\n\n\tvar n int\n\t_, err := fmt.Scan(&n)\n\tif err != nil {\n\t\treturn\n\t}\n\tsolve(n)\n\n}\n",
+            "lines": "25"
+        }
+    ]
+}

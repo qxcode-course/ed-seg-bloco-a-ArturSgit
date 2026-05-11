@@ -26,3 +26,7 @@
 2026-05-11 09:54:02, SELF, v:1, k:ed@alternando, self:1, rate:100, study:120, concept:1
 2026-05-11 09:54:03, MOVE, v:1, k:ed@alternando, mode:PICK
 2026-05-11 09:54:05, MOVE, v:1, k:ed@alternando, mode:BACK
+2026-05-11 10:04:24, MOVE, v:1, k:ed@resto, mode:PICK
+2026-05-11 10:22:01, EXEC, v:1, k:ed@resto, mode:FULL, rate:0, size:18
+2026-05-11 10:22:16, EXEC, v:1, k:ed@resto, mode:FULL, rate:100, size:25
+2026-05-11 10:22:25, MOVE, v:1, k:ed@resto, mode:BACK
