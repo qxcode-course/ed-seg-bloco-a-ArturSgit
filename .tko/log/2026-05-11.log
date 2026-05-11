@@ -30,3 +30,10 @@
 2026-05-11 10:22:01, EXEC, v:1, k:ed@resto, mode:FULL, rate:0, size:18
 2026-05-11 10:22:16, EXEC, v:1, k:ed@resto, mode:FULL, rate:100, size:25
 2026-05-11 10:22:25, MOVE, v:1, k:ed@resto, mode:BACK
+2026-05-11 10:23:40, MOVE, v:1, k:ed@mdc, mode:DOWN
+2026-05-11 10:43:34, MOVE, v:1, k:ed@mdc, mode:PICK
+2026-05-11 10:44:17, EXEC, v:1, k:ed@mdc, mode:FULL, rate:0, size:15
+2026-05-11 10:50:56, EXEC, v:1, k:ed@mdc, mode:FULL, size:25, fail:COMP
+2026-05-11 10:52:27, MOVE, v:1, k:ed@mdc, mode:PICK
+2026-05-11 10:52:38, EXEC, v:1, k:ed@mdc, mode:FULL, rate:100, size:27
+2026-05-11 10:52:44, MOVE, v:1, k:ed@mdc, mode:BACK

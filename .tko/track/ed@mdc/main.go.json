@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-11_10-44-17",
+            "content": "@@ -56,84 +56,16 @@\n  %7B%0A%09\n-%0A%09if a == 0 %7B%0A%09%09return b%0A%09%7D%0A%0A%09if b == 0 %7B%0A%09%09return a%0A%09%7D%0A%0A%09return mdc(b, a%25b)\n+return 0\n %0A%7D%0A%0A\n@@ -97,18 +97,12 @@\n nt%0A%09\n-_, err := \n+fmt.\n Scan\n@@ -114,25 +114,8 @@\n &b)%0A\n-%09if err != nil %7B%0A\n %09fmt\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-11_10-50-56",
+            "content": "@@ -51,16 +51,17 @@\n ) int %7B%0A\n+%09\n %0A%09if a =\n@@ -171,20 +171,16 @@\n  err := \n-fmt.\n Scan(&a,\n@@ -205,20 +205,8 @@\n l %7B%0A\n-%09%09return%0A%09%7D%0A\n %09fmt\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-05-11_10-52-38",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc mdc(a, b int) int {\n\n\tif a == 0 {\n\t\treturn b\n\t}\n\n\tif b == 0 {\n\t\treturn a\n\t}\n\n\treturn mdc(b, a%b)\n}\n\nfunc main() {\n\tvar a, b int\n\t_, err := fmt.Scan(&a, &b)\n\tif err != nil {\n\t\treturn\n\t}\n\tfmt.Println(mdc(a, b))\n}\n",
+            "lines": "27"
+        }
+    ]
+}
