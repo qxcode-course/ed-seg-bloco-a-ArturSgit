@@ -42,3 +42,4 @@
 2026-05-11 11:08:43, EXEC, v:1, k:ed@queimada, mode:FULL, rate:16, size:45
 2026-05-11 11:08:52, EXEC, v:1, k:ed@queimada, mode:FULL, rate:100, size:50
 2026-05-11 11:08:55, MOVE, v:1, k:ed@queimada, mode:BACK
+2026-05-11 20:37:28, MOVE, v:1, k:ed@labirinto, mode:DOWN
