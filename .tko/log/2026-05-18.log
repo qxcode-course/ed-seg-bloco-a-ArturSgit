@@ -13,3 +13,8 @@
 2026-05-18 10:04:01, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:20
 2026-05-18 10:04:13, EXEC, v:1, k:ed@vetequals, mode:FULL, rate:100, size:59
 2026-05-18 10:04:59, MOVE, v:1, k:ed@vetequals, mode:BACK
+2026-05-18 10:05:53, MOVE, v:1, k:ed@enesimo, mode:DOWN
+2026-05-18 10:05:56, MOVE, v:1, k:ed@enesimo, mode:PICK
+2026-05-18 10:07:16, EXEC, v:1, k:ed@enesimo, mode:FULL, rate:0, size:5
+2026-05-18 10:54:59, EXEC, v:1, k:ed@enesimo, mode:FULL, size:60, fail:COMP
+2026-05-18 10:56:35, EXEC, v:1, k:ed@enesimo, mode:FULL, rate:100, size:54
