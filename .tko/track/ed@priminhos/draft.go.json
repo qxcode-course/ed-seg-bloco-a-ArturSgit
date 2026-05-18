@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-18_11-42-31",
+            "content": "@@ -6,17 +6,16 @@\n ge main \n-%0A\n (%0A    %22b\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-05-18_11-44-12",
+            "content": "@@ -11,15 +11,8 @@\n in %0A\n-import \n (%0A  \n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-05-18_11-44-08",
+            "content": "@@ -5,17 +5,17 @@\n age main\n-%0A\n+ \n %0Aimport \n@@ -20,17 +20,20 @@\n t (%0A\n-%09\n+    \n %22bufio%22%0A\n %09%22fm\n@@ -32,22 +32,31 @@\n io%22%0A\n-%09\n+    \n %22fmt%22%0A\n-%09\n+    \n %22os%22%0A\n-%09\n+    \n %22str\n@@ -61,17 +61,20 @@\n trconv%22%0A\n-%09\n+    \n %22strings\n@@ -115,17 +115,20 @@\n  bool %7B%0A\n-%09\n+    \n if n %3C= \n@@ -131,18 +131,24 @@\n  %3C= 1 %7B%0A\n-%09%09\n+        \n return f\n@@ -152,20 +152,26 @@\n n false%0A\n-%09%7D%0A%09\n+    %7D%0A    \n if n == \n@@ -174,18 +174,24 @@\n  == 2 %7B%0A\n-%09%09\n+        \n return t\n@@ -194,20 +194,26 @@\n rn true%0A\n-%09%7D%0A%09\n+    %7D%0A    \n if div*d\n@@ -221,18 +221,24 @@\n v %3E n %7B%0A\n-%09%09\n+        \n return t\n@@ -241,20 +241,26 @@\n rn true%0A\n-%09%7D%0A%09\n+    %7D%0A    \n if n%25div\n@@ -267,18 +267,24 @@\n  == 0 %7B%0A\n-%09%09\n+        \n return f\n@@ -288,20 +288,26 @@\n n false%0A\n-%09%7D%0A%09\n+    %7D%0A    \n return p\n@@ -333,24 +333,25 @@\n %0A%0Afunc primo\n+ \n (n int) bool\n@@ -353,17 +353,20 @@\n  bool %7B%0A\n-%09\n+    \n return p\n@@ -402,16 +402,17 @@\n PrimoAux\n+ \n (n int, \n@@ -442,18 +442,25 @@\n ) int %7B%0A\n-%0A%09\n+    %0A    \n if len(p\n@@ -473,19 +473,31 @@\n  == n %7B%0A\n-%0A%09%09\n+      %0A        \n return p\n@@ -502,20 +502,26 @@\n  primos%0A\n-%09%7D%0A%09\n+    %7D%0A    \n if primo\n@@ -530,18 +530,24 @@\n tual) %7B%0A\n-%09%09\n+        \n primos =\n@@ -569,20 +569,26 @@\n  atual)%0A\n-%09%7D%0A%09\n+    %7D%0A    \n return c\n@@ -642,16 +642,17 @@\n egaPrimo\n+ \n (n int) \n@@ -660,17 +660,20 @@\n %5Dint %7B%0A%0A\n-%09\n+    \n return c\n@@ -730,17 +730,20 @@\n in() %7B%0A%0A\n-%09\n+    \n scanner \n@@ -772,17 +772,20 @@\n .Stdin)%0A\n-%09\n+    \n if scann\n@@ -795,19 +795,26 @@\n Scan() %7B\n-%0A%09%09\n+ %0A        \n input :=\n@@ -848,18 +848,24 @@\n Text())%0A\n-%09%09\n+        \n n, err :\n@@ -886,18 +886,24 @@\n (input)%0A\n-%09%09\n+        \n if err =\n@@ -910,19 +910,28 @@\n = nil %7B%0A\n-%09%09%09\n+            \n resultad\n@@ -955,11 +955,20 @@\n (n)%0A\n-%09%09%09\n+            \n fmt.\n@@ -1033,13 +1033,16 @@\n %22))%0A\n-%09%09%7D%0A%09\n+        \n %7D%0A%7D%0A\n",
+            "lines": "57"
+        },
+        {
+            "label": "2026-05-18_11-45-14",
+            "content": "@@ -68,23 +68,22 @@\n )%0A%0Afunc \n-%C3%A9P\n+p\n rimo\n-A\n+a\n ux(n int\n@@ -87,20 +87,16 @@\n int, div\n-isor\n  int) bo\n@@ -169,22 +169,19 @@\n %09if \n-n%25\n div\n-isor == 0\n+*div %3E n\n  %7B%0A%09\n@@ -180,36 +180,35 @@\n  %3E n %7B%0A%09%09return \n-fals\n+tru\n e%0A%09%7D%0A%09if divisor\n@@ -204,27 +204,18 @@\n %09if \n+n%25\n div\n-isor*divisor %3E n\n+ == 0\n  %7B%0A%09\n@@ -218,27 +218,28 @@\n  %7B%0A%09%09return \n-tru\n+fals\n e%0A%09%7D%0A%09return\n@@ -235,31 +235,30 @@\n %0A%09%7D%0A%09return \n-%C3%A9P\n+p\n rimo\n-A\n+a\n ux(n, diviso\n@@ -258,12 +258,8 @@\n  div\n-isor\n +1)%0A\n@@ -266,18 +266,17 @@\n %7D%0A%0Afunc \n-%C3%89P\n+p\n rimo(n i\n@@ -298,15 +298,14 @@\n urn \n-%C3%A9P\n+p\n rimo\n-A\n+a\n ux(n\n@@ -325,25 +325,24 @@\n carregaPrimo\n-s\n Aux(n int, a\n@@ -365,24 +365,23 @@\n  %5B%5Dint) \n-%5B%5D\n int %7B%0A\n+%0A\n %09if len(\n@@ -391,24 +391,25 @@\n mos) == n %7B%0A\n+%0A\n %09%09return pri\n@@ -419,15 +419,13 @@\n %0A%09%7D%0A\n-%0A\n %09if \n-%C3%89P\n+p\n rimo\n@@ -470,17 +470,16 @@\n ual)%0A%09%7D%0A\n-%0A\n %09return \n@@ -486,25 +486,24 @@\n carregaPrimo\n-s\n Aux(n, atual\n@@ -522,17 +522,17 @@\n %7D%0A%0Afunc \n-C\n+c\n arregaPr\n@@ -534,17 +534,16 @@\n egaPrimo\n-s\n (n int) \n@@ -550,16 +550,17 @@\n %5B%5Dint %7B%0A\n+%0A\n %09return \n@@ -571,17 +571,16 @@\n egaPrimo\n-s\n Aux(n, 2\n@@ -617,16 +617,17 @@\n ain() %7B%0A\n+%0A\n %09scanner\n@@ -793,9 +793,9 @@\n  := \n-C\n+c\n arre\n@@ -801,17 +801,16 @@\n egaPrimo\n-s\n (n)%0A%09%09%09f\n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-05-18_11-48-31",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc \u00e9PrimoAux(n int, divisor int) bool {\n\tif n <= 1 {\n\t\treturn false\n\t}\n\tif n == 2 {\n\t\treturn true\n\t}\n\tif n%divisor == 0 {\n\t\treturn false\n\t}\n\tif divisor*divisor > n {\n\t\treturn true\n\t}\n\treturn \u00e9PrimoAux(n, divisor+1)\n}\n\nfunc \u00c9Primo(n int) bool {\n\treturn \u00e9PrimoAux(n, 2)\n}\n\nfunc carregaPrimosAux(n int, atual int, primos []int) []int {\n\tif len(primos) == n {\n\t\treturn primos\n\t}\n\n\tif \u00c9Primo(atual) {\n\t\tprimos = append(primos, atual)\n\t}\n\n\treturn carregaPrimosAux(n, atual+1, primos)\n}\n\nfunc CarregaPrimos(n int) []int {\n\treturn carregaPrimosAux(n, 2, make([]int, 0, n))\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tif scanner.Scan() {\n\t\tinput := strings.TrimSpace(scanner.Text())\n\t\tn, err := strconv.Atoi(input)\n\t\tif err == nil {\n\t\t\tresultado := CarregaPrimos(n)\n\t\t\tfmt.Println(strings.ReplaceAll(fmt.Sprint(resultado), \" \", \", \"))\n\t\t}\n\t}\n}\n",
+            "lines": "57"
+        }
+    ]
+}
