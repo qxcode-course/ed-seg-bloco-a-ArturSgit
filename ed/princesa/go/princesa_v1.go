@@ -3,12 +3,12 @@ package main
 import "fmt"
 
 // funcao para inicializar
-func initial(n int, e int){
+func initial(n int, e int) {
 
 	// inicializacao
 	vivos := make([]int, n)
-	for i := 0 ; i < n ; i++ {
-		vivos[i] = i + 1 
+	for i := 0; i < n; i++ {
+		vivos[i] = i + 1
 	}
 
 	// serve para encontrar no vetor a espada
@@ -20,27 +20,26 @@ func initial(n int, e int){
 
 		index_alvo := (index_espada + 1) % len(vivos)
 
-		vivos = append(vivos[:index_alvo], vivos[index_alvo + 1:]... )
+		vivos = append(vivos[:index_alvo], vivos[index_alvo+1:]...)
 
 		index_espada = index_alvo % len(vivos)
 	}
 
 	impressao(vivos, 0)
 
-
 }
 
-func impressao(vivos[] int, index_espada int){
+func impressao(vivos []int, index_espada int) {
 
 	fmt.Print("[ ")
 
 	for i, v := range vivos {
-		
+
 		if i == index_espada {
 
 			fmt.Printf("%d> ", v)
 
-		} else  {
+		} else {
 
 			fmt.Printf("%d ", v)
 		}
@@ -48,7 +47,6 @@ func impressao(vivos[] int, index_espada int){
 
 	fmt.Print("]\n")
 }
-
 
 func main() {
 
