@@ -62,3 +62,44 @@
 2026-05-20 09:44:45, MOVE, v:1, k:ed@escada, mode:EDIT
 2026-05-20 09:47:43, EXEC, v:1, k:ed@escada, mode:FULL, rate:100, size:41
 2026-05-20 09:47:56, MOVE, v:1, k:ed@escada, mode:BACK
+2026-05-20 10:03:41, SELF, v:1, k:ed@escada, self:1, rate:100, study:100
+2026-05-20 10:03:45, MOVE, v:1, k:ed@binomiais, mode:DOWN
+2026-05-20 10:05:58, MOVE, v:1, k:ed@binomiais, mode:PICK
+2026-05-20 10:03:45, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-20 10:03:45, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-20 10:07:49, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-20 10:09:01, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-20 10:14:31, EXEC, v:1, k:ed@binomiais, mode:FREE, size:7
+2026-05-20 10:16:32, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-20 10:28:25, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-20 10:30:19, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-20 10:35:10, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-20 10:43:01, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-20 10:46:22, MOVE, v:1, k:ed@binomiais, mode:PICK
+2026-05-20 10:46:30, EXEC, v:1, k:ed@binomiais, mode:FULL, size:34, fail:COMP
+2026-05-20 10:50:07, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-20 10:53:01, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-20 10:59:07, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-20 11:01:44, EXEC, v:1, k:ed@binomiais, mode:FULL, size:34, fail:COMP
+2026-05-20 11:01:46, EXEC, v:1, k:ed@binomiais, mode:FULL, fail:COMP
+2026-05-20 11:01:46, EXEC, v:1, k:ed@binomiais, mode:FULL, fail:COMP
+2026-05-20 11:01:47, EXEC, v:1, k:ed@binomiais, mode:FULL, fail:COMP
+2026-05-20 11:01:47, EXEC, v:1, k:ed@binomiais, mode:FULL, fail:COMP
+2026-05-20 11:04:00, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-20 11:09:02, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-20 11:13:27, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-20 11:17:37, EXEC, v:1, k:ed@binomiais, mode:FULL, rate:20, size:43
+2026-05-20 11:18:37, EXEC, v:1, k:ed@binomiais, mode:FULL, rate:0, size:43
+2026-05-20 11:18:48, EXEC, v:1, k:ed@binomiais, mode:FULL, rate:0
+2026-05-20 11:18:57, EXEC, v:1, k:ed@binomiais, mode:FULL, rate:0, size:43
+2026-05-20 11:19:03, EXEC, v:1, k:ed@binomiais, mode:FULL, rate:0, size:43
+2026-05-20 11:19:02, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-20 11:19:03, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-20 11:23:58, EXEC, v:1, k:ed@binomiais, mode:FULL, rate:20, size:43
+2026-05-20 11:25:41, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-20 11:23:58, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-20 11:28:19, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-20 11:35:26, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-20 11:38:48, MOVE, v:1, k:ed@binomiais, mode:EDIT
+2026-05-20 11:43:01, EXEC, v:1, k:ed@binomiais, mode:FULL, rate:100, size:43
+2026-05-20 11:43:07, MOVE, v:1, k:ed@binomiais, mode:BACK

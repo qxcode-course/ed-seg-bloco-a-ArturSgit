@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-20_10-14-31",
+            "content": "@@ -9,37 +9,8 @@\n main\n-%0Aimport (%0A%09%22fmt%22%0A%09%22io%22%0A%09%22os%0A)\n %0A%0Afu\n@@ -52,238 +52,22 @@\n  %7B%0A%0A\n-%09if k %3C 0 %7C%7C k %3E n %7B%0A%0A%09%09return 0%0A%09%7D%0A%09if k == 0 %7C%7C k == n %7B%0A%0A%09%09return 1%0A%09%7D%0A%09if k %3E n/2 %7B%0A%09%09k = n - k%0A%09%7D%0A%0A%09result := 1%0A%09for i := 1; i %3C= k; i++ %7B%0A%09%09result = result * (n - i + 1) / i%0A%09%7D%0A%0A%09return result%0A%0A%7D%0A%0Afunc main() %7B%0A%0A%09var n, k int\n+%7D%0Afunc main() %7B\n %0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-05-20_10-46-30",
+            "content": "@@ -5,16 +5,45 @@\n age main\n+%0Aimport (%0A%09%22fmt%22%0A%09%22io%22%0A%09%22os%0A)\n %0A%0Afunc b\n@@ -313,87 +313,6 @@\n int%0A\n-%09_, err := fmt.Scan(&n, &k)%0A%09if err != nil %7B%0A%09%09if err == io.EOF %7B%0A%09%09%09return%0A%09%09%7D%0A%09\n %7D%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-20_11-01-44",
+            "content": "@@ -11,39 +11,8 @@\n in%0A%0A\n-import (%0A%09%22fmt%22%0A%09%22io%22%0A%09%22os%22%0A)%0A%0A\n func\n@@ -217,17 +217,17 @@\n  * (n - \n-k\n+i\n  + 1) / \n@@ -247,16 +247,17 @@\n  result%0A\n+%0A\n %7D%0A%0Afunc \n@@ -364,113 +364,7 @@\n %09%09%7D%0A\n+\n %09\n-%09fmt.Fprintln(os.Stderr, %22Erro ao ler a entrada%22, err)%0A%09%09return%0A%09%7D%0A%09fmt.Println(binomialcoeficient(n, k))%0A\n %7D%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-20_11-17-37",
+            "content": "@@ -250,11 +250,11 @@\n  (n \n-+ i\n+- k\n  + 1\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-05-20_11-18-37",
+            "content": "@@ -250,13 +250,13 @@\n  (n \n-- i -\n++ i +\n  1) \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-05-20_11-18-57",
+            "content": "@@ -248,17 +248,17 @@\n  * (n - \n-k\n+i\n  - 1) / \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-05-20_11-19-03",
+            "content": "@@ -250,17 +250,17 @@\n  (n - k \n-+\n+-\n  1) / i%0A\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-05-20_11-23-58",
+            "content": "@@ -252,17 +252,17 @@\n n - k + \n-i\n+1\n ) / i%0A%09%7D\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-05-20_11-43-01",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"io\"\n\t\"os\"\n)\n\nfunc binomialcoeficient(n, k int) int {\n\n\tif k < 0 || k > n {\n\n\t\treturn 0\n\t}\n\tif k == 0 || k == n {\n\n\t\treturn 1\n\t}\n\tif k > n/2 {\n\t\tk = n - k\n\t}\n\n\tresult := 1\n\tfor i := 1; i <= k; i++ {\n\t\tresult = result * (n - k + i) / i\n\t}\n\n\treturn result\n}\n\nfunc main() {\n\n\tvar n, k int\n\t_, err := fmt.Scan(&n, &k)\n\tif err != nil {\n\t\tif err == io.EOF {\n\t\t\treturn\n\t\t}\n\t\tfmt.Fprintln(os.Stderr, \"Erro ao ler a entrada\", err)\n\t\treturn\n\t}\n\tfmt.Println(binomialcoeficient(n, k))\n}\n",
+            "lines": "43"
+        }
+    ]
+}
