@@ -1,0 +1,84 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-20_08-21-55",
+            "content": "@@ -19,18 +19,16 @@\n t %22fmt%22%0A\n-%0A%0A\n func mai\n@@ -37,92 +37,39 @@\n ) %7B%0A\n-%0A\n     \n-var n int %0A    _, err := fmt.Scan(&n)%0A    if err != nil %7B%0A        return%0A    %7D%0A%0A\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2026-05-20_08-30-16",
+            "content": "@@ -24,21 +24,8 @@\n t%22%0A%0A\n-var dp %5B%5Dint%0A\n %0Afun\n@@ -124,13 +124,7 @@\n  %7D%0A%0A\n-    %0A\n %0A%7D%0A\n-%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-05-20_08-35-30",
+            "content": "@@ -38,36 +38,8 @@\n nt%0A%0A\n-func x(n int) int %7B%0A    %0A%7D%0A%0A\n func\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-20_08-39-44",
+            "content": "@@ -63,200 +63,8 @@\n    %0A\n-    if n == 1 %7C%7C n == 2 %7B%0A  %0A        return 1%0A    %7D%0A    if n == 3 %7B%0A        return 2%0A    %7D%0A    if dp%5Bn%5D != 0 %7B%0A        return dp%5Bn%5D%0A    %7D%0A    dp%5Bn%5D = x(n) + x(n-2) + x(n-3)%0A    return dp%5Bn%5D%0A%0A%0A\n %7D%0A%0Af\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-05-20_09-05-13",
+            "content": "@@ -17,21 +17,13 @@\n ort \n-(%0A    \n %22fmt%22\n-%0A)\n %0A%0Ava\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-05-20_09-05-51",
+            "content": "@@ -6,17 +6,16 @@\n ge main%0A\n-%0A\n import (\n",
+            "lines": "37"
+        },
+        {
+            "label": "2026-05-20_09-06-36",
+            "content": "@@ -221,26 +221,24 @@\n n%5D = x(n\n--1\n ) + x(n-\n 1) + x(n\n@@ -229,17 +229,17 @@\n ) + x(n-\n-1\n+2\n ) + x(n-\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-20_09-09-55",
+            "content": "@@ -368,56 +368,8 @@\n  %7D%0A%0A\n-    dp = make(%5B%5Dint, n+1)%0A    fmt.Println(x(n))%0A\n     \n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-05-20_09-14-18",
+            "content": "@@ -231,17 +231,17 @@\n ) + x(n-\n-3\n+1\n ) + x(n-\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-05-20_09-14-37",
+            "content": "@@ -231,17 +231,17 @@\n ) + x(n-\n-2\n+3\n ) + x(n-\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-05-20_09-14-49",
+            "content": "@@ -16,17 +16,20 @@\n mport (%0A\n-%09\n+    \n %22fmt%22%0A)%0A\n@@ -33,139 +33,149 @@\n %0A)%0A%0A\n-func calcular(atual int, alvo int, dp %5B%5Dint) int %7B%0A%09if atual %3E alvo %7B%0A%09%09return 0%0A%09%7D%0A%09if atual == alvo %7B%0A%09%09return 1%0A%09%7D%0A%0A%09\n+var dp %5B%5Dint%0A%0Afunc x(n int) int %7B%0A    %0A    if n == 1 %7C%7C n == 2 %7B%0A  %0A        return 1%0A    %7D%0A    if n == 3 %7B%0A        return 2%0A    %7D%0A    \n if dp%5B\n-atual\n+n\n %5D !=\n@@ -179,18 +179,24 @@\n  != 0 %7B%0A\n-%09%09\n+        \n return d\n@@ -201,89 +201,58 @@\n  dp%5B\n-atual%5D%0A%09%7D%0A%0A%09dp%5Batual%5D = calcular(atual, alvo, dp) + calcular(atual+3, alvo, dp)%0A%09\n+n%5D%0A    %7D%0A    dp%5Bn%5D = x(n-1) + x(n-2) + x(n-3)%0A    \n retu\n@@ -261,14 +261,12 @@\n  dp%5B\n-atual%5D\n+n%5D%0A%0A\n %0A%7D%0A%0A\n@@ -279,17 +279,21 @@\n ain() %7B%0A\n-%09\n+%0A    \n var n in\n@@ -293,18 +293,22 @@\n ar n int\n-%0A%09\n+ %0A    \n _, err :\n@@ -322,17 +322,20 @@\n can(&n)%0A\n-%09\n+    \n if err !\n@@ -346,121 +346,37 @@\n l %7B%0A\n-%09%09return%0A%09%7D%0A%0A%09if n == 1 %7C%7C n == 2 %7B%0A%09%09fmt.Println(1)%0A%09%09return%0A%09%7D%0A%09if n == 3 %7B%0A%09%09fmt.Println(2)%0A%09%09return%0A%09%7D%0A%0A%09\n+        return%0A    %7D%0A%0A    \n dp \n-:\n = ma\n@@ -394,9 +394,12 @@\n +1)%0A\n-%09\n+    \n fmt.\n@@ -410,26 +410,19 @@\n tln(\n-calcular(0, n, dp))\n+x(n))%0A    %0A\n %0A%7D%0A\n+%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-05-20_09-22-35",
+            "content": "@@ -220,12 +220,8 @@\n tual\n- + 1\n , al\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-20_09-22-50",
+            "content": "@@ -216,16 +216,20 @@\n ar(atual\n+ + 1\n , alvo, \n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-20_09-23-07",
+            "content": "@@ -274,16 +274,17 @@\n dp%5Batual\n+%5D\n %0A%7D%0A%0Afunc\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-20_09-25-52",
+            "content": "@@ -220,12 +220,8 @@\n tual\n- + 1\n , al\n@@ -274,17 +274,16 @@\n dp%5Batual\n-%5D\n %0A%7D%0A%0Afunc\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-20_09-47-43",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc calcular(atual int, alvo int, dp []int) int {\n\tif atual > alvo {\n\t\treturn 0\n\t}\n\tif atual == alvo {\n\t\treturn 1\n\t}\n\n\tif dp[atual] != 0 {\n\t\treturn dp[atual]\n\t}\n\n\tdp[atual] = calcular(atual + 1, alvo, dp) + calcular(atual+3, alvo, dp)\n\treturn dp[atual]\n}\n\nfunc main() {\n\tvar n int\n\t_, err := fmt.Scan(&n)\n\tif err != nil {\n\t\treturn\n\t}\n\n\tif n == 1 || n == 2 {\n\t\tfmt.Println(1)\n\t\treturn\n\t}\n\tif n == 3 {\n\t\tfmt.Println(2)\n\t\treturn\n\t}\n\n\tdp := make([]int, n+1)\n\tfmt.Println(calcular(0, n, dp))\n}\n",
+            "lines": "41"
+        }
+    ]
+}
