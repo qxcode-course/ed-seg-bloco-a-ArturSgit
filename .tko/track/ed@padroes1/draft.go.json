@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-21_22-16-48",
+            "content": "package main\nimport \n\nfunc main() {\n    var n int\n    _, err := f\n}\n",
+            "lines": "7"
+        }
+    ]
+}

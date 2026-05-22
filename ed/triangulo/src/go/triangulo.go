@@ -10,16 +10,16 @@ import (
 
 func processa(vet []int) {
 	if len(vet) < 1 {
-		return 
+		return
 	}
 	if len(vet) > 1 {
-		
-		aux := make([]int, len(vet) - 1)
 
-		for i := 0 ; i < len(vet) - 1 ; i++ {
+		aux := make([]int, len(vet)-1)
+
+		for i := 0; i < len(vet)-1; i++ {
 			aux[i] = vet[i] + vet[i+1]
-		} 
-			
+		}
+
 		processa(aux)
 	}
 

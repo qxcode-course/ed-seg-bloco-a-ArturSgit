@@ -16,10 +16,10 @@ expanded:
 - ed@rec
 flags:
   inbox: all
-  panel: graph
+  panel: skills
   show_panel: 'false'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@triangulo
-selected_index: 4
+selected: ed@diagonal
+selected_index: 16

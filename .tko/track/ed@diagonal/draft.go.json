@@ -1,0 +1,29 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-22_08-32-56",
+            "content": "@@ -293,30 +293,7 @@\n n%0A%09%7D\n-%0A%0A%09diagonal(palavra, 0)\n %0A%7D%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-05-22_08-33-12",
+            "content": "@@ -155,17 +155,17 @@\n Print(%22%25\n-s\n+c\n %5Cn%22, pal\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-22_08-33-39",
+            "content": "@@ -156,13 +156,12 @@\n rint\n-f\n (%22%25\n-c\n+s\n %5Cn%22,\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-22_08-34-46",
+            "content": "@@ -196,10 +196,8 @@\n  qtd\n-+1\n )%0A%7D%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-05-22_08-46-57",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc diagonal(pal string, qtd int) {\n\n\tif len(pal) == 0 {\n\t\treturn\n\t}\n\n\tfor i := 0; i < qtd; i++ {\n\n\t\tfmt.Print(\" \")\n\t}\n\n\tfmt.Printf(\"%c\\n\", pal[0])\n\tdiagonal(pal[1:], qtd+1)\n}\n\nfunc main() {\n\n\tvar palavra string\n\t_, err := fmt.Scan(&palavra)\n\tif err != nil {\n\t\treturn\n\t}\n\n\tdiagonal(palavra, 0)\n}\n",
+            "lines": "29"
+        }
+    ]
+}

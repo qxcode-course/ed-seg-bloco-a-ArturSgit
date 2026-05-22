@@ -1,0 +1,36 @@
+2026-05-22 08:08:04, MOVE, v:1, k:ed@diagonal, mode:PICK
+2026-05-22 08:08:11, MOVE, v:1, k:ed@padroes1, mode:EDIT
+2026-05-22 08:11:35, MOVE, v:1, k:ed@diagonal, mode:EDIT
+2026-05-22 08:17:11, MOVE, v:1, k:ed@diagonal, mode:EDIT
+2026-05-22 08:21:35, MOVE, v:1, k:ed@diagonal, mode:EDIT
+2026-05-22 08:26:04, MOVE, v:1, k:ed@diagonal, mode:EDIT
+2026-05-22 08:31:58, MOVE, v:1, k:ed@diagonal, mode:EDIT
+2026-05-22 08:32:56, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0, size:27
+2026-05-22 08:33:12, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0, size:29
+2026-05-22 08:33:39, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0, size:29
+2026-05-22 08:34:46, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0, size:29
+2026-05-22 08:34:59, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0
+2026-05-22 08:35:00, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0
+2026-05-22 08:35:03, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0
+2026-05-22 08:35:03, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0
+2026-05-22 08:35:04, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0
+2026-05-22 08:35:04, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0
+2026-05-22 08:35:04, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0
+2026-05-22 08:35:05, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0
+2026-05-22 08:35:05, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0
+2026-05-22 08:35:05, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0
+2026-05-22 08:35:06, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0
+2026-05-22 08:35:06, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0
+2026-05-22 08:35:06, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0
+2026-05-22 08:35:07, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0
+2026-05-22 08:35:09, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0
+2026-05-22 08:35:10, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0
+2026-05-22 08:35:10, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0
+2026-05-22 08:35:11, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0
+2026-05-22 08:36:43, MOVE, v:1, k:ed@diagonal, mode:EDIT
+2026-05-22 08:35:11, MOVE, v:1, k:ed@diagonal, mode:EDIT
+2026-05-22 08:41:25, MOVE, v:1, k:ed@diagonal, mode:EDIT
+2026-05-22 08:44:11, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0
+2026-05-22 08:44:12, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0
+2026-05-22 08:44:12, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0
+2026-05-22 08:46:57, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:100, size:29
