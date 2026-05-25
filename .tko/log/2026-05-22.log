@@ -34,3 +34,39 @@
 2026-05-22 08:44:12, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0
 2026-05-22 08:44:12, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:0
 2026-05-22 08:46:57, EXEC, v:1, k:ed@diagonal, mode:FULL, rate:100, size:29
+2026-05-22 08:46:56, MOVE, v:1, k:ed@diagonal, mode:EDIT
+2026-05-22 08:46:57, MOVE, v:1, k:ed@diagonal, mode:EDIT
+2026-05-22 08:47:40, MOVE, v:1, k:ed@diagonal, mode:BACK
+2026-05-22 08:47:56, SELF, v:1, k:ed@diagonal, self:1, rate:100, friend:40
+2026-05-22 08:49:14, MOVE, v:1, k:ed@sufixos, mode:DOWN
+2026-05-22 08:49:15, MOVE, v:1, k:ed@sufixos, mode:PICK
+2026-05-22 08:49:14, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-05-22 08:49:14, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-05-22 08:49:14, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-05-22 08:55:55, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-05-22 08:59:44, EXEC, v:1, k:ed@sufixos, mode:FULL, size:7, fail:COMP
+2026-05-22 08:59:45, EXEC, v:1, k:ed@sufixos, mode:FULL, fail:COMP
+2026-05-22 08:59:46, EXEC, v:1, k:ed@sufixos, mode:FULL, fail:COMP
+2026-05-22 09:02:18, EXEC, v:1, k:ed@sufixos, mode:FULL, size:9, fail:COMP
+2026-05-22 09:02:13, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-05-22 09:04:08, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:13
+2026-05-22 09:07:36, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:17
+2026-05-22 09:07:34, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-05-22 09:07:36, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-05-22 09:12:24, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-05-22 09:14:21, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-05-22 09:18:01, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:20
+2026-05-22 09:18:01, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-05-22 09:18:13, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-05-22 09:23:51, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:23
+2026-05-22 09:26:40, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-05-22 09:23:51, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-05-22 09:36:38, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-05-22 09:40:53, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-05-22 09:44:49, EXEC, v:1, k:ed@sufixos, mode:FULL, size:24, fail:COMP
+2026-05-22 09:45:52, MOVE, v:1, k:ed@sufixos, mode:EDIT
+2026-05-22 09:47:54, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:24
+2026-05-22 09:51:56, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:0, size:24
+2026-05-22 09:52:06, EXEC, v:1, k:ed@sufixos, mode:FULL, rate:100, size:26
+2026-05-22 09:52:37, MOVE, v:1, k:ed@sufixos, mode:BACK
+2026-05-22 09:52:55, SELF, v:1, k:ed@sufixos, self:1, rate:100, friend:65

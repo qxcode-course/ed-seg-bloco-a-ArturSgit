@@ -33,15 +33,15 @@ func (e *Editor) KeyLeft() {
 
 func (e *Editor) KeyEnter() {
 	newLine := NewList[rune]()
-	
+
 	for e.cursor != e.line.Value.End() {
 		val := e.cursor.Value
 		e.cursor = e.line.Value.Erase(e.cursor)
 		newLine.PushBack(val)
 	}
-	
+
 	e.lines.Insert(e.line.Next(), newLine)
-	
+
 	e.line = e.line.Next()
 	e.cursor = e.line.Value.Front()
 }
@@ -61,7 +61,7 @@ func (e *Editor) KeyRight() {
 func (e *Editor) KeyUp() {
 	if e.line != e.lines.Front() {
 		idx := e.line.Value.IndexOf(e.cursor)
-		
+
 		e.line = e.line.Prev()
 		e.cursor = e.line.Value.Front()
 		for i := 0; i < idx && e.cursor != e.line.Value.End(); i++ {
@@ -73,9 +73,9 @@ func (e *Editor) KeyUp() {
 func (e *Editor) KeyDown() {
 	if e.line != e.lines.Back() {
 		idx := e.line.Value.IndexOf(e.cursor)
-		
+
 		e.line = e.line.Next()
-		
+
 		e.cursor = e.line.Value.Front()
 		for i := 0; i < idx && e.cursor != e.line.Value.End(); i++ {
 			e.cursor = e.cursor.Next()
@@ -89,7 +89,7 @@ func (e *Editor) KeyBackspace() {
 		e.line.Value.Erase(prev)
 		return
 	}
-	
+
 	if e.line != e.lines.Front() {
 		prevLineNode := e.line.Prev()
 		prevLine := prevLineNode.Value
@@ -104,7 +104,7 @@ func (e *Editor) KeyBackspace() {
 			}
 			it = it.Next()
 		}
-		
+
 		if newCursor == nil {
 			newCursor = prevLine.End()
 		}
@@ -125,7 +125,7 @@ func (e *Editor) KeyDelete() {
 		nextLine := nextLineNode.Value
 
 		var firstInserted *Node[rune]
-		
+
 		it := nextLine.Front()
 		for it != nextLine.End() {
 			inserted := e.line.Value.Insert(e.line.Value.End(), it.Value)
@@ -134,13 +134,13 @@ func (e *Editor) KeyDelete() {
 			}
 			it = it.Next()
 		}
-		
+
 		if firstInserted != nil {
 			firstInserted = e.line.Value.End()
 		}
 		e.lines.Erase(nextLineNode)
 		e.cursor = firstInserted
-		}
+	}
 }
 
 func main() {

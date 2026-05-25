@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-22_08-59-44",
+            "content": "@@ -11,22 +11,8 @@\n in%0A%0A\n-import %22fmt%22%0A%0A\n func\n@@ -46,36 +46,17 @@\n ing%0A\n-%09\n+    \n _, err\n- := fmt.Scan(&palavra)\n %0A%7D%0A\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-05-22_09-02-18",
+            "content": "@@ -90,36 +90,6 @@\n ra)%0A\n-%09if err != nil %7B%0A%09%09return%0A%09%7D%0A%0A\n %7D%0A\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-05-22_09-04-08",
+            "content": "@@ -25,43 +25,8 @@\n t%22%0A%0A\n-func sufixos(palavra string) %7B%0A%0A%7D%0A%0A\n func\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-05-22_09-07-36",
+            "content": "@@ -57,44 +57,8 @@\n  %7B%0A%0A\n-%09if len(palavra) == 0 %7B%0A%09%09return%0A%09%7D%0A\n %7D%0A%0Af\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-05-22_09-18-01",
+            "content": "@@ -77,17 +77,16 @@\n  == 0 %7B%0A\n-%0A\n %09%09return\n@@ -92,31 +92,8 @@\n n%0A%09%7D\n-%0A%0A%09sufixos(palavra%5B1:%5D)\n %0A%7D%0A%0A\n",
+            "lines": "20"
+        },
+        {
+            "label": "2026-05-22_09-23-51",
+            "content": "@@ -117,29 +117,8 @@\n :%5D)%0A\n-%09fmt.Println(palavra%0A\n %7D%0A%0Af\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-22_09-44-49",
+            "content": "@@ -108,17 +108,17 @@\n palavra%5B\n-0\n+1\n :%5D)%0A%09fmt\n@@ -133,17 +133,16 @@\n (palavra\n-)\n %0A%7D%0A%0Afunc\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-22_09-47-54",
+            "content": "@@ -112,9 +112,9 @@\n vra%5B\n-1\n+0\n :%5D)%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-22_09-51-56",
+            "content": "@@ -237,25 +237,6 @@\n %09%7D%0A%0A\n-%09sufixos(palavra)%0A%0A\n %7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-22_09-52-06",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc sufixos(palavra string) {\n\n\tif len(palavra) == 0 {\n\n\t\treturn\n\t}\n\n\tsufixos(palavra[1:])\n\tfmt.Println(palavra)\n}\n\nfunc main() {\n\n\tvar palavra string\n\t_, err := fmt.Scan(&palavra)\n\tif err != nil {\n\t\treturn\n\t}\n\n\tsufixos(palavra)\n\n}\n",
+            "lines": "26"
+        }
+    ]
+}
