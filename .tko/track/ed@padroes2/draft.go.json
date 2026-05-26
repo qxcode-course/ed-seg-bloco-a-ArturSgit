@@ -1,0 +1,74 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-26_08-57-08",
+            "content": "@@ -81,17 +81,20 @@\n n 3%0A%09%7D%0A%0A\n-%09\n+    \n return p\n@@ -105,20 +105,17 @@\n es(n\n--\n+ - \n 1) + (\n-2 * n\n )%0A%7D%0A\n@@ -196,31 +196,36 @@\n %0A%09%7D%0A\n-%0A%09totpecas := padroes(n\n+%09fmt.Println(%22Hello, World!%22\n )%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-05-26_09-03-29",
+            "content": "@@ -221,29 +221,6 @@\n (n)%0A\n-%09fmt.Println(totpecas)%0A\n %7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-26_09-09-49",
+            "content": "@@ -110,14 +110,12 @@\n + (2\n-*n + 2\n+ * n\n )%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-26_09-10-15",
+            "content": "@@ -111,17 +111,17 @@\n  (2*n + \n-n\n+2\n )%0A%7D%0Afunc\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-26_09-11-49",
+            "content": "@@ -98,16 +98,18 @@\n adroes(n\n+-1\n ) + (2*n\n@@ -111,17 +111,17 @@\n  (2*n + \n-1\n+n\n )%0A%7D%0Afunc\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-26_09-14-57",
+            "content": "@@ -102,10 +102,8 @@\n es(n\n--1\n ) + \n@@ -109,17 +109,17 @@\n  (2*n + \n-3\n+1\n )%0A%7D%0Afunc\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-26_09-15-35",
+            "content": "@@ -111,17 +111,17 @@\n  (2*n + \n-2\n+3\n )%0A%7D%0Afunc\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-26_09-18-20",
+            "content": "@@ -109,13 +109,15 @@\n  + (\n+2*\n n + \n-1\n+2\n )%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-26_09-21-08",
+            "content": "@@ -109,10 +109,8 @@\n  + (\n-3*\n n + \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-26_09-23-50",
+            "content": "@@ -109,13 +109,15 @@\n  + (\n+3*\n n + \n-2\n+1\n )%0A%7D%0A\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-26_09-26-44",
+            "content": "@@ -109,17 +109,17 @@\n  + (n + \n-3\n+2\n )%0A%7D%0Afunc\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-26_09-26-53",
+            "content": "@@ -109,17 +109,17 @@\n  + (n + \n-1\n+3\n )%0A%7D%0Afunc\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-26_09-29-42",
+            "content": "@@ -109,10 +109,8 @@\n  + (\n-2*\n n + \n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-05-26_09-32-43",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n)\n\nfunc padroes(n int) int {\n\n\tif n == 1 {\n\t\treturn 3\n\t}\n\n\treturn padroes(n-1) + (2*n + 1)\n}\nfunc main() {\n\tvar n int\n\t_, err := fmt.Scan(&n)\n\tif err != nil {\n\t\treturn\n\t}\n\n\ttotpecas := padroes(n)\n\tfmt.Println(totpecas)\n}\n",
+            "lines": "24"
+        }
+    ]
+}

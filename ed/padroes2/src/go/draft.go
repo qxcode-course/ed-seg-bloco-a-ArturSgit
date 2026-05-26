@@ -1,5 +1,24 @@
 package main
-import "fmt"
+
+import (
+	"fmt"
+)
+
+func padroes(n int) int {
+
+	if n == 1 {
+		return 3
+	}
+
+	return padroes(n-1) + (2*n + 1)
+}
 func main() {
-    fmt.Println("Hello, World!")
+	var n int
+	_, err := fmt.Scan(&n)
+	if err != nil {
+		return
+	}
+
+	totpecas := padroes(n)
+	fmt.Println(totpecas)
 }
