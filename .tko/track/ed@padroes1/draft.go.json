@@ -2,8 +2,18 @@
     "patches": [
         {
             "label": "2026-05-21_22-16-48",
-            "content": "package main\nimport \n\nfunc main() {\n    var n int\n    _, err := f\n}\n",
+            "content": "@@ -6,8 +6,63 @@\n ge main%0A\n+import %0A%0Afunc main() %7B%0A    var n int%0A    _, err := f%0A%7D%0A\n",
             "lines": "7"
+        },
+        {
+            "label": "2026-05-26_08-16-33",
+            "content": "@@ -10,180 +10,4 @@\n ain%0A\n-%0Aimport %22fmt%22%0A%0Afunc numeroBlocos(n int) int %7B%0A%09return 8*n + 12%0A%7D%0Afunc main() %7B%0A%09var n int%0A%09_, err := fmt.Scan(&n)%0A%09if err != nil %7B%0A%09%09return%0A%09%7D%0A%0A%09fmt.Println(numeroBlocos(n))%0A%7D%0A\n",
+            "lines": "1"
+        },
+        {
+            "label": "2026-05-26_08-28-39",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc numeroBlocos(n int) int {\n\treturn 8*n + 12\n}\nfunc main() {\n\tvar n int\n\t_, err := fmt.Scan(&n)\n\tif err != nil {\n\t\treturn\n\t}\n\n\tfmt.Println(numeroBlocos(n))\n}\n",
+            "lines": "16"
         }
     ]
 }

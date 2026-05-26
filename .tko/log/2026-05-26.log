@@ -1,0 +1,13 @@
+2026-05-26 08:14:45, MOVE, v:1, k:ed@padroes1, mode:PICK
+2026-05-26 08:15:53, MOVE, v:1, k:ed@padroes1, mode:PICK
+2026-05-26 08:16:33, EXEC, v:1, k:ed@padroes1, mode:FULL, size:1, fail:COMP
+2026-05-26 08:19:29, MOVE, v:1, k:ed@padroes1, mode:EDIT
+2026-05-26 08:24:52, MOVE, v:1, k:ed@padroes1, mode:EDIT
+2026-05-26 08:28:39, EXEC, v:1, k:ed@padroes1, mode:FULL, rate:100, size:16
+2026-05-26 08:29:03, MOVE, v:1, k:ed@padroes1, mode:BACK
+2026-05-26 08:29:24, SELF, v:1, k:ed@padroes1, self:1, rate:100, study:40
+2026-05-26 08:29:36, MOVE, v:1, k:ed@padroes2, mode:DOWN
+2026-05-26 08:29:38, MOVE, v:1, k:ed@padroes2, mode:PICK
+2026-05-26 08:29:36, MOVE, v:1, k:ed@padroes2, mode:EDIT
+2026-05-26 08:29:36, MOVE, v:1, k:ed@padroes2, mode:EDIT
+2026-05-26 08:29:36, MOVE, v:1, k:ed@padroes2, mode:EDIT
