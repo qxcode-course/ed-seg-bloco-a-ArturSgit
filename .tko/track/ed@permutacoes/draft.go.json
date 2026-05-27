@@ -1,0 +1,139 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-26_10-11-53",
+            "content": "@@ -11,147 +11,41 @@\n in%0A%0A\n-import (%0A    %22fmt%22%0A    %22sort%22%0A    %22strings%22%0A%0Afunc main() %7B%0A%0A%09var entrada string%0A%0A%09if _, err := fmt.Scan(&entrada); err != nil %7B%0A%09%09return%0A%09%7D%0A\n+func main() %7B%0A%0A%09var entrada string\n %0A%7D%0A\n",
+            "lines": "6"
+        },
+        {
+            "label": "2026-05-26_10-24-04",
+            "content": "@@ -20,16 +20,42 @@\n t (%0A\n-%09\n+    \n %22fmt%22%0A\n-)\n+    %22sort%22%0A    %22strings%22\n %0A%0Afu\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-05-26_10-24-14",
+            "content": "@@ -27,27 +27,8 @@\n mt%22%0A\n-%09%22sort%22%0A%09%22strings%22%0A\n )%0A%0Af\n@@ -126,128 +126,6 @@\n %09%7D%0A%0A\n-%09caracteres := strings.Split(entrada, %22%22)%0A%09sort.Strings(caracteres)%0A%0A%09atual := make(%5B%5Dstring, 0, len(caracteres))%0A%09usado%0A%0A\n %7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-05-26_10-53-09",
+            "content": "@@ -265,200 +265,8 @@\n sado\n- := make(%5B%5Dbool, len(caracteres))%0A%0A%09var backtrack func()%0A%09backtrack = func() %7B%0A        if len(atual) == len(caracteres) %7B%0A            fmt.Println(strings.Join(atual, %22%22))%0A            return%0A%09%7D\n %0A%0A%7D%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-05-27_08-10-20",
+            "content": "@@ -459,19 +459,6 @@\n %09%7D%0A%0A\n-%09for i := 0%0A%0A\n %7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-05-27_08-15-45",
+            "content": "@@ -470,15 +470,8 @@\n := 0\n- ; i %3C \n %0A%0A%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-27_08-18-27",
+            "content": "@@ -477,13 +477,8 @@\n i %3C \n-len()\n %0A%0A%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-27_08-21-05",
+            "content": "@@ -477,23 +477,13 @@\n i %3C len(\n-caracteres\n )%0A%0A%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-27_08-23-55",
+            "content": "@@ -488,16 +488,12 @@\n acteres)\n- ; i\n %0A%0A%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-27_08-26-34",
+            "content": "@@ -496,18 +496,8 @@\n  ; i\n-++ %7B%0A%09%09%0A%09%7D\n %0A%0A%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-05-27_08-29-17",
+            "content": "@@ -503,16 +503,8 @@\n %7B%0A%09%09\n-if usado\n %0A%09%7D%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-27_08-36-59",
+            "content": "@@ -511,21 +511,8 @@\n sado\n-%5Bi%5D %7B%0A%09%09%09%0A%09%09%7D\n %0A%09%7D%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-05-27_08-44-08",
+            "content": "@@ -520,17 +520,8 @@\n %0A%09%09%09\n-continue \n %0A%09%09%7D\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-27_08-48-07",
+            "content": "@@ -501,11 +501,8 @@\n + %7B%0A\n-%09%09%0A\n %09%09if\n@@ -528,27 +528,13 @@\n inue\n+ \n %0A%09%09%7D\n-%0A%0A%09%09usado%5Bi%5D = \n %0A%09%7D%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-05-27_08-58-31",
+            "content": "@@ -550,51 +550,8 @@\n %5D = \n-true%0A%09%09atual = append(atual, caracteres%5Bi%5D)\n %0A%09%7D%0A\n",
+            "lines": "39"
+        },
+        {
+            "label": "2026-05-27_09-11-48",
+            "content": "@@ -594,22 +594,8 @@\n i%5D)%0A\n-%09%09backtrack()%0A\n %09%7D%0A%0A\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-05-27_09-14-40",
+            "content": "@@ -592,15 +592,26 @@\n s%5Bi%5D)%0A%09%09\n+backtrack()\n %0A%09%7D%0A%0A%7D%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-27_09-16-53",
+            "content": "@@ -597,25 +597,8 @@\n %0A%09%09%0A\n-%09%09atual = atual %0A\n %09%7D%0A%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-27_09-25-23",
+            "content": "@@ -612,38 +612,9 @@\n tual\n-%5B:len(atual)-1%5D%0A%09%09usado%5Bi%5D = f\n+ \n %0A%09%7D%0A\n",
+            "lines": "42"
+        },
+        {
+            "label": "2026-05-27_10-08-17",
+            "content": "@@ -642,11 +642,8 @@\n  = f\n-als\n %0A%09%7D%0A\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-05-27_10-28-08",
+            "content": "@@ -645,21 +645,11 @@\n fals\n-e\n %0A%09%7D\n-%0A%09backtra\n %0A%0A%7D%0A\n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-05-27_10-43-29",
+            "content": "@@ -340,18 +340,24 @@\n unc() %7B%0A\n-%09%09\n+        \n if len(a\n@@ -383,19 +383,28 @@\n eres) %7B%0A\n-%09%09%09\n+            \n fmt.Prin\n@@ -436,22 +436,27 @@\n %22))%0A\n-%09%09%09\n+            \n return%0A\n-%09%09%7D%0A\n %09%7D%0A%0A\n@@ -466,16 +466,17 @@\n r i := 0\n+ \n ; i %3C le\n@@ -492,16 +492,17 @@\n res)\n+ \n ; i++ %7B%0A\n %0A%09%09i\n@@ -497,16 +497,18 @@\n ; i++ %7B%0A\n+%09%09\n %0A%09%09if us\n@@ -590,16 +590,18 @@\n res%5Bi%5D)%0A\n+%09%09\n %0A%09%09atual\n@@ -658,12 +658,8 @@\n ktra\n-ck()\n %0A%0A%7D%0A\n",
+            "lines": "44"
+        },
+        {
+            "label": "2026-05-27_11-16-01",
+            "content": "@@ -571,15 +571,8 @@\n %5D)%0A%0A\n-%09%09back%0A\n %09%09at\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-05-27_11-18-38",
+            "content": "@@ -573,20 +573,16 @@\n %0A%0A%09%09back\n-trac\n %0A%09%09atual\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-27_11-25-00",
+            "content": "@@ -577,19 +577,16 @@\n backtrac\n-k()\n %0A%09%09atual\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-27_11-27-17",
+            "content": "@@ -432,16 +432,19 @@\n rn%0A%09%09%7D%0A%09\n+%7D%0A%0A\n %09for i :\n@@ -478,17 +478,16 @@\n ++ %7B%0A%0A%09%09\n-%09\n if usado\n@@ -492,17 +492,16 @@\n do%5Bi%5D %7B%0A\n-%09\n %09%09%09conti\n@@ -506,21 +506,19 @@\n tinue%0A%09%09\n-%09\n %7D%0A%0A\n-%09\n %09%09usado%5B\n@@ -529,17 +529,16 @@\n  true%0A%09%09\n-%09\n atual = \n@@ -569,17 +569,16 @@\n %5Bi%5D)%0A%0A%09%09\n-%09\n backtrac\n@@ -581,17 +581,16 @@\n track()%0A\n-%09\n %09%09atual \n@@ -614,17 +614,16 @@\n l)-1%5D%0A%09%09\n-%09\n usado%5Bi%5D\n@@ -632,22 +632,17 @@\n  false%0A%09\n-%09%7D%0A%09%7D%0A\n+%7D\n %0A%09backtr\n",
+            "lines": "46"
+        },
+        {
+            "label": "2026-05-27_11-33-41",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"sort\"\n\t\"strings\"\n)\n\nfunc main() {\n\n\tvar entrada string\n\n\tif _, err := fmt.Scan(&entrada); err != nil {\n\t\treturn\n\t}\n\n\tcaracteres := strings.Split(entrada, \"\")\n\tsort.Strings(caracteres)\n\n\tatual := make([]string, 0, len(caracteres))\n\tusado := make([]bool, len(caracteres))\n\n\tvar backtrack func()\n\tbacktrack = func() {\n\t\tif len(atual) == len(caracteres) {\n\t\t\tfmt.Println(strings.Join(atual, \"\"))\n\t\t\treturn\n\t\t}\n\t\tfor i := 0; i < len(caracteres); i++ {\n\n\t\t\tif usado[i] {\n\t\t\t\tcontinue\n\t\t\t}\n\n\t\t\tusado[i] = true\n\t\t\tatual = append(atual, caracteres[i])\n\n\t\t\tbacktrack()\n\t\t\tatual = atual[:len(atual)-1]\n\t\t\tusado[i] = false\n\t\t}\n\t}\n\n\tbacktrack()\n\n}\n",
+            "lines": "46"
+        }
+    ]
+}
