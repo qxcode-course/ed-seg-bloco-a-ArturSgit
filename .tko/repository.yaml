@@ -13,7 +13,7 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@backtrack
+- ed@vector
 flags:
   inbox: all
   panel: skills
@@ -21,5 +21,5 @@ flags:
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@permutacoes
-selected_index: 7
+selected: ed@vetbuild
+selected_index: 5
