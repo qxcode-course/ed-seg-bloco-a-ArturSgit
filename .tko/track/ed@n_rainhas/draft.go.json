@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-05-29_08-26-52",
+            "content": "@@ -42,272 +42,8 @@\n %0A)%0A%0A\n-func solveNQueens(n int) int %7B%0A%09cols := make(%5B%5Dbool, n)%0A%09diagPrincipal := make(%5B%5Dbool, 2*n-1)%0A%09diagSecundaria := make(%5B%5Dbool, 2*n-1)%0A%0A%09solucoes := 0%0A%0A%09var backtrack func(linha int)%0A%09backtrack = func(linha int) %7B%0A%09%09if linha == n %7B%0A%09%09%09solucoes++%0A%09%09%09return%0A%09%09%7D%0A%09%7D%0A%7D%0A%0A\n func\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-05-29_09-24-58",
+            "content": "@@ -299,118 +299,8 @@\n %0A%09%09%7D\n-%0A%0A%09%09for col := 0; col %3C n; col++ %7B%0A%0A%09%09%09idPrincipal := linha - col + (n - 1)%0A%09%09%09idSecundaria := linha + col%0A%09%09%7D\n %0A%09%7D%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-05-31_09-50-12",
+            "content": "@@ -406,367 +406,14 @@\n col%0A\n-%0A%09%09%09if cols%5Bcol%5D %7C%7C diagPrincipal%5BidPrincipal%5D %7C%7C diagSecundaria%5BidSecundaria%5D %7B%0A%09%09%09%09continue%0A%09%09%09%7D%0A%0A%09%09%09cols%5Bcol%5D = true%0A%09%09%09diagPrincipal%5BidPrincipal%5D = true%0A%09%09%09diagSecundaria%5BidSecundaria%5D = true%0A%0A%09%09%09backtrack(linha + 1)%0A%0A%09%09%09cols%5Bcol%5D = false%0A%09%09%09diagPrincipal%5BidPrincipal%5D = false%0A%09%09%09diagSecundaria%5BidSecundaria%5D = false%0A%09%09%7D%0A%09%7D%0A%0A%09backtrack(0)%0A%09return solucoes\n+%09%09%7D%0A%09%7D\n %0A%7D%0A%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-05-31_09-51-08",
+            "content": "@@ -365,16 +365,20 @@\n col + (n\n+ - 1\n )%0A%09%09%09idS\n@@ -922,62 +922,8 @@\n n%0A%09%7D\n-%0A%09resultado := solveNQueens(n)%0A%09fmt.Println(resultado)\n %0A%0A%7D%0A\n",
+            "lines": "58"
+        },
+        {
+            "label": "2026-05-31_09-51-58",
+            "content": "@@ -369,12 +369,8 @@\n + (n\n- - 1\n )%0A%09%09\n@@ -613,16 +613,20 @@\n ck(linha\n+ + 1\n )%0A%0A%09%09%09co\n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-05-31_09-52-21",
+            "content": "@@ -621,12 +621,8 @@\n inha\n- + 2\n )%0A%0A%09\n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-05-31_09-52-35",
+            "content": "@@ -620,17 +620,17 @@\n linha + \n-1\n+2\n )%0A%0A%09%09%09co\n",
+            "lines": "60"
+        },
+        {
+            "label": "2026-05-31_09-52-41",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"io\"\n\t\"os\"\n)\n\nfunc solveNQueens(n int) int {\n\tcols := make([]bool, n)\n\tdiagPrincipal := make([]bool, 2*n-1)\n\tdiagSecundaria := make([]bool, 2*n-1)\n\n\tsolucoes := 0\n\n\tvar backtrack func(linha int)\n\tbacktrack = func(linha int) {\n\t\tif linha == n {\n\t\t\tsolucoes++\n\t\t\treturn\n\t\t}\n\n\t\tfor col := 0; col < n; col++ {\n\n\t\t\tidPrincipal := linha - col + (n - 1)\n\t\t\tidSecundaria := linha + col\n\n\t\t\tif cols[col] || diagPrincipal[idPrincipal] || diagSecundaria[idSecundaria] {\n\t\t\t\tcontinue\n\t\t\t}\n\n\t\t\tcols[col] = true\n\t\t\tdiagPrincipal[idPrincipal] = true\n\t\t\tdiagSecundaria[idSecundaria] = true\n\n\t\t\tbacktrack(linha + 1)\n\n\t\t\tcols[col] = false\n\t\t\tdiagPrincipal[idPrincipal] = false\n\t\t\tdiagSecundaria[idSecundaria] = false\n\t\t}\n\t}\n\n\tbacktrack(0)\n\treturn solucoes\n}\n\nfunc main() {\n\n\tvar n int\n\n\t_, err := fmt.Scan(&n)\n\tif err != nil && err != io.EOF {\n\t\tfmt.Fprintln(os.Stderr, \"Erro ao ler a entrada:\", err)\n\t\treturn\n\t}\n\tresultado := solveNQueens(n)\n\tfmt.Println(resultado)\n\n}\n",
+            "lines": "60"
+        }
+    ]
+}

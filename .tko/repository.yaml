@@ -13,13 +13,13 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@vector
+- ed@backtrack
 flags:
   inbox: all
-  panel: skills
+  panel: graph
   show_panel: 'false'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@vetbuild
-selected_index: 5
+selected: ed@n_rainhas
+selected_index: 9
