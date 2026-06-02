@@ -1,0 +1,164 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_10-01-55",
+            "content": "@@ -39,24 +39,8 @@\n ) %7B%0A\n-%0A%09var n, k int%0A%0A\n %09fmt\n",
+            "lines": "7"
+        },
+        {
+            "label": "2026-06-01_10-02-24",
+            "content": "@@ -55,17 +55,8 @@\n nt%0A%0A\n-    if %0A%0A\n %09fmt\n",
+            "lines": "10"
+        },
+        {
+            "label": "2026-06-01_10-07-54",
+            "content": "@@ -62,26 +62,8 @@\n  if \n-_, err := fmt.Scan\n %0A%0A%09f\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-01_10-16-18",
+            "content": "@@ -80,17 +80,8 @@\n Scan\n-(&n, &k);\n %0A%0A%09f\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-01_10-22-00",
+            "content": "@@ -51,17 +51,20 @@\n  k int%0A%0A\n-%09\n+    \n if _, er\n@@ -89,25 +89,8 @@\n &k);\n- err != nil %7B%0A%0A%09%7D\n %0A%0A%09f\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-01_10-26-22",
+            "content": "@@ -100,19 +100,41 @@\n l %7B%0A\n-%09%09return%0A%09%7D%0A\n+%0A%09%7D%0A%0A%09fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-01_10-30-22",
+            "content": "@@ -113,30 +113,6 @@\n %09%7D%0A%0A\n-%09arr := make(%5B%5Dint, n)%0A%0A\n %7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-01_10-33-16",
+            "content": "@@ -135,36 +135,8 @@\n , n)\n-%0A    for i := 0; i %3C n; i++ \n %0A%0A%7D%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-06-01_10-41-36",
+            "content": "@@ -163,26 +163,8 @@\n i++ \n-%7B%0A        %0A    %7D%60%7D\n %0A%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-01_10-51-13",
+            "content": "@@ -132,17 +132,20 @@\n int, n)%0A\n-%09\n+    \n for i :=\n@@ -165,29 +165,23 @@\n + %7B%0A\n-%09%09fmt.Scan(&arr%5Bi%5D)%0A%09\n+        %0A    %7D%60\n %7D%0A%0A%7D\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-01_10-53-42",
+            "content": "@@ -186,35 +186,6 @@\n %09%7D%0A%0A\n-%09if subsetSum(arr, k) %7B%0A%0A%09%7D%0A%0A\n %7D%0A\n",
+            "lines": "18"
+        },
+        {
+            "label": "2026-06-01_10-58-24",
+            "content": "@@ -205,43 +205,13 @@\n rr, \n-n, k, 0, 0) %7B%0A%09%09fmt.Println(%22true%22)\n+k) %7B%0A\n %0A%09%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-01_11-02-59",
+            "content": "@@ -25,91 +25,8 @@\n t%22%0A%0A\n-func subsetSum(arr %5B%5Dint, n int, target int, index int, currentSum int) bool %7B%0A%0A%7D%0A%0A\n func\n@@ -243,41 +243,8 @@\n )%0A%09%7D\n- else %7B%0A%09%09fmt.Println(%22false%22)%0A%09%7D\n %0A%0A%7D%0A\n",
+            "lines": "22"
+        },
+        {
+            "label": "2026-06-01_11-32-13",
+            "content": "@@ -104,15 +104,8 @@\n l %7B%0A\n-    if \n %0A%7D%0A%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-01_11-35-08",
+            "content": "@@ -107,18 +107,16 @@\n %0A    if \n-cu\n %0A%7D%0A%0Afunc\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-01_11-38-00",
+            "content": "@@ -109,17 +109,16 @@\n    if cu\n-r\n %0A%7D%0A%0Afunc\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-01_11-39-33",
+            "content": "@@ -110,17 +110,16 @@\n   if cur\n-r\n %0A%7D%0A%0Afunc\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-01_11-39-51",
+            "content": "@@ -111,22 +111,16 @@\n  if curr\n-entSum\n %0A%7D%0A%0Afunc\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-01_11-43-40",
+            "content": "@@ -121,11 +121,8 @@\n tSum\n- ==\n %0A%7D%0A%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-01_11-46-50",
+            "content": "@@ -100,17 +100,20 @@\n  bool %7B%0A\n-%09\n+    \n if curre\n@@ -124,21 +124,8 @@\n m ==\n- target %7B%0A%0A%09%7D\n %0A%7D%0A%0A\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-01_11-50-42",
+            "content": "@@ -127,24 +127,16 @@\n arget %7B%0A\n-%09%09return\n %0A%09%7D%0A%7D%0A%0Af\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-01_21-41-52",
+            "content": "@@ -139,13 +139,8 @@\n turn\n- true\n %0A%09%7D%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-01_21-45-36",
+            "content": "@@ -144,17 +144,16 @@\n true%0A%09%7D%0A\n-%0A\n %7D%0A%0Afunc \n",
+            "lines": "30"
+        },
+        {
+            "label": "2026-06-01_21-46-41",
+            "content": "@@ -149,13 +149,8 @@\n %09%7D%0A%0A\n-%09if %0A\n %7D%0A%0Af\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-01_21-49-27",
+            "content": "@@ -149,26 +149,16 @@\n %09%7D%0A%0A%09if \n-currentSum\n %0A%7D%0A%0Afunc\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-01_21-52-11",
+            "content": "@@ -163,10 +163,8 @@\n tSum\n- %3E\n %0A%7D%0A%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-01_21-55-55",
+            "content": "@@ -165,31 +165,8 @@\n um %3E\n- target %7C%7C index %3E= n %7B\n %0A%7D%0A%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-01_21-58-35",
+            "content": "@@ -188,12 +188,8 @@\n  n %7B\n-%0A%0A%09%7D\n %0A%7D%0A%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-01_21-59-46",
+            "content": "@@ -189,22 +189,8 @@\n n %7B%0A\n-%09%09return false\n %0A%09%7D%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-01_22-02-28",
+            "content": "@@ -206,158 +206,8 @@\n e%0A%09%7D\n-%0A%0A%09if subsetSum(arr, n, target, index+1, currentSum+arr%5Bindex%5D) %7B%0A%09%09return true%0A%09%7D%0A%09if subsetSum(arr, n, target, index+1, currentSum) %7B%0A%0A%09return false\n %0A%7D%0A%0A\n",
+            "lines": "34"
+        },
+        {
+            "label": "2026-06-01_22-06-41",
+            "content": "@@ -337,33 +337,16 @@\n ntSum) %7B\n-%0A%09%09return true%0A%09%7D\n %0A%0A%09retur\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-01_22-06-57",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc subsetSum(arr []int, n int, target int, index int, currentSum int) bool {\n\tif currentSum == target {\n\t\treturn true\n\t}\n\n\tif currentSum > target || index >= n {\n\t\treturn false\n\t}\n\n\tif subsetSum(arr, n, target, index+1, currentSum+arr[index]) {\n\t\treturn true\n\t}\n\tif subsetSum(arr, n, target, index+1, currentSum) {\n\t\treturn true\n\t}\n\n\treturn false\n}\n\nfunc main() {\n\n\tvar n, k int\n\n\tif _, err := fmt.Scan(&n, &k); err != nil {\n\t\treturn\n\t}\n\n\tarr := make([]int, n)\n\tfor i := 0; i < n; i++ {\n\t\tfmt.Scan(&arr[i])\n\t}\n\n\tif subsetSum(arr, n, k, 0, 0) {\n\t\tfmt.Println(\"true\")\n\t} else {\n\t\tfmt.Println(\"false\")\n\t}\n\n}\n",
+            "lines": "43"
+        }
+    ]
+}

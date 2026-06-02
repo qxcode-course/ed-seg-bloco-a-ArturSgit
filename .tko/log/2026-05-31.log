@@ -126,3 +126,4 @@
 2026-05-31 18:14:09, MOVE, v:1, k:ed@wordsearch, mode:EDIT
 2026-05-31 18:17:28, EXEC, v:1, k:ed@wordsearch, mode:FULL, rate:100, size:105
 2026-05-31 18:17:32, MOVE, v:1, k:ed@wordsearch, mode:BACK
+2026-05-31 18:18:51, SELF, v:1, k:ed@wordsearch, self:1, rate:100, study:190
