@@ -1,0 +1,229 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-01_22-13-50",
+            "content": "@@ -59,19 +59,8 @@\n ing%0A\n-%09var L int%0A\n %09fmt\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-06-01_22-17-31",
+            "content": "@@ -69,39 +69,8 @@\n  int\n-%0A%0A%09_, err := fmt.Scan(&entrada)\n %0A%09fm\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-06-01_22-27-50",
+            "content": "@@ -102,15 +102,35 @@\n a)%0A%09\n-if err%0A%09\n+fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-06-02_08-06-07",
+            "content": "@@ -108,11 +108,8 @@\n  err\n- !=\n %0A%09%0A%7D\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-02_08-08-51",
+            "content": "@@ -111,26 +111,9 @@\n r !=\n- nil %7B%0A%09%09return%0A%09%7D\n %0A\n+%09\n %0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-02_08-11-36",
+            "content": "@@ -131,16 +131,6 @@\n %09%7D%0A%0A\n-%09_, err %0A%0A\n %7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-02_08-13-13",
+            "content": "@@ -139,22 +139,8 @@\n err \n-= fmt.Scan(&L)\n %0A%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-02_08-13-48",
+            "content": "@@ -149,17 +149,12 @@\n Scan(&L)\n-%0A%09if \n %0A%0A%7D%0A\n",
+            "lines": "16"
+        },
+        {
+            "label": "2026-06-02_08-16-44",
+            "content": "@@ -154,18 +154,12 @@\n &L)%0A%09if \n-err !=\n %0A%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-02_08-19-11",
+            "content": "@@ -160,30 +160,12 @@\n f err !=\n- nil %7B%0A%09%09return%0A%09%7D\n %0A%0A%7D%0A\n",
+            "lines": "17"
+        },
+        {
+            "label": "2026-06-02_08-23-32",
+            "content": "@@ -25,33 +25,8 @@\n t%22%0A%0A\n-func valido(seq %5B%5Drune)%0A%0A\n func\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-02_08-28-15",
+            "content": "@@ -47,19 +47,8 @@\n rune\n-, index int\n )%0A%0Af\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-02_08-31-14",
+            "content": "@@ -55,17 +55,8 @@\n dex \n-int, num \n int)\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-02_08-32-40",
+            "content": "@@ -67,26 +67,9 @@\n  int\n-, L int) bool %7B%0A%0A%7D\n+)\n %0A%0Afu\n",
+            "lines": "21"
+        },
+        {
+            "label": "2026-06-02_08-39-16",
+            "content": "@@ -83,20 +83,8 @@\n l %7B%0A\n-%09charNum := \n %0A%7D%0A%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-02_08-40-52",
+            "content": "@@ -95,23 +95,8 @@\n  := \n-rune('0' + num)\n %0A%7D%0A%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-02_08-46-04",
+            "content": "@@ -110,25 +110,8 @@\n num)\n-%0A%0A%09inicioEsquerda\n %0A%7D%0A%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2026-06-02_08-48-56",
+            "content": "@@ -127,13 +127,8 @@\n erda\n- := %0A\n %0A%7D%0A%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-06-02_08-50-09",
+            "content": "@@ -131,17 +131,8 @@\n  := \n-index - L\n %0A%0A%7D%0A\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-02_08-52-03",
+            "content": "@@ -142,21 +142,8 @@\n  L%0A%0A\n-%09return true%0A\n %7D%0A%0Af\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-02_08-52-16",
+            "content": "@@ -136,20 +136,16 @@\n ndex - L\n-%0A%09if\n %0A%0A%09retur\n",
+            "lines": "27"
+        },
+        {
+            "label": "2026-06-02_08-53-34",
+            "content": "@@ -144,39 +144,8 @@\n %0A%09if\n- inicioEsquerda %3C 0 %7B%0A%09%09%0A%09%7D%0A%0A%09%5D\n %0A%0A%09r\n",
+            "lines": "28"
+        },
+        {
+            "label": "2026-06-02_08-59-16",
+            "content": "@@ -168,25 +168,8 @@\n %7B%0A%09%09\n-iniciEsquerda = 0\n %0A%09%7D%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-02_09-01-49",
+            "content": "@@ -190,58 +190,8 @@\n %09%7D%0A%0A\n-%09for i := inicioEsquerda; i %3C index; i++ %7B%0A%09%09%0A%09%7D%0A%0A\n %09%5D%0A%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-06-02_09-08-16",
+            "content": "@@ -235,50 +235,8 @@\n %7B%0A%09%09\n-if seq%5Bi%5D == charNum %7B%0A%09%09%09return false%0A%09%09%7D\n %0A%09%7D%0A\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-06-02_09-11-06",
+            "content": "@@ -282,34 +282,8 @@\n %09%7D%0A%0A\n-%09fimDireita := index + L%0A%0A\n %09%5D%0A%0A\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-06-02_09-13-53",
+            "content": "@@ -306,68 +306,8 @@\n  + L\n-%0A%09if fimDireita %3E= len(seq) %7B%0A%09%09fimDireita = len(seq) - 1%0A%09%7D\n %0A%0A%09%5D\n",
+            "lines": "40"
+        },
+        {
+            "label": "2026-06-02_09-15-47",
+            "content": "@@ -364,16 +364,20 @@\n - 1%0A%09%7D%0A%0A\n+%09%5D%0A%0A\n %09return \n",
+            "lines": "43"
+        },
+        {
+            "label": "2026-06-02_09-15-59",
+            "content": "@@ -165,25 +165,24 @@\n  0 %7B%0A%09%09inici\n-o\n Esquerda = 0\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-02_09-16-14",
+            "content": "@@ -369,101 +369,8 @@\n %09%7D%0A%0A\n-%09for i := index + 1; i %3C= fimDireita; i++ %7B%0A%09%09if seq%5Bi%5D == charNum %7B%0A%09%09%09return false%0A%09%09%7D%0A%09%7D%0A%0A\n %09ret\n@@ -544,36 +544,6 @@\n %09%7D%0A%0A\n-%09seqRunes := %5B%5Drune(entrada)%0A%0A\n %7D%0A\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-02_09-18-30",
+            "content": "@@ -478,25 +478,8 @@\n %0A%7D%0A%0A\n-func resolver()%0A%0A\n func\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-06-02_09-21-33",
+            "content": "@@ -492,57 +492,9 @@\n ver(\n-seq %5B%5Drune, index int, L int) (string, bool) %7B%0A%0A%7D\n+)\n %0A%0Afu\n",
+            "lines": "51"
+        },
+        {
+            "label": "2026-06-02_09-24-41",
+            "content": "@@ -540,36 +540,8 @@\n  %7B%0A%0A\n-%09if index == len(seq) %7B%0A%0A%09%7D%0A\n %7D%0A%0Af\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-06-02_09-30-21",
+            "content": "@@ -564,34 +564,8 @@\n ) %7B%0A\n-%09%09return string(seq), true\n %0A%09%7D%0A\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-06-02_09-33-01",
+            "content": "@@ -594,72 +594,8 @@\n %0A%09%7D%0A\n-%0A%09if seq%5Bindex%5D != '.' %7B%0A%09%09return resolver(seq, index+1, L)%0A%09%7D%0A%0A\n %7D%0A%0Af\n",
+            "lines": "56"
+        },
+        {
+            "label": "2026-06-02_09-36-00",
+            "content": "@@ -658,27 +658,8 @@\n %09%7D%0A%0A\n-%09return %22%22, false%0A%0A\n %7D%0A%0Af\n@@ -848,84 +848,8 @@\n ada)\n-%0A%09if solucao, ok := resolver(seqRunes, 0, L); ok %7B%0A%09%09fmt.Println(solucao)%0A%09%7D\n %0A%0A%7D%0A\n",
+            "lines": "61"
+        },
+        {
+            "label": "2026-06-02_09-36-38",
+            "content": "@@ -658,15 +658,8 @@\n %09%7D%0A%0A\n-%09for %0A%0A\n %09ret\n",
+            "lines": "66"
+        },
+        {
+            "label": "2026-06-02_09-40-48",
+            "content": "@@ -663,39 +663,8 @@\n for \n-num := 0; num %3C= L; num++ %7B%0A%0A%09%7D\n %0A%0A%09r\n",
+            "lines": "68"
+        },
+        {
+            "label": "2026-06-02_09-43-11",
+            "content": "@@ -691,46 +691,8 @@\n + %7B%0A\n-%09%09if valido(seq, index, num, L) %7B%0A%0A%09%09%7D\n %0A%09%7D%0A\n",
+            "lines": "70"
+        },
+        {
+            "label": "2026-06-02_09-45-55",
+            "content": "@@ -725,39 +725,8 @@\n ) %7B%0A\n-%09%09%09seq%5Bindex%5D = rune('0' + num)\n %0A%09%09%7D\n",
+            "lines": "72"
+        },
+        {
+            "label": "2026-06-02_09-48-40",
+            "content": "@@ -756,96 +756,8 @@\n num)\n-%0A%0A%09%09%09if resultado, ok := resolver(seq, index+1, L); ok %7B%0A%09%09%09%09return resultado, true%0A%09%09%09%7D\n %0A%09%09%7D\n",
+            "lines": "72"
+        },
+        {
+            "label": "2026-06-02_09-52-47",
+            "content": "@@ -1101,12 +1101,12 @@\n es, \n-L, 0\n+0, L\n ); o\n",
+            "lines": "76"
+        },
+        {
+            "label": "2026-06-02_09-53-22",
+            "content": "@@ -637,27 +637,24 @@\n ver(seq,\n- L,\n  index+1\n )%0A%09%7D%0A%0A%09f\n@@ -645,16 +645,19 @@\n  index+1\n+, L\n )%0A%09%7D%0A%0A%09f\n@@ -794,19 +794,16 @@\n seq,\n- L,\n  index+1\n ); o\n@@ -798,16 +798,19 @@\n  index+1\n+, L\n ); ok %7B%0A\n",
+            "lines": "76"
+        },
+        {
+            "label": "2026-06-02_09-54-25",
+            "content": "@@ -504,20 +504,20 @@\n ne, \n-L\n+index\n  int, \n-index\n+L\n  int\n@@ -844,29 +844,8 @@\n %09%09%09%7D\n-%0A%0A%09%09%09seq%5Bindex%5D = '.'\n %0A%09%09%7D\n",
+            "lines": "76"
+        },
+        {
+            "label": "2026-06-02_09-55-25",
+            "content": "package main\n\nimport \"fmt\"\n\nfunc valido(seq []rune, index int, num int, L int) bool {\n\tcharNum := rune('0' + num)\n\n\tinicioEsquerda := index - L\n\tif inicioEsquerda < 0 {\n\t\tinicioEsquerda = 0\n\t}\n\n\tfor i := inicioEsquerda; i < index; i++ {\n\t\tif seq[i] == charNum {\n\t\t\treturn false\n\t\t}\n\t}\n\n\tfimDireita := index + L\n\tif fimDireita >= len(seq) {\n\t\tfimDireita = len(seq) - 1\n\t}\n\n\tfor i := index + 1; i <= fimDireita; i++ {\n\t\tif seq[i] == charNum {\n\t\t\treturn false\n\t\t}\n\t}\n\n\treturn true\n}\n\nfunc resolver(seq []rune, L int, index int) (string, bool) {\n\n\tif index == len(seq) {\n\t\treturn string(seq), true\n\t}\n\n\tif seq[index] != '.' {\n\t\treturn resolver(seq, L, index+1)\n\t}\n\n\tfor num := 0; num <= L; num++ {\n\t\tif valido(seq, index, num, L) {\n\t\t\tseq[index] = rune('0' + num)\n\n\t\t\tif resultado, ok := resolver(seq, L, index+1); ok {\n\t\t\t\treturn resultado, true\n\t\t\t}\n\n\t\t\tseq[index] = '.'\n\t\t}\n\t}\n\n\treturn \"\", false\n\n}\n\nfunc main() {\n\tvar entrada string\n\tvar L int\n\n\t_, err := fmt.Scan(&entrada)\n\tif err != nil {\n\t\treturn\n\t}\n\n\t_, err = fmt.Scan(&L)\n\tif err != nil {\n\t\treturn\n\t}\n\n\tseqRunes := []rune(entrada)\n\tif solucao, ok := resolver(seqRunes, L, 0); ok {\n\t\tfmt.Println(solucao)\n\t}\n\n}\n",
+            "lines": "78"
+        }
+    ]
+}

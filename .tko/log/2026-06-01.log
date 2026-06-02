@@ -67,3 +67,14 @@
 2026-06-01 22:07:43, MOVE, v:1, k:ed@distancia, mode:DOWN
 2026-06-01 22:07:44, MOVE, v:1, k:ed@distancia, mode:PICK
 2026-06-01 22:07:58, MOVE, v:1, k:ed@distancia, mode:BACK
+2026-06-01 22:08:28, MOVE, v:1, k:ed@distancia, mode:PICK
+2026-06-01 22:07:43, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-06-01 22:07:43, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-06-01 22:07:43, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-06-01 22:13:50, EXEC, v:1, k:ed@distancia, mode:FULL, size:8, fail:COMP
+2026-06-01 22:13:48, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-06-01 22:17:31, EXEC, v:1, k:ed@distancia, mode:FULL, size:9, fail:COMP
+2026-06-01 22:20:25, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-06-01 22:22:41, MOVE, v:1, k:ed@distancia, mode:EDIT
+2026-06-01 22:27:50, EXEC, v:1, k:ed@distancia, mode:FULL, size:11, fail:COMP
+2026-06-01 22:27:48, MOVE, v:1, k:ed@distancia, mode:EDIT
