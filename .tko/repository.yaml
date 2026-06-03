@@ -12,14 +12,13 @@ sources:
   type: git
   writeable: false
   quests: null
-expanded:
-- ed@backtrack
+expanded: []
 flags:
-  inbox: inbox
-  panel: graph
+  inbox: all
+  panel: skills
   show_panel: 'false'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@distancia
-selected_index: 3
+selected: ed@list
+selected_index: 5
