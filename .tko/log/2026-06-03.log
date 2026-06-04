@@ -67,3 +67,12 @@
 2026-06-03 11:37:20, EXEC, v:1, k:ed@setbuild, mode:FULL, rate:100, size:218
 2026-06-03 11:37:23, MOVE, v:1, k:ed@setbuild, mode:BACK
 2026-06-03 11:37:42, SELF, v:1, k:ed@setbuild, self:1, rate:100, friend:250
+2026-06-03 21:08:13, MOVE, v:1, k:ed@bettersearch, mode:DOWN
+2026-06-03 21:08:13, MOVE, v:1, k:ed@bettersearch, mode:EDIT
+2026-06-03 21:08:13, MOVE, v:1, k:ed@bettersearch, mode:EDIT
+2026-06-03 21:08:13, MOVE, v:1, k:ed@bettersearch, mode:EDIT
+2026-06-03 21:08:14, MOVE, v:1, k:ed@bettersearch, mode:PICK
+2026-06-03 21:10:43, EXEC, v:1, k:ed@bettersearch, mode:FULL, rate:18, size:33
+2026-06-03 21:11:13, EXEC, v:1, k:ed@bettersearch, mode:FULL, rate:18, size:39
+2026-06-03 21:11:13, MOVE, v:1, k:ed@bettersearch, mode:EDIT
+2026-06-03 21:11:11, MOVE, v:1, k:ed@bettersearch, mode:EDIT
