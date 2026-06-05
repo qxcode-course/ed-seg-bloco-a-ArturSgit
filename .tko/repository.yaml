@@ -16,10 +16,10 @@ expanded:
 - ed@vector
 flags:
   inbox: all
-  panel: skills
+  panel: graph
   show_panel: 'false'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@bettersearch
-selected_index: 6
+selected: ed@multiset
+selected_index: 7
