@@ -12,14 +12,13 @@ sources:
   type: git
   writeable: false
   quests: null
-expanded:
-- ed@list
+expanded: []
 flags:
-  inbox: all
-  panel: skills
+  inbox: inbox
+  panel: graph
   show_panel: 'false'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@lista_d2
-selected_index: 6
+selected: ed@vector
+selected_index: 2
