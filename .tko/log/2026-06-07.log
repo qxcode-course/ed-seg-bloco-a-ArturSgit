@@ -30,3 +30,8 @@
 2026-06-07 11:37:05, EXEC, v:1, k:ed@magicsearch, mode:FULL, rate:100, size:49
 2026-06-07 11:37:13, MOVE, v:1, k:ed@magicsearch, mode:BACK
 2026-06-07 11:37:21, SELF, v:1, k:ed@magicsearch, self:1, rate:100, study:60
+2026-06-07 12:15:19, MOVE, v:1, k:ed@iterador, mode:DOWN
+2026-06-07 12:15:20, MOVE, v:1, k:ed@iterador, mode:PICK
+2026-06-07 12:15:46, MOVE, v:1, k:ed@iterador, mode:BACK
+2026-06-07 13:01:23, MOVE, v:1, k:ed@controlz, mode:DOWN
+2026-06-07 13:01:24, MOVE, v:1, k:ed@controlz, mode:PICK

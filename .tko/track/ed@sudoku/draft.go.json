@@ -1,0 +1,99 @@
+{
+    "patches": [
+        {
+            "label": "2026-06-08_10-49-20",
+            "content": "@@ -50,54 +50,8 @@\n  int\n-%0A%0A%09if _, err := fmt.Scan(&n); err != nil %7B%0A%0A%09%7D\n %0A%09fm\n",
+            "lines": "9"
+        },
+        {
+            "label": "2026-06-08_10-53-54",
+            "content": "@@ -93,18 +93,40 @@\n l %7B%0A\n-%09%09return%0A%09%7D\n+%0A%09%7D%0A%09fmt.Println(%22Hello, World!%22)\n %0A%7D%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2026-06-08_10-54-36",
+            "content": "@@ -104,36 +104,7 @@\n n%0A%09%7D\n-%0A%0A%09matriz := make(%5B%5D%5B%5Dint, n)\n %0A%7D%0A\n",
+            "lines": "12"
+        },
+        {
+            "label": "2026-06-08_10-56-33",
+            "content": "@@ -134,100 +134,6 @@\n  n)%0A\n-%09for i := 0; i %3C n; i++ %7B%0A%09%09var linha string%0A%09%09fmt.Scan(&linha)%0A%09%09matriz%5Bi%5D = %5B%5Dint(linha)%0A%09%7D%0A\n %7D%0A\n",
+            "lines": "14"
+        },
+        {
+            "label": "2026-06-08_11-04-39",
+            "content": "@@ -18,73 +18,13 @@\n ort \n-(%0A%09\n %22fmt%22\n-%0A)%0A%0Afunc naLinha(matriz %5B%5D%5B%5Drune) bool %7B%0A%0A%09return false%0A%7D\n %0A%0Afu\n",
+            "lines": "19"
+        },
+        {
+            "label": "2026-06-08_11-09-04",
+            "content": "@@ -54,26 +54,8 @@\n %5B%5D%5B%5D\n-rune, lin int, ch \n rune\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-08_11-14-35",
+            "content": "@@ -86,94 +86,8 @@\n  %7B%0A%0A\n-%09for i := 0; i %3C len(matriz); i++ %7B%0A%09%09if matriz%5Blin%5D%5Bi%5D == ch %7B%0A%09%09%09return true%0A%09%09%7D%0A%09%7D%0A\n %09ret\n",
+            "lines": "26"
+        },
+        {
+            "label": "2026-06-09_09-20-35",
+            "content": "@@ -189,35 +189,8 @@\n %0A%7D%0A%0A\n-func naColuna() bool %7B%0A%0A%7D%0A%0A\n func\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-06-09_09-25-43",
+            "content": "@@ -203,150 +203,17 @@\n una(\n-matriz %5B%5D%5B%5Drune, col int, ch rune) bool %7B%0A%0A%09for i := 0; i %3C len(matriz); i++ %7B%0A%09%09if matriz%5Bi%5D%5Bcol%5D == ch %7B%0A%09%09%09return true%0A%09%09%7D%0A%09%7D%0A%09return false\n+) bool %7B%0A\n %0A%7D%0A%0A\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-06-09_09-37-09",
+            "content": "@@ -349,78 +349,8 @@\n %0A%7D%0A%0A\n-func Quadrante(matriz %5B%5D%5B%5Drune, lin int, col int, ch rune) bool %7B%0A%0A%7D%0A%0A\n func\n",
+            "lines": "41"
+        },
+        {
+            "label": "2026-06-09_09-45-38",
+            "content": "@@ -27,16 +27,8 @@\n mt%22%0A\n-%09%22math%22%0A\n )%0A%0Af\n@@ -415,342 +415,8 @@\n l %7B%0A\n-%09dim := len(matriz)%0A%09tamSubgrade := int(math.Sqrt(float64(dim)))%0A%0A%09inicioLinha := (lin / tamSubgrade) * tamSubgrade%0A%09inicioColuna := (col / tamSubgrade) * tamSubgrade%0A%0A%09for i := 0; i %3C tamSubgrade; i++ %7B%0A%09%09for j := 0; j %3C tamSubgrade; j++ %7B%0A%09%09%09if matriz%5BinicioLinha+i%5D%5BinicioColuna+j%5D == ch %7B%0A%09%09%09%09return true%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%09return false\n %0A%7D%0A%0A\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-06-09_20-40-36",
+            "content": "@@ -761,130 +761,8 @@\n %0A%7D%0A%0A\n-func resolver(matriz %5B%5D%5B%5Drune, index int) bool %7B%0A%0A%09n := len(matriz)%0A%09if index == n*n %7B%0A%09%09return true%0A%09%7D%0A%0A%09return false%0A%7D%0A%0A\n func\n@@ -946,20 +946,19 @@\n %5Bi%5D = %5B%5D\n-rune\n+int\n (linha)%0A\n",
+            "lines": "59"
+        },
+        {
+            "label": "2026-06-09_21-26-09",
+            "content": "@@ -980,20 +980,19 @@\n ake(%5B%5D%5B%5D\n-rune\n+int\n , n)%0A%09fo\n@@ -1086,102 +1086,7 @@\n )%0A%09%7D\n-%0A%0A%09if resolver(matriz, 0) %7B%0A%09%09for i := 0; i %3C n; i++ %7B%0A%09%09%09fmt.Println(string(matriz%5Bi%5D))%0A%09%09%7D%0A%09%7D\n %0A%7D%0A\n",
+            "lines": "69"
+        },
+        {
+            "label": "2026-06-09_21-30-10",
+            "content": "@@ -866,27 +866,8 @@\n %09%7D%0A%0A\n-%09lin := index / n%0A%0A\n %09ret\n",
+            "lines": "75"
+        },
+        {
+            "label": "2026-06-09_21-30-33",
+            "content": "@@ -883,61 +883,8 @@\n  / n\n-%0A%09col := index %25 n%0A%0A%09if matriz%5Blin%5D%5Bcol%5D != '.' %7B%0A%0A%09%7D\n %0A%0A%09r\n",
+            "lines": "77"
+        },
+        {
+            "label": "2026-06-09_21-35-41",
+            "content": "@@ -933,42 +933,8 @@\n ' %7B%0A\n-%09%09return resolver(matriz, index+1)\n %0A%09%7D%0A\n",
+            "lines": "82"
+        },
+        {
+            "label": "2026-06-09_21-39-43",
+            "content": "@@ -972,230 +972,8 @@\n %09%7D%0A%0A\n-%09for num := '1'; num %3C= rune('0'+n); num++ %7B%0A%09%09if !naLinha(matriz, lin, num) && !naColuna(matriz, col, num) && !Quadrante(matriz, lin, col, num) %7B%0A%09%09%09matriz%5Blin%5D%5Bcol%5D = num%0A%0A%09%09%09if resolver(matriz, index+1) %7B%0A%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%0A\n %09ret\n",
+            "lines": "82"
+        },
+        {
+            "label": "2026-06-09_21-57-01",
+            "content": "@@ -1180,54 +1180,13 @@\n ) %7B%0A\n-%09%09%09%09return true%0A%09%09%09%7D%0A%09%09%09matriz%5Blin%5D%5Bcol%5D = '.'\n+%0A%09%09%09%7D\n %0A%09%09%7D\n",
+            "lines": "92"
+        },
+        {
+            "label": "2026-06-09_22-02-11",
+            "content": "package main\n\nimport (\n\t\"fmt\"\n\t\"math\"\n)\n\nfunc naLinha(matriz [][]rune, lin int, ch rune) bool {\n\n\tfor i := 0; i < len(matriz); i++ {\n\t\tif matriz[lin][i] == ch {\n\t\t\treturn true\n\t\t}\n\t}\n\treturn false\n}\n\nfunc naColuna(matriz [][]rune, col int, ch rune) bool {\n\n\tfor i := 0; i < len(matriz); i++ {\n\t\tif matriz[i][col] == ch {\n\t\t\treturn true\n\t\t}\n\t}\n\treturn false\n}\n\nfunc Quadrante(matriz [][]rune, lin int, col int, ch rune) bool {\n\tdim := len(matriz)\n\ttamSubgrade := int(math.Sqrt(float64(dim)))\n\n\tinicioLinha := (lin / tamSubgrade) * tamSubgrade\n\tinicioColuna := (col / tamSubgrade) * tamSubgrade\n\n\tfor i := 0; i < tamSubgrade; i++ {\n\t\tfor j := 0; j < tamSubgrade; j++ {\n\t\t\tif matriz[inicioLinha+i][inicioColuna+j] == ch {\n\t\t\t\treturn true\n\t\t\t}\n\t\t}\n\t}\n\treturn false\n}\n\nfunc resolver(matriz [][]rune, index int) bool {\n\n\tn := len(matriz)\n\tif index == n*n {\n\t\treturn true\n\t}\n\n\tlin := index / n\n\tcol := index % n\n\n\tif matriz[lin][col] != '.' {\n\t\treturn resolver(matriz, index+1)\n\t}\n\n\tfor num := '1'; num <= rune('0'+n); num++ {\n\t\tif !naLinha(matriz, lin, num) && !naColuna(matriz, col, num) && !Quadrante(matriz, lin, col, num) {\n\t\t\tmatriz[lin][col] = num\n\n\t\t\tif resolver(matriz, index+1) {\n\t\t\t\treturn true\n\t\t\t}\n\t\t\tmatriz[lin][col] = '.'\n\t\t}\n\t}\n\n\treturn false\n}\n\nfunc main() {\n\n\tvar n int\n\n\tif _, err := fmt.Scan(&n); err != nil {\n\t\treturn\n\t}\n\n\tmatriz := make([][]rune, n)\n\tfor i := 0; i < n; i++ {\n\t\tvar linha string\n\t\tfmt.Scan(&linha)\n\t\tmatriz[i] = []rune(linha)\n\t}\n\n\tif resolver(matriz, 0) {\n\t\tfor i := 0; i < n; i++ {\n\t\t\tfmt.Println(string(matriz[i]))\n\t\t}\n\t}\n}\n",
+            "lines": "93"
+        }
+    ]
+}
