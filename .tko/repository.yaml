@@ -13,13 +13,13 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@backtrack
+- ed@list
 flags:
   inbox: all
   panel: graph
-  show_panel: 'false'
+  show_panel: 'true'
   task_graph_mode: executions
   show_time: 'true'
 lang: go
-selected: ed@permutacoes
-selected_index: 10
+selected: ed@lista_d2
+selected_index: 6
