@@ -47,3 +47,5 @@
 2026-06-19 09:55:04, MOVE, v:1, k:ed@lista_d2, mode:PICK
 2026-06-19 09:55:06, EXEC, v:1, k:ed@lista_d2, mode:FULL, rate:80
 2026-06-19 09:55:14, EXEC, v:1, k:ed@lista_d2, mode:FULL, rate:100, size:294
+2026-06-19 09:56:14, MOVE, v:1, k:ed@lista_d2, mode:BACK
+2026-06-19 09:56:42, SELF, v:1, k:ed@lista_d2, self:1, rate:100, study:230
