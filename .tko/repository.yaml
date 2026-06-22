@@ -16,12 +16,12 @@ expanded:
 - ed@tree
 flags:
   inbox: all
-  panel: graph
+  panel: skills
   task_graph_mode: executions
   show_time: 'true'
 audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: ed@soma
-selected_index: 12
+selected: ed@serial
+selected_index: 8
