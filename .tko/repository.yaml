@@ -23,5 +23,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: ed@formatada
-selected_index: 9
+selected: ed@clonar
+selected_index: 11

@@ -7,3 +7,32 @@
 2026-06-23 08:40:39, EXEC, v:1, k:ed@formatada, mode:FULL, rate:100, size:96
 2026-06-23 08:40:44, MOVE, v:1, k:ed@formatada, mode:BACK
 2026-06-23 08:41:00, SELF, v:1, k:ed@formatada, self:1, rate:100, study:50
+2026-06-23 08:50:32, MOVE, v:1, k:ed@clonar, mode:DOWN
+2026-06-23 08:50:33, MOVE, v:1, k:ed@clonar, mode:PICK
+2026-06-23 08:50:34, EXEC, v:1, k:ed@clonar, mode:FULL, rate:0, size:76
+2026-06-23 08:51:56, EXEC, v:1, k:ed@clonar, mode:FULL, rate:0
+2026-06-23 08:50:32, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-06-23 08:54:44, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-06-23 08:51:56, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-06-23 08:57:36, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-06-23 09:02:02, EXEC, v:1, k:ed@clonar, mode:FULL, size:76, fail:COMP
+2026-06-23 09:04:56, EXEC, v:1, k:ed@clonar, mode:FULL, rate:0, size:78
+2026-06-23 09:04:55, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-06-23 09:04:56, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-06-23 09:06:46, EXEC, v:1, k:ed@clonar, mode:FULL, rate:16, size:80
+2026-06-23 09:09:46, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-06-23 09:06:45, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-06-23 09:14:36, EXEC, v:1, k:ed@clonar, mode:FULL, rate:16, size:81
+2026-06-23 09:14:34, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-06-23 09:14:36, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-06-23 09:17:22, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-06-23 09:32:11, EXEC, v:1, k:ed@clonar, mode:FULL, size:82, fail:COMP
+2026-06-23 09:34:31, EXEC, v:1, k:ed@clonar, mode:FULL, size:82, fail:COMP
+2026-06-23 09:34:30, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-06-23 09:39:43, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-06-23 09:44:18, EXEC, v:1, k:ed@clonar, mode:FULL, size:82, fail:COMP
+2026-06-23 09:44:16, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-06-23 09:49:54, MOVE, v:1, k:ed@clonar, mode:EDIT
+2026-06-23 09:51:28, EXEC, v:1, k:ed@clonar, mode:FULL, rate:100, size:82
+2026-06-23 09:51:35, MOVE, v:1, k:ed@clonar, mode:BACK
+2026-06-23 09:51:50, SELF, v:1, k:ed@clonar, self:1, rate:100, study:50
