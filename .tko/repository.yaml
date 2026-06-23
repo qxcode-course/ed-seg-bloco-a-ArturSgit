@@ -23,5 +23,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: ed@serial
-selected_index: 8
+selected: ed@formatada
+selected_index: 9

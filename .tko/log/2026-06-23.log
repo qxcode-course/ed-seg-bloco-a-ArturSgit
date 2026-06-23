@@ -1,0 +1,9 @@
+2026-06-23 08:39:17, MOVE, v:1, k:ed@formatada, mode:PICK
+2026-06-23 08:39:17, EXEC, v:1, k:ed@formatada, mode:FULL, rate:14
+2026-06-23 08:39:34, EXEC, v:1, k:ed@formatada, mode:FULL, rate:0, size:96
+2026-06-23 08:40:04, EXEC, v:1, k:ed@formatada, mode:FULL, rate:14, size:96
+2026-06-23 08:40:23, EXEC, v:1, k:ed@formatada, mode:FULL, rate:0, size:96
+2026-06-23 08:40:32, EXEC, v:1, k:ed@formatada, mode:FULL, rate:14, size:96
+2026-06-23 08:40:39, EXEC, v:1, k:ed@formatada, mode:FULL, rate:100, size:96
+2026-06-23 08:40:44, MOVE, v:1, k:ed@formatada, mode:BACK
+2026-06-23 08:41:00, SELF, v:1, k:ed@formatada, self:1, rate:100, study:50

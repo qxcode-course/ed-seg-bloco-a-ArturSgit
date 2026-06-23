@@ -41,3 +41,21 @@
 2026-06-22 11:11:34, EXEC, v:1, k:ed@serial, mode:FULL, rate:100, size:86
 2026-06-22 11:11:38, MOVE, v:1, k:ed@serial, mode:BACK
 2026-06-22 11:12:06, SELF, v:1, k:ed@serial, self:1, rate:100, study:60
+2026-06-22 11:12:59, MOVE, v:1, k:ed@formatada, mode:DOWN
+2026-06-22 11:12:59, MOVE, v:1, k:ed@formatada, mode:PICK
+2026-06-22 11:13:52, EXEC, v:1, k:ed@formatada, mode:FULL, rate:0, size:72
+2026-06-22 11:12:59, MOVE, v:1, k:ed@formatada, mode:EDIT
+2026-06-22 11:14:37, MOVE, v:1, k:ed@formatada, mode:EDIT
+2026-06-22 11:13:52, MOVE, v:1, k:ed@formatada, mode:EDIT
+2026-06-22 11:19:08, MOVE, v:1, k:ed@formatada, mode:EDIT
+2026-06-22 11:23:38, MOVE, v:1, k:ed@formatada, mode:EDIT
+2026-06-22 11:33:25, EXEC, v:1, k:ed@formatada, mode:FULL, rate:0, size:89
+2026-06-22 11:36:24, MOVE, v:1, k:ed@formatada, mode:EDIT
+2026-06-22 11:33:25, MOVE, v:1, k:ed@formatada, mode:EDIT
+2026-06-22 11:39:52, MOVE, v:1, k:ed@formatada, mode:EDIT
+2026-06-22 11:46:13, MOVE, v:1, k:ed@formatada, mode:EDIT
+2026-06-22 11:47:22, EXEC, v:1, k:ed@formatada, mode:FULL, rate:42, size:96
+2026-06-22 11:48:34, EXEC, v:1, k:ed@formatada, mode:FULL, size:96, fail:COMP
+2026-06-22 11:48:43, EXEC, v:1, k:ed@formatada, mode:FULL, rate:42, size:96
+2026-06-22 11:49:05, EXEC, v:1, k:ed@formatada, mode:FULL, rate:14, size:96
+2026-06-22 11:49:12, MOVE, v:1, k:ed@formatada, mode:BACK
