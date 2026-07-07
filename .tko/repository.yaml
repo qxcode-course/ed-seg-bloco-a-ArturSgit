@@ -23,5 +23,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: ed@ilhas
-selected_index: 10
+selected: ed@pintura
+selected_index: 12

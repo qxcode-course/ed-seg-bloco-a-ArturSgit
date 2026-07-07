@@ -1,0 +1,44 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_10-55-20",
+            "content": "@@ -118,62 +118,17 @@\n  %7B%0A%09\n-if len(board) == 0 %7C%7C len(board%5B0%5D) == 0 %7B%0A%09%09return%0A%09%7D\n+_ = board\n %0A%7D%0A%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-07_10-56-04",
+            "content": "@@ -173,28 +173,8 @@\n %0A%09%7D%0A\n-%09rows := len(board)%0A\n %7D%0A%0A/\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-07_10-58-01",
+            "content": "@@ -170,17 +170,16 @@\n urn%0A%09%7D%0A%09\n-n\n rows := \n@@ -193,354 +193,8 @@\n rd)%0A\n-%09ncols := len(board%5B0%5D)%0A%0A%09var dfs func(r, c int)%0A%09dfs = func(r, c int) %7B%0A%09%09if r %3C 0 %7C%7C r %3E= nrows %7C%7C c %3C 0 %7C%7C c %3E= ncols %7C%7C board%5Br%5D%5Bc%5D != 'O' %7B%0A%09%09%09return%0A%09%09%7D%0A%09%09board%5Br%5D%5Bc%5D = 'T' // Marca como tempor%C3%A1rio para evitar ciclos%0A%09%09dfs(r-1, c)       // Cima%0A%09%09dfs(r+1, c)       // Baixo%0A%09%09dfs(r, c-1)       // Esquerda%0A%09%09dfs(r, c+1)       // Direita%0A%09%7D%0A\n %7D%0A%0A/\n",
+            "lines": "32"
+        },
+        {
+            "label": "2026-07-07_12-01-26",
+            "content": "@@ -539,43 +539,8 @@\n a%0A%09%7D\n-%0A%0A%09for i := 0; i %3C nrows; i++ %7B%0A%0A%09%7D\n %0A%7D%0A%0A\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-07-07_12-03-05",
+            "content": "@@ -571,106 +571,8 @@\n + %7B%0A\n-%09%09if board%5Bi%5D%5B0%5D == 'O' %7B%0A%0A%09%09%09dfs(i, 0)%0A%09%09%7D%0A%09%09if board%5Bi%5D%5Bncols-1%5D == 'O' %7B%0A%09%09%09dfs(i, ncols-1)%0A%09%09%7D\n %0A%09%7D%0A\n",
+            "lines": "49"
+        },
+        {
+            "label": "2026-07-07_12-11-06",
+            "content": "@@ -672,140 +672,8 @@\n %7D%0A%09%7D\n-%0A%0A%09for j := 0; j %3C ncols; j++ %7B%0A%09%09if board%5B0%5D%5Bj%5D == 'O' %7B%0A%09%09%09dfs(0, j)%0A%09%09%7D%0A%09%09if board%5Bnrows-1%5D%5Bj%5D == 'O' %7B%0A%09%09%09dfs(nrows-1, j)%0A%09%09%7D%0A%09%7D\n %0A%7D%0A%0A\n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-07-07_12-33-03",
+            "content": "@@ -804,187 +804,8 @@\n %7D%0A%09%7D\n-%0A%0A%09for i := 0; i %3C nrows; i++ %7B%0A%09%09for j := 0; j %3C ncols; j++ %7B%0A%09%09%09if board%5Bi%5D%5Bj%5D == 'O' %7B%0A%09%09%09%09board%5Bi%5D%5Bj%5D = 'X'%0A%09%09%09%7D else if board%5Bi%5D%5Bj%5D == 'T' %7B%0A%09%09%09%09board%5Bi%5D%5Bj%5D = 'O'%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D\n %0A%7D%0A%0A\n",
+            "lines": "64"
+        },
+        {
+            "label": "2026-07-07_12-52-24",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n)\n\n// N\u00c3O ALTERE A ASSINATURA DA FUN\u00c7\u00c3O solve\nfunc solve(board [][]byte) {\n\tif len(board) == 0 || len(board[0]) == 0 {\n\t\treturn\n\t}\n\tnrows := len(board)\n\tncols := len(board[0])\n\n\tvar dfs func(r, c int)\n\tdfs = func(r, c int) {\n\t\tif r < 0 || r >= nrows || c < 0 || c >= ncols || board[r][c] != 'O' {\n\t\t\treturn\n\t\t}\n\t\tboard[r][c] = 'T' // Marca como tempor\u00e1rio para evitar ciclos\n\t\tdfs(r-1, c)       // Cima\n\t\tdfs(r+1, c)       // Baixo\n\t\tdfs(r, c-1)       // Esquerda\n\t\tdfs(r, c+1)       // Direita\n\t}\n\n\tfor i := 0; i < nrows; i++ {\n\t\tif board[i][0] == 'O' {\n\n\t\t\tdfs(i, 0)\n\t\t}\n\t\tif board[i][ncols-1] == 'O' {\n\t\t\tdfs(i, ncols-1)\n\t\t}\n\t}\n\n\tfor j := 0; j < ncols; j++ {\n\t\tif board[0][j] == 'O' {\n\t\t\tdfs(0, j)\n\t\t}\n\t\tif board[nrows-1][j] == 'O' {\n\t\t\tdfs(nrows-1, j)\n\t\t}\n\t}\n\n\tfor i := 0; i < nrows; i++ {\n\t\tfor j := 0; j < ncols; j++ {\n\t\t\tif board[i][j] == 'O' {\n\t\t\t\tboard[i][j] = 'X'\n\t\t\t} else if board[i][j] == 'T' {\n\t\t\t\tboard[i][j] = 'O'\n\t\t\t}\n\t\t}\n\t}\n}\n\n// N\u00c3O ALTERE A MAIN\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tvar nrows, ncols int\n\tfmt.Sscanf(scanner.Text(), \"%d %d\", &nrows, &ncols)\n\tboard := make([][]byte, nrows)\n\tfor i := 0; i < nrows; i++ {\n\t\tscanner.Scan()\n\t\tboard[i] = []byte(scanner.Text())\n\t}\n\tsolve(board)\n\tfor _, row := range board {\n\t\tfmt.Println(string(row))\n\t}\n}\n",
+            "lines": "74"
+        }
+    ]
+}
