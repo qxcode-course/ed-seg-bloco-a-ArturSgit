@@ -23,5 +23,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: ed@caminho
-selected_index: 10
+selected: ed@rotten
+selected_index: 11

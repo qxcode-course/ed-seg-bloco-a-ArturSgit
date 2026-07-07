@@ -1,0 +1,104 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_17-24-12",
+            "content": "@@ -11,39 +11,8 @@\n in%0A%0A\n-type Pos struct %7B%0A%09l, c int%0A%7D%0A%0A\n func\n",
+            "lines": "4"
+        },
+        {
+            "label": "2026-07-07_17-42-46",
+            "content": "@@ -42,301 +42,8 @@\n %0A%7D%0A%0A\n-func funcRottingOranges(grid %5B%5D%5B%5Dint) int %7B%0A%0A%09if len(grid) == 0 %7C%7C len(grid%5B0%5D) == 0 %7B%0A%09%09return 0%0A%09%7D%0A%0A%09nrows := len(grid)%0A%09ncols := len(grid%5B0%5D)%0A%09queue := NewQueue%5BPos%5D()%0A%09freshOranges := 0%0A%0A%09for i := 0; i %3C nrows; i++ %7B%0A%09%09for j := 0; j %3C ncols; j++ %7B%0A%09%09%09if grid%5Bi%5D%5Bj%5D == 2 %7B%0A%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D%0A%0A%7D%0A%0A\n func\n",
+            "lines": "8"
+        },
+        {
+            "label": "2026-07-07_18-07-19",
+            "content": "@@ -318,92 +318,8 @@\n 2 %7B%0A\n-%09%09%09%09queue.Enqueue(Pos%7Bl: i, c: j%7D)%0A%09%09%09%7D else if grid%5Bi%5D%5Bj%5D == 1 %7B%0A%09%09%09%09freshOranges++\n %0A%09%09%09\n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-07-07_18-10-13",
+            "content": "@@ -416,47 +416,8 @@\n %09%7D%0A%0A\n-%09if freshOranges == 0 %7B%0A%09%09return 0%0A%09%7D%0A%0A\n %7D%0A%0Af\n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-07-07_18-13-10",
+            "content": "@@ -455,72 +455,8 @@\n %09%7D%0A%0A\n-%09minutes := 0%0A%09dirs := %5B%5DPos%7B%7B-1, 0%7D, %7B1, 0%7D, %7B0, -1%7D, %7B0, 1%7D%7D%0A%0A\n %7D%0A%0Af\n",
+            "lines": "35"
+        },
+        {
+            "label": "2026-07-07_18-16-00",
+            "content": "@@ -519,95 +519,8 @@\n %7D%7D%0A%0A\n-%09for !queue.IsEmpty() %7B%0A%0A%09%09size := queue.queue.Len()%0A%09%09infectedThisRound := false%0A%0A%09%7D%0A%0A\n %7D%0A%0Af\n",
+            "lines": "38"
+        },
+        {
+            "label": "2026-07-07_18-20-42",
+            "content": "@@ -603,458 +603,11 @@\n e%0A%0A%09\n-%09for k := 0; k %3C size; k++ %7B%0A%0A            atual, _ := queue.Dequeue()%0A            for _, dir := range dirs %7B%0A                nl, nc := atual.l+d.l, atual.c+d.c%0A%0A                if nl %3E= 0 && nl %3C nrows && nc %3E= 0 && nc %3C ncols && grid%5Bnl%5D%5Bnc%5D == 1 %7B%0A                    grid%5Bnl%5D%5Bnc%5D = 2%0A                    freshOranges--%0A                    infectedThisRound = true%0A                    queue.Enqueue(Pos%7Bl: nl, c: nc%7D)%0A                %7D%0A            \n+%7D%0A%0A\n %7D%0A%0Af\n",
+            "lines": "45"
+        },
+        {
+            "label": "2026-07-07_18-27-25",
+            "content": "@@ -629,19 +629,28 @@\n  k++ %7B%0A%0A\n-%09%09%09\n+            \n atual, _\n@@ -669,19 +669,28 @@\n queue()%0A\n-%09%09%09\n+            \n for _, d\n@@ -708,20 +708,32 @@\n  dirs %7B%0A\n-%09%09%09%09\n+                \n nl, nc :\n@@ -760,20 +760,32 @@\n .c+d.c%0A%0A\n-%09%09%09%09\n+                \n if nl %3E=\n@@ -853,55 +853,100 @@\n 1 %7B%0A\n-%09%09%09%09%09grid%5Bnl%5D%5Bnc%5D = 2%0A%09%09%09%09%09freshOranges--%0A%09%09%09%09%09\n+                    grid%5Bnl%5D%5Bnc%5D = 2%0A                    freshOranges--%0A                    \n infe\n@@ -970,13 +970,28 @@\n rue%0A\n-%09%09%09%09%09\n+                    \n queu\n@@ -1023,109 +1023,38 @@\n c%7D)%0A\n-%09%09%09%09%7D%0A%09%09%09%7D%0A%09%09%7D%0A%0A%09%09if infectedThisMinute %7B%0A%09%09%09minutes++%0A%09%09%7D%0A%09%7D%0A%0A%09if freshOranges %3E 0 %7B%0A%09%09return -1%0A%09%7D%0A\n+                %7D%0A            \n %7D%0A%0Af\n",
+            "lines": "55"
+        },
+        {
+            "label": "2026-07-07_18-29-06",
+            "content": "@@ -1022,24 +1022,8 @@\n %0A%09%7D%0A\n-%09return minutes%0A\n %7D%0A%0Af\n",
+            "lines": "66"
+        },
+        {
+            "label": "2026-07-07_18-30-04",
+            "content": "@@ -11,33 +11,8 @@\n in%0A%0A\n-import %22container/list%22%0A%0A\n type\n@@ -1041,56 +1041,8 @@\n %0A%7D%0A%0A\n-type Queue%5BT any%5D struct %7B%0A%09queue *list.List%0A%7D%0A%0A\n func\n",
+            "lines": "67"
+        },
+        {
+            "label": "2026-07-07_18-33-17",
+            "content": "@@ -1114,83 +1114,8 @@\n %0A%7D%0A%0A\n-func NewQueue%5BT any%5D() *Queue%5BT%5D %7B%0A%09return &Queue%5BT%5D%7Bqueue: list.New()%7D%0A%7D%0A%0A\n func\n",
+            "lines": "73"
+        },
+        {
+            "label": "2026-07-07_18-35-08",
+            "content": "@@ -1189,119 +1189,8 @@\n %0A%7D%0A%0A\n-func (q *Queue%5BT%5D) Enqueue(value T) %7B%0A%09q.queue.PushBack(value)%0A%7D%0A%0Afunc (q *Queue%5BT%5D) Dequeue() (T, bool) %7B%0A%0A%7D%0A%0A\n func\n",
+            "lines": "77"
+        },
+        {
+            "label": "2026-07-07_18-35-54",
+            "content": "@@ -1296,93 +1296,8 @@\n ) %7B%0A\n-%09element := q.queue.Front()%0A%09if element == nil %7B%0A%09%09var zero T%0A%09%09return zero, false%0A%09%7D\n %0A%7D%0A%0A\n",
+            "lines": "85"
+        },
+        {
+            "label": "2026-07-07_18-38-18",
+            "content": "@@ -1382,65 +1382,8 @@\n %0A%09%7D%0A\n-%09q.queue.Remove(element)%0A%09return element.Value.(T), true%0A\n %7D%0A%0Af\n",
+            "lines": "89"
+        },
+        {
+            "label": "2026-07-07_18-38-37",
+            "content": "@@ -1442,74 +1442,8 @@\n %0A%7D%0A%0A\n-func (q *Queue%5BT%5D) IsEmpty() bool %7B%0A%09return q.queue.Len() == 0%0A%7D%0A%0A\n func\n",
+            "lines": "91"
+        },
+        {
+            "label": "2026-07-07_18-38-55",
+            "content": "@@ -18,20 +18,8 @@\n ort \n-(%0A%09%22bufio%22%0A%09\n %22con\n@@ -34,27 +34,8 @@\n ist%22\n-%0A%09%22os%22%0A%09%22strings%22%0A)\n %0A%0Aty\n@@ -1522,462 +1522,6 @@\n ) %7B%0A\n-%0A%09scanner := bufio.NewScanner(os.Stdin)%0A%09if scanner.Scan() %7B%0A        return%0A%09%7D%0A    parts := strings.Fields(scanner.Text())%0A    nl, _ := strconv.Atoi(parts%5B0%5D)%0A    nc, _ := strconv.Atoi(parts%5B1%5D)%0A%0A    grid := make(%5B%5D%5B%5Dint, nl)%0A    for i := 0; i %3C nl; i++ %7B%0A        scanner.Scan()%0A        rowParts := strings.Fields(scanner.Text())%0A        row := make(%5B%5Dint, nc)%0A        for j := 0; j %3C nc; j++ %7B%0A            row%5Bj%5D, _ = strconv.Atoi(rowParts%5Bj%5D)%0A        %7D%0A%0A\n %7D%0A\n",
+            "lines": "95"
+        },
+        {
+            "label": "2026-07-07_18-46-07",
+            "content": "@@ -49,28 +49,10 @@\n %22%0A%09%22\n-fmt%22%0A%09%22os%22%0A%09%22strconv\n+os\n %22%0A%09%22\n@@ -638,22 +638,21 @@\n ctedThis\n-Minute\n+Round\n  := fals\n@@ -727,16 +727,18 @@\n for _, d\n+ir\n  := rang\n@@ -922,22 +922,21 @@\n ctedThis\n-Minute\n+Round\n  = true%0A\n@@ -1610,18 +1610,24 @@\n can() %7B%0A\n-%09%09\n+        \n return%0A%09\n@@ -1628,17 +1628,20 @@\n turn%0A%09%7D%0A\n-%09\n+    \n parts :=\n@@ -1672,17 +1672,20 @@\n Text())%0A\n-%09\n+    \n nl, _ :=\n@@ -1708,17 +1708,20 @@\n rts%5B0%5D)%0A\n-%09\n+    \n nc, _ :=\n@@ -1745,17 +1745,20 @@\n ts%5B1%5D)%0A%0A\n-%09\n+    \n grid := \n@@ -1775,17 +1775,20 @@\n nt, nl)%0A\n-%09\n+    \n for i :=\n@@ -1805,18 +1805,24 @@\n ; i++ %7B%0A\n-%09%09\n+        \n scanner.\n@@ -1828,18 +1828,24 @@\n .Scan()%0A\n-%09%09\n+        \n rowParts\n@@ -1879,18 +1879,24 @@\n Text())%0A\n-%09%09\n+        \n row := m\n@@ -1910,18 +1910,24 @@\n nt, nc)%0A\n-%09%09\n+        \n for j :=\n@@ -1944,19 +1944,28 @@\n ; j++ %7B%0A\n-%09%09%09\n+            \n row%5Bj%5D, \n@@ -1998,69 +1998,17 @@\n j%5D)%0A\n-%09%09%7D%0A%0A%09%09grid%5Bi%5D = row%0A%09%7D%0A%09fmt.Println(funcRottingOranges(grid))\n+        %7D%0A\n %0A%7D%0A\n",
+            "lines": "118"
+        },
+        {
+            "label": "2026-07-07_18-48-19",
+            "content": "@@ -714,18 +714,17 @@\n %09atual, \n-ok\n+_\n  := queu\n@@ -738,36 +738,8 @@\n ue()\n-%0A%0A%09%09%09if !ok %7B%0A%09%09%09%09break%0A%09%09%09%7D\n %0A%09%09%09\n@@ -1457,16 +1457,14 @@\n t)%0A%09\n-value :=\n+return\n  ele\n@@ -1481,22 +1481,8 @@\n .(T)\n-%0A%09return value\n , tr\n",
+            "lines": "123"
+        },
+        {
+            "label": "2026-07-07_18-58-48",
+            "content": "@@ -1656,17 +1656,16 @@\n in)%0A%09if \n-!\n scanner.\n",
+            "lines": "128"
+        },
+        {
+            "label": "2026-07-07_19-25-33",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"container/list\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\ntype Pos struct {\n\tl, c int\n}\n\nfunc funcRottingOranges(grid [][]int) int {\n\n\tif len(grid) == 0 || len(grid[0]) == 0 {\n\t\treturn 0\n\t}\n\n\tnrows := len(grid)\n\tncols := len(grid[0])\n\tqueue := NewQueue[Pos]()\n\tfreshOranges := 0\n\n\tfor i := 0; i < nrows; i++ {\n\t\tfor j := 0; j < ncols; j++ {\n\t\t\tif grid[i][j] == 2 {\n\t\t\t\tqueue.Enqueue(Pos{l: i, c: j})\n\t\t\t} else if grid[i][j] == 1 {\n\t\t\t\tfreshOranges++\n\t\t\t}\n\t\t}\n\t}\n\n\tif freshOranges == 0 {\n\t\treturn 0\n\t}\n\n\tminutes := 0\n\tdirs := []Pos{{-1, 0}, {1, 0}, {0, -1}, {0, 1}}\n\n\tfor !queue.IsEmpty() {\n\n\t\tsize := queue.queue.Len()\n\t\tinfectedThisMinute := false\n\n\t\tfor k := 0; k < size; k++ {\n\n\t\t\tatual, ok := queue.Dequeue()\n\n\t\t\tif !ok {\n\t\t\t\tbreak\n\t\t\t}\n\t\t\tfor _, d := range dirs {\n\t\t\t\tnl, nc := atual.l+d.l, atual.c+d.c\n\n\t\t\t\tif nl >= 0 && nl < nrows && nc >= 0 && nc < ncols && grid[nl][nc] == 1 {\n\t\t\t\t\tgrid[nl][nc] = 2\n\t\t\t\t\tfreshOranges--\n\t\t\t\t\tinfectedThisMinute = true\n\t\t\t\t\tqueue.Enqueue(Pos{l: nl, c: nc})\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\tif infectedThisMinute {\n\t\t\tminutes++\n\t\t}\n\t}\n\n\tif freshOranges > 0 {\n\t\treturn -1\n\t}\n\treturn minutes\n}\n\ntype Queue[T any] struct {\n\tqueue *list.List\n}\n\nfunc NewQueue[T any]() *Queue[T] {\n\treturn &Queue[T]{queue: list.New()}\n}\n\nfunc (q *Queue[T]) Enqueue(value T) {\n\tq.queue.PushBack(value)\n}\n\nfunc (q *Queue[T]) Dequeue() (T, bool) {\n\telement := q.queue.Front()\n\tif element == nil {\n\t\tvar zero T\n\t\treturn zero, false\n\t}\n\tq.queue.Remove(element)\n\tvalue := element.Value.(T)\n\treturn value, true\n}\n\nfunc (q *Queue[T]) IsEmpty() bool {\n\treturn q.queue.Len() == 0\n}\n\nfunc main() {\n\n\tscanner := bufio.NewScanner(os.Stdin)\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\tparts := strings.Fields(scanner.Text())\n\tnl, _ := strconv.Atoi(parts[0])\n\tnc, _ := strconv.Atoi(parts[1])\n\n\tgrid := make([][]int, nl)\n\tfor i := 0; i < nl; i++ {\n\t\tscanner.Scan()\n\t\trowParts := strings.Fields(scanner.Text())\n\t\trow := make([]int, nc)\n\t\tfor j := 0; j < nc; j++ {\n\t\t\trow[j], _ = strconv.Atoi(rowParts[j])\n\t\t}\n\n\t\tgrid[i] = row\n\t}\n\tfmt.Println(funcRottingOranges(grid))\n}\n",
+            "lines": "128"
+        }
+    ]
+}

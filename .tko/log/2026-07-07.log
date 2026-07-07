@@ -140,3 +140,65 @@
 2026-07-07 17:00:38, EXEC, v:1, k:ed@caminho, mode:FULL, rate:100, size:158
 2026-07-07 17:00:44, MOVE, v:1, k:ed@caminho, mode:BACK
 2026-07-07 17:01:14, SELF, v:1, k:ed@caminho, self:1, rate:100, study:140
+2026-07-07 17:00:38, MOVE, v:1, k:ed@caminho, mode:EDIT
+2026-07-07 17:11:15, MOVE, v:1, k:ed@rotten, mode:DOWN
+2026-07-07 17:11:52, MOVE, v:1, k:ed@bufferring, mode:DOWN
+2026-07-07 17:11:53, MOVE, v:1, k:ed@bufferring, mode:PICK
+2026-07-07 17:12:19, EXEC, v:1, k:ed@bufferring, mode:FULL, rate:0, size:110
+2026-07-07 17:11:15, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-07 17:11:52, MOVE, v:1, k:ed@bufferring, mode:EDIT
+2026-07-07 17:11:52, MOVE, v:1, k:ed@bufferring, mode:EDIT
+2026-07-07 17:12:19, MOVE, v:1, k:ed@bufferring, mode:EDIT
+2026-07-07 17:22:18, MOVE, v:1, k:ed@bufferring, mode:BACK
+2026-07-07 17:22:49, MOVE, v:1, k:ed@rotten, mode:PICK
+2026-07-07 17:24:12, EXEC, v:1, k:ed@rotten, mode:FULL, rate:0, size:4
+2026-07-07 17:24:11, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-07 17:24:12, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-07 17:42:46, EXEC, v:1, k:ed@rotten, mode:FULL, rate:0, size:8
+2026-07-07 17:42:44, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-07 17:42:46, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-07 17:49:22, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-07 17:53:45, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-07 18:04:10, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-07 18:07:07, MOVE, v:1, k:ed@rotten, mode:BACK
+2026-07-07 18:07:18, MOVE, v:1, k:ed@rotten, mode:PICK
+2026-07-07 18:07:19, EXEC, v:1, k:ed@rotten, mode:FULL, size:29, fail:COMP
+2026-07-07 18:10:13, EXEC, v:1, k:ed@rotten, mode:FULL, size:31, fail:COMP
+2026-07-07 18:10:11, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-07 18:13:10, EXEC, v:1, k:ed@rotten, mode:FULL, size:35, fail:COMP
+2026-07-07 18:16:00, EXEC, v:1, k:ed@rotten, mode:FULL, size:38, fail:COMP
+2026-07-07 18:15:57, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-07 18:20:42, EXEC, v:1, k:ed@rotten, mode:FULL, size:45, fail:COMP
+2026-07-07 18:20:40, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-07 18:26:36, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-07 18:27:25, EXEC, v:1, k:ed@rotten, mode:FULL, size:55, fail:COMP
+2026-07-07 18:29:06, EXEC, v:1, k:ed@rotten, mode:FULL, size:66, fail:COMP
+2026-07-07 18:30:04, EXEC, v:1, k:ed@rotten, mode:FULL, size:67, fail:COMP
+2026-07-07 18:31:24, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-07 18:33:17, EXEC, v:1, k:ed@rotten, mode:FULL, size:73, fail:COMP
+2026-07-07 18:34:48, MOVE, v:1, k:ed@rotten, mode:BACK
+2026-07-07 18:35:07, MOVE, v:1, k:ed@rotten, mode:PICK
+2026-07-07 18:35:08, EXEC, v:1, k:ed@rotten, mode:FULL, size:77, fail:COMP
+2026-07-07 18:35:54, EXEC, v:1, k:ed@rotten, mode:FULL, size:85, fail:COMP
+2026-07-07 18:38:18, EXEC, v:1, k:ed@rotten, mode:FULL, size:89, fail:COMP
+2026-07-07 18:38:37, EXEC, v:1, k:ed@rotten, mode:FULL, size:91, fail:COMP
+2026-07-07 18:38:55, EXEC, v:1, k:ed@rotten, mode:FULL, size:95, fail:COMP
+2026-07-07 18:38:52, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-07 18:44:30, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-07 18:46:07, EXEC, v:1, k:ed@rotten, mode:FULL, size:118, fail:COMP
+2026-07-07 18:48:19, EXEC, v:1, k:ed@rotten, mode:FULL, rate:0, size:123
+2026-07-07 18:49:03, MOVE, v:1, k:ed@rotten, mode:PICK
+2026-07-07 18:49:16, EXEC, v:1, k:ed@rotten, mode:FULL, rate:0
+2026-07-07 18:49:16, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-07 18:52:16, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-07 18:58:48, EXEC, v:1, k:ed@rotten, mode:FULL, rate:0, size:128
+2026-07-07 18:58:29, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-07 18:58:48, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-07 19:20:06, EXEC, v:1, k:ed@rotten, mode:FULL, rate:0
+2026-07-07 19:20:15, EXEC, v:1, k:ed@rotten, mode:FULL, rate:0
+2026-07-07 19:22:48, EXEC, v:1, k:ed@rotten, mode:FULL, rate:0
+2026-07-07 19:22:48, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-07 19:22:47, MOVE, v:1, k:ed@rotten, mode:EDIT
+2026-07-07 19:25:33, EXEC, v:1, k:ed@rotten, mode:FULL, rate:100, size:128
+2026-07-07 19:25:39, MOVE, v:1, k:ed@rotten, mode:BACK
+2026-07-07 19:26:00, SELF, v:1, k:ed@rotten, self:1, rate:100, study:150
