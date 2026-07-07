@@ -1,0 +1,28 @@
+2026-07-07 09:13:04, SELF, v:1, k:ed@editorint, self:1, study:240
+2026-07-07 09:14:08, MOVE, v:1, k:ed@ilhas, mode:DOWN
+2026-07-07 09:14:24, MOVE, v:1, k:ed@ilhas, mode:PICK
+2026-07-07 09:14:25, EXEC, v:1, k:ed@ilhas, mode:FULL, size:31, fail:COMP
+2026-07-07 09:15:21, EXEC, v:1, k:ed@ilhas, mode:FULL, fail:COMP
+2026-07-07 09:14:08, MOVE, v:1, k:ed@ilhas, mode:EDIT
+2026-07-07 09:15:56, MOVE, v:1, k:ed@ilhas, mode:EDIT
+2026-07-07 09:16:51, EXEC, v:1, k:ed@ilhas, mode:FULL, size:32, fail:COMP
+2026-07-07 09:19:15, MOVE, v:1, k:ed@ilhas, mode:EDIT
+2026-07-07 09:26:09, EXEC, v:1, k:ed@ilhas, mode:FULL, size:44, fail:COMP
+2026-07-07 09:26:07, MOVE, v:1, k:ed@ilhas, mode:EDIT
+2026-07-07 09:27:25, EXEC, v:1, k:ed@ilhas, mode:FULL, size:50, fail:COMP
+2026-07-07 09:30:38, MOVE, v:1, k:ed@ilhas, mode:EDIT
+2026-07-07 09:46:41, MOVE, v:1, k:ed@ilhas, mode:EDIT
+2026-07-07 09:46:44, EXEC, v:1, k:ed@ilhas, mode:FULL, size:52, fail:COMP
+2026-07-07 09:54:01, EXEC, v:1, k:ed@ilhas, mode:FULL, size:59, fail:COMP
+2026-07-07 09:56:06, EXEC, v:1, k:ed@ilhas, mode:FULL, size:61, fail:COMP
+2026-07-07 09:56:02, MOVE, v:1, k:ed@ilhas, mode:EDIT
+2026-07-07 10:08:59, MOVE, v:1, k:ed@ilhas, mode:EDIT
+2026-07-07 10:50:49, EXEC, v:1, k:ed@ilhas, mode:FULL, fail:COMP
+2026-07-07 10:51:27, EXEC, v:1, k:ed@ilhas, mode:FULL, fail:COMP
+2026-07-07 10:50:48, MOVE, v:1, k:ed@ilhas, mode:EDIT
+2026-07-07 10:52:42, EXEC, v:1, k:ed@ilhas, mode:FULL, rate:100, size:61
+2026-07-07 10:52:46, MOVE, v:1, k:ed@ilhas, mode:BACK
+2026-07-07 10:53:05, SELF, v:1, k:ed@ilhas, self:1, rate:100, study:90
+2026-07-07 10:53:23, MOVE, v:1, k:ed@cercado, mode:DOWN
+2026-07-07 10:53:25, MOVE, v:1, k:ed@cercado, mode:PICK
+2026-07-07 10:53:32, MOVE, v:1, k:ed@cercado, mode:BACK

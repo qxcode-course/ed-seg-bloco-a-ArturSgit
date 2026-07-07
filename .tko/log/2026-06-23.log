@@ -36,3 +36,7 @@
 2026-06-23 09:51:28, EXEC, v:1, k:ed@clonar, mode:FULL, rate:100, size:82
 2026-06-23 09:51:35, MOVE, v:1, k:ed@clonar, mode:BACK
 2026-06-23 09:51:50, SELF, v:1, k:ed@clonar, self:1, rate:100, study:50
+2026-06-23 10:45:57, MOVE, v:1, k:ed@altura, mode:DOWN
+2026-06-23 10:45:58, MOVE, v:1, k:ed@altura, mode:PICK
+2026-06-23 10:45:57, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-06-23 10:45:57, MOVE, v:1, k:ed@altura, mode:EDIT
