@@ -1,0 +1,79 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-07_23-23-19",
+            "content": "@@ -164,28 +164,39 @@\n  %7B%0A%09\n-if root == nil %7B%0A%0A%09%7D\n+// TODO%0A%09_ = values%0A%09return nil\n %0A%7D%0A%0A\n",
+            "lines": "79"
+        },
+        {
+            "label": "2026-07-07_23-24-37",
+            "content": "@@ -126,55 +126,8 @@\n %0A%7D%0A%0A\n-func insert(root *Node, value int) *Node %7B%0A%0A%7D%0A%0A\n func\n@@ -164,39 +164,28 @@\n  %7B%0A%09\n-// TODO%0A%09_ = values%0A%09return nil\n+if root == nil %7B%0A%0A%09%7D\n %0A%7D%0A%0A\n",
+            "lines": "79"
+        },
+        {
+            "label": "2026-07-07_23-26-22",
+            "content": "@@ -169,29 +169,8 @@\n e %7B%0A\n-%09if root == nil %7B%0A%0A%09%7D\n %0A%7D%0A%0A\n",
+            "lines": "83"
+        },
+        {
+            "label": "2026-07-07_23-26-42",
+            "content": "@@ -149,16 +149,18 @@\n ode, val\n+ue\n  int) *N\n",
+            "lines": "85"
+        },
+        {
+            "label": "2026-07-07_23-26-59",
+            "content": "@@ -185,34 +185,8 @@\n l %7B%0A\n-%09%09return &Node%7BValue: val%7D\n %0A%09%7D%0A\n",
+            "lines": "85"
+        },
+        {
+            "label": "2026-07-07_23-27-36",
+            "content": "@@ -212,35 +212,8 @@\n al%7D%0A\n-%09%7D%0A%09if val %3C root.Value %7B%0A%0A\n %09%7D%0A%7D\n",
+            "lines": "85"
+        },
+        {
+            "label": "2026-07-07_23-28-06",
+            "content": "@@ -238,44 +238,8 @@\n e %7B%0A\n-%09%09root.Left = insert(root.Left, val)\n %0A%09%7D%0A\n",
+            "lines": "88"
+        },
+        {
+            "label": "2026-07-07_23-28-48",
+            "content": "@@ -275,39 +275,8 @@\n al)%0A\n-%09%7D else if val %3E root.Value %7B%0A%0A\n %09%7D%0A%7D\n",
+            "lines": "88"
+        },
+        {
+            "label": "2026-07-07_23-29-42",
+            "content": "@@ -305,62 +305,11 @@\n e %7B%0A\n-%09%09root.Right = insert(root.Right, val)%0A%09%7D%0A%09return root\n+%0A%09%7D\n %0A%7D%0A%0A\n",
+            "lines": "90"
+        },
+        {
+            "label": "2026-07-07_23-30-46",
+            "content": "@@ -363,134 +363,8 @@\n %0A%7D%0A%0A\n-func findMax(root *Node) *Node %7B%0A%09current := root%0A%09for current.Right != nil %7B%0A%09%09current = current.Right%0A%09%7D%0A%09return current%0A%7D%0A%0A\n func\n",
+            "lines": "91"
+        },
+        {
+            "label": "2026-07-07_23-32-09",
+            "content": "@@ -489,53 +489,8 @@\n %0A%7D%0A%0A\n-func remove(root *Node, val int) *Node %7B%0A%0A%7D%0A%0A\n func\n",
+            "lines": "99"
+        },
+        {
+            "label": "2026-07-07_23-32-33",
+            "content": "@@ -530,41 +530,8 @@\n e %7B%0A\n-%09if root == nil %7B%0A%09%09return nil%0A%09%7D\n %0A%7D%0A%0A\n",
+            "lines": "103"
+        },
+        {
+            "label": "2026-07-07_23-33-05",
+            "content": "@@ -563,72 +563,8 @@\n l%0A%09%7D\n-%0A%0A%09if val %3C root.Value %7B%0A%09%09root.Left = remove(root.Left, val)%0A%09%7D\n %0A%7D%0A%0A\n",
+            "lines": "105"
+        },
+        {
+            "label": "2026-07-07_23-34-33",
+            "content": "@@ -623,25 +623,16 @@\n  val)%0A%09%7D\n- else if \n %0A%7D%0A%0Afunc\n",
+            "lines": "109"
+        },
+        {
+            "label": "2026-07-07_23-35-04",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\ntype Node struct {\n\tValue int\n\tLeft  *Node\n\tRight *Node\n}\n\nfunc insert(root *Node, val int) *Node {\n\tif root == nil {\n\t\treturn &Node{Value: val}\n\t}\n\tif val < root.Value {\n\t\troot.Left = insert(root.Left, val)\n\t} else if val > root.Value {\n\t\troot.Right = insert(root.Right, val)\n\t}\n\treturn root\n}\n\nfunc findMax(root *Node) *Node {\n\tcurrent := root\n\tfor current.Right != nil {\n\t\tcurrent = current.Right\n\t}\n\treturn current\n}\n\nfunc remove(root *Node, val int) *Node {\n\tif root == nil {\n\t\treturn nil\n\t}\n\n\tif val < root.Value {\n\t\troot.Left = remove(root.Left, val)\n\t} else if \n}\n\nfunc BstInsert(values []int) *Node {\n\t// TODO\n\t_ = values\n\treturn nil\n}\n\nfunc BstRemove(node *Node, value int) *Node {\n\t// TODO\n\t_, _ = node, value\n\treturn nil\n}\n\n// -----------------------------------------------------------------------------------\nfunc BShow(node *Node, history string) {\n\tif node != nil && (node.Left != nil || node.Right != nil) {\n\t\tBShow(node.Left, history+\"l\")\n\t}\n\tfor i := 0; i < len(history)-1; i++ {\n\t\tif history[i] != history[i+1] {\n\t\t\tfmt.Print(\"\u2502   \")\n\t\t} else {\n\t\t\tfmt.Print(\"    \")\n\t\t}\n\t}\n\tif history != \"\" {\n\t\tif history[len(history)-1] == 'l' {\n\t\t\tfmt.Print(\"\u256d\u2500\u2500\u2500\")\n\t\t} else {\n\t\t\tfmt.Print(\"\u2570\u2500\u2500\u2500\")\n\t\t}\n\t}\n\tif node == nil {\n\t\tfmt.Println(\"#\")\n\t\treturn\n\t}\n\tfmt.Println(node.Value)\n\tif node.Left != nil || node.Right != nil {\n\t\tBShow(node.Right, history+\"r\")\n\t}\n}\n\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\tscanner.Scan()\n\tparts := strings.Split(scanner.Text(), \" \")\n\tvalues := make([]int, 0, len(parts))\n\tfor _, elem := range parts {\n\t\tv, err := strconv.Atoi(elem)\n\t\tif err == nil {\n\t\t\tvalues = append(values, v)\n\t\t}\n\t}\n\tscanner.Scan()\n\ttoRemove, _ := strconv.Atoi(scanner.Text())\n\n\t_ = toRemove // Ignora o valor a ser removido, pois n\u00e3o est\u00e1 implementado\n\troot := BstInsert(values)\n\tfmt.Println(\"original:\")\n\tBShow(root, \"\") // Chama a fun\u00e7\u00e3o de impress\u00e3o formatada\n\troot = BstRemove(root, toRemove)\n\tfmt.Println(\"modificado:\")\n\tBShow(root, \"\") // Chama a fun\u00e7\u00e3o de impress\u00e3o formatada da \u00e1rvore modificada\n}\n",
+            "lines": "109"
+        }
+    ]
+}

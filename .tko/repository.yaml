@@ -13,15 +13,15 @@ sources:
   writeable: false
   quests: null
 expanded:
-- ed@bfs
+- ed@linear
 flags:
   inbox: all
-  panel: skills
+  panel: graph
   task_graph_mode: executions
   show_time: 'true'
 audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: ed@rotten
-selected_index: 11
+selected: ed@bufferring
+selected_index: 6
