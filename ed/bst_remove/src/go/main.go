@@ -35,25 +35,49 @@ func findMax(root *Node) *Node {
 }
 
 func remove(root *Node, val int) *Node {
+
 	if root == nil {
 		return nil
 	}
 
 	if val < root.Value {
+
 		root.Left = remove(root.Left, val)
-	} else if 
+
+	} else if val > root.Value {
+
+		root.Right = remove(root.Right, val)
+
+	} else {
+
+		if root.Left == nil {
+
+			return root.Right
+
+		} else if root.Right == nil {
+
+			return root.Left
+		}
+
+		predecessor := findMax(root.Left)
+		root.Value = predecessor.Value
+		root.Left = remove(root.Left, predecessor.Value)
+	}
+
+	return root
 }
 
 func BstInsert(values []int) *Node {
-	// TODO
-	_ = values
-	return nil
+
+	var root *Node
+	for _, val := range values {
+		root = insert(root, val)
+	}
+	return root
 }
 
 func BstRemove(node *Node, value int) *Node {
-	// TODO
-	_, _ = node, value
-	return nil
+	return remove(node, value)
 }
 
 // -----------------------------------------------------------------------------------
