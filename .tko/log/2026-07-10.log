@@ -64,3 +64,6 @@
 2026-07-10 15:55:59, EXEC, v:1, k:ed@bst_remove, mode:FULL, rate:12, size:135
 2026-07-10 15:59:23, EXEC, v:1, k:ed@bst_remove, mode:FULL, rate:100, size:133
 2026-07-10 15:59:35, MOVE, v:1, k:ed@bst_remove, mode:BACK
+2026-07-10 15:59:07, MOVE, v:1, k:ed@bst_remove, mode:EDIT
+2026-07-10 15:59:22, MOVE, v:1, k:ed@bst_remove, mode:EDIT
+2026-07-10 16:00:15, SELF, v:1, k:ed@bst_remove, self:1, rate:100, study:90

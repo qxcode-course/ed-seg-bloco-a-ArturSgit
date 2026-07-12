@@ -26,9 +26,12 @@ func find(node *Node, value int) *Node {
 	if node.Value == value {
 		return node
 	}
-	if leftResult := find(node.Left, value); leftResult != nil {
+
+	leftResult := find(node.Left, value)
+	if leftResult != nil {
 		return leftResult
 	}
+
 	return find(node.Right, value)
 }
 
@@ -39,20 +42,34 @@ func getHeight(node *Node) int {
 	if node == nil {
 		return 0
 	}
+
 	leftHeight := getHeight(node.Left)
 	rightHeight := getHeight(node.Right)
 
 	if leftHeight > rightHeight {
-
+		return leftHeight + 1
 	}
+	return rightHeight + 1
 }
 
 // node is the root of the tree
 // level is the current level in the tree (1 for root)
 // value is the value we are looking for
 func calcNodeDepth(node *Node, level int, value int) int {
-	_, _, _ = node, level, value
-	return 0
+
+	if node == nil {
+		return 0
+	}
+	if node.Value == value {
+		return level
+	}
+
+	leftDepth := calcNodeDepth(node.Left, level+1, value)
+	if leftDepth != 0 {
+		return leftDepth
+	}
+
+	return calcNodeDepth(node.Right, level+1, value)
 }
 
 // --------------------------------------------------------------------
@@ -112,14 +129,14 @@ func main() {
 	fmt.Println("Arvore:")
 	BShow(root, "")
 
-	// values := strings.FieldsSeq(line)
-	// for s := range values {
-	// 	value, _ := strconv.Atoi(s)
-	// 	node := find(root, value)
-	// 	if node != nil {
-	// 		fmt.Printf("Altura: %d, Profundidade: %d\n", getHeight(node), calcNodeDepth(root, 1, value))
-	// 	} else {
-	// 		fmt.Println("-1")
-	// 	}
-	// }
+	values := strings.FieldsSeq(line)
+	for s := range values {
+		value, _ := strconv.Atoi(s)
+		node := find(root, value)
+		if node != nil {
+			fmt.Printf("Altura: %d, Profundidade: %d\n", getHeight(node), calcNodeDepth(root, 1, value))
+		} else {
+			fmt.Println("-1")
+		}
+	}
 }

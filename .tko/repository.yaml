@@ -23,5 +23,5 @@ audit:
   enabled: false
   interval_seconds: null
 lang: go
-selected: ed@bst_remove
-selected_index: 18
+selected: ed@altura
+selected_index: 13

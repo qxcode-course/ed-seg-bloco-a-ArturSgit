@@ -1,0 +1,37 @@
+2026-07-12 12:38:11, MOVE, v:1, k:ed@altura, mode:DOWN
+2026-07-12 12:38:12, MOVE, v:1, k:ed@altura, mode:PICK
+2026-07-12 12:38:13, EXEC, v:1, k:ed@altura, mode:FULL, rate:0, size:108
+2026-07-12 12:39:19, EXEC, v:1, k:ed@altura, mode:FULL, rate:0
+2026-07-12 12:42:35, EXEC, v:1, k:ed@altura, mode:FULL, size:110, fail:COMP
+2026-07-12 12:42:43, MOVE, v:1, k:ed@altura, mode:BACK
+2026-07-12 12:42:59, MOVE, v:1, k:ed@altura, mode:PICK
+2026-07-12 12:43:00, EXEC, v:1, k:ed@altura, mode:FULL, fail:COMP
+2026-07-12 12:47:16, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-12 12:48:35, EXEC, v:1, k:ed@altura, mode:FULL, size:118, fail:COMP
+2026-07-12 12:50:18, EXEC, v:1, k:ed@altura, mode:FULL, rate:0, size:120
+2026-07-12 12:50:16, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-12 12:50:18, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-12 12:57:43, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-12 13:02:43, EXEC, v:1, k:ed@altura, mode:FULL, size:129, fail:COMP
+2026-07-12 13:02:41, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-12 13:04:52, EXEC, v:1, k:ed@altura, mode:FULL, rate:0, size:130
+2026-07-12 13:04:50, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-12 13:04:52, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-12 13:09:13, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-12 13:17:42, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-12 13:24:48, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-12 13:30:12, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-12 13:34:34, EXEC, v:1, k:ed@altura, mode:FULL, rate:0, size:142
+2026-07-12 13:35:52, EXEC, v:1, k:ed@altura, mode:FULL, size:142, fail:COMP
+2026-07-12 13:35:50, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-12 13:34:34, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-12 19:41:18, EXEC, v:1, k:ed@altura, mode:FULL, size:142, fail:COMP
+2026-07-12 19:43:45, EXEC, v:1, k:ed@altura, mode:FREE, size:142
+2026-07-12 19:43:53, MOVE, v:1, k:ed@altura, mode:BACK
+2026-07-12 19:43:55, MOVE, v:1, k:ed@altura, mode:PICK
+2026-07-12 19:43:55, EXEC, v:1, k:ed@altura, mode:FULL, fail:COMP
+2026-07-12 19:43:43, MOVE, v:1, k:ed@altura, mode:EDIT
+2026-07-12 19:46:50, EXEC, v:1, k:ed@altura, mode:FULL, size:142, fail:COMP
+2026-07-12 19:47:47, EXEC, v:1, k:ed@altura, mode:FULL, rate:100, size:142
+2026-07-12 19:47:52, MOVE, v:1, k:ed@altura, mode:BACK
+2026-07-12 19:47:59, SELF, v:1, k:ed@altura, self:1, rate:100, study:90
