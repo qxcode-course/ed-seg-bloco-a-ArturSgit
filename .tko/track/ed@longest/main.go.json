@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2026-07-12_22-42-02",
+            "content": "@@ -287,398 +287,8 @@\n )%0A%09%7D\n-%0A%0A%09dirs := %5B%5D%5B%5Dint%7B%7B-1, 0%7D, %7B1, 0%7D, %7B0, -1%7D, %7B0, 1%7D%7D%0A%0A%09var dfs func(int, int) int%0A%09dfs = func(i, j int) int %7B%0A%09%09if dp%5Bi%5D%5Bj%5D != 0 %7B%0A%09%09%09return dp%5Bi%5D%5Bj%5D%0A%09%09%7D%0A%0A%09%09maxLen := 1%0A%09%09for _, dir := range dirs %7B%0A%09%09%09x, y := i+dir%5B0%5D, j+dir%5B1%5D%0A%09%09%09if x %3E= 0 && x %3C m && y %3E= 0 && y %3C n && matrix%5Bx%5D%5By%5D %3E matrix%5Bi%5D%5Bj%5D %7B%0A%09%09%09%09length := 1 + dfs(x, y)%0A%09%09%09%09if length %3E maxLen %7B%0A%09%09%09%09%09maxLen = length%0A%09%09%09%09%7D%0A%09%09%09%7D%0A%09%09%7D\n %0A%7D%0A%0A\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-07-12_22-52-46",
+            "content": "@@ -677,194 +677,8 @@\n %0A%09%09%7D\n-%0A%0A%09%09dp%5Bi%5D%5Bj%5D = maxLen%0A%09%09return maxLen%0A%09%7D%0A%0A%09result := 0%0A%09for i := 0; i %3C m; i++ %7B%0A%09%09for j := 0; j %3C n; j++ %7B%0A%09%09%09length := dfs(i, j)%0A%09%09%09if length %3E result %7B%0A%09%09%09%09result = length%0A%09%09%09%7D%0A%09%09%7D%0A%09%7D\n %0A%7D%0A%0A\n",
+            "lines": "72"
+        },
+        {
+            "label": "2026-07-12_22-57-40",
+            "content": "@@ -863,24 +863,8 @@\n %7D%0A%09%7D\n-%0A%0A%09return result\n %0A%7D%0A%0A\n",
+            "lines": "86"
+        },
+        {
+            "label": "2026-07-12_23-00-29",
+            "content": "package main\n\nimport (\n\t\"bufio\"\n\t\"fmt\"\n\t\"os\"\n\t\"strconv\"\n\t\"strings\"\n)\n\nfunc longestIncreasingPath(matrix [][]int) int {\n\n\tif len(matrix) == 0 || len(matrix[0]) == 0 {\n\t\treturn 0\n\t}\n\n\tm, n := len(matrix), len(matrix[0])\n\tdp := make([][]int, m)\n\tfor i := range dp {\n\t\tdp[i] = make([]int, n)\n\t}\n\n\tdirs := [][]int{{-1, 0}, {1, 0}, {0, -1}, {0, 1}}\n\n\tvar dfs func(int, int) int\n\tdfs = func(i, j int) int {\n\t\tif dp[i][j] != 0 {\n\t\t\treturn dp[i][j]\n\t\t}\n\n\t\tmaxLen := 1\n\t\tfor _, dir := range dirs {\n\t\t\tx, y := i+dir[0], j+dir[1]\n\t\t\tif x >= 0 && x < m && y >= 0 && y < n && matrix[x][y] > matrix[i][j] {\n\t\t\t\tlength := 1 + dfs(x, y)\n\t\t\t\tif length > maxLen {\n\t\t\t\t\tmaxLen = length\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\n\t\tdp[i][j] = maxLen\n\t\treturn maxLen\n\t}\n\n\tresult := 0\n\tfor i := 0; i < m; i++ {\n\t\tfor j := 0; j < n; j++ {\n\t\t\tlength := dfs(i, j)\n\t\t\tif length > result {\n\t\t\t\tresult = length\n\t\t\t}\n\t\t}\n\t}\n\n\treturn result\n}\n\n// N\u00e3o modifique a fun\u00e7\u00e3o main\nfunc main() {\n\tscanner := bufio.NewScanner(os.Stdin)\n\n\tif !scanner.Scan() {\n\t\treturn\n\t}\n\tparts := strings.Fields(scanner.Text())\n\tif len(parts) < 2 {\n\t\treturn\n\t}\n\tnl, _ := strconv.Atoi(parts[0])\n\tnc, _ := strconv.Atoi(parts[1])\n\n\tmatrix := make([][]int, nl)\n\tfor i := 0; i < nl; i++ {\n\t\tif !scanner.Scan() {\n\t\t\treturn\n\t\t}\n\t\ttokens := strings.Fields(scanner.Text())\n\t\trow := make([]int, nc)\n\t\tfor j := 0; j < nc && j < len(tokens); j++ {\n\t\t\tv, _ := strconv.Atoi(tokens[j])\n\t\t\trow[j] = v\n\t\t}\n\t\tmatrix[i] = row\n\t}\n\n\tfmt.Println(longestIncreasingPath(matrix))\n}\n",
+            "lines": "88"
+        }
+    ]
+}
